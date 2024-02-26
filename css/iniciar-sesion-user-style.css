@@ -100,3 +100,14 @@ input{
     animation: fadeIn 1s ease-in-out;
   }
 
+  footer{
+    background-color: #000;
+    color: #fff;
+    padding: 8px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 8px;
+}
+
