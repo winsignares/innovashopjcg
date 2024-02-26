@@ -30,29 +30,29 @@ h2{
     text-align: center;
     font-size: 30px;
     text-transform: uppercase;
-    color: #2e2e2e;
+    color: #000;
     margin-bottom: 25px;
 }
 
 label, p{
     font-size: 17;
-    color: #575757;
+    color: #000;
     margin-bottom: 10px;
 }
 
 input{
     padding: 17px 11px;
-    border: 1px solid #2e2e2e;
+    border: 1px solid #000;
     border-radius: 25px;
     margin-bottom: 25px;
     background-color: #FAFAFC;
     outline: none;
-    color: #2e2e2e;
+    color: #000;
     font-size: 17px;
 }
 
 .btn-1{
-    background-color: #2e2e2e;
+    background-color: #000;
     font-size: 15px;
     color: #FFFFFF;
     text-transform: uppercase;
@@ -60,7 +60,7 @@ input{
 }
 
 .btn-1:hover{
-    background-color: #cac2c1;
+    background-color: #6C261F;
 }
 
 .remember{
@@ -68,3 +68,35 @@ input{
     justify-content: space-between;
     margin-bottom: 25px;
 }
+
+.boton-inicio{
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  padding: 10px 15px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.boton-inicio:hover {
+    background-color: #6C261F;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .boton-inicio {
+    animation: fadeIn 1s ease-in-out;
+  }
+
