@@ -68,13 +68,3 @@ input{
     justify-content: space-between;
     margin-bottom: 25px;
 }
-
-@media(max-width:991px){
-    body{
-        padding: 30px;
-    }
-
-    form{
-        width: 100px;
-    }
-}
