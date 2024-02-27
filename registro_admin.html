@@ -1,0 +1,75 @@
+ 
+<!DOCTYPE html> 
+<html> 
+  
+<head> 
+    <title>Registro admin</title> 
+    <link rel="stylesheet" 
+          href="./css/registro_admin.css"> 
+</head> 
+<a href="index.html" class="inicio">
+       <button class="boton-inicio">INICIO</button>
+   </a>
+<body> 
+    <div class="main"> 
+        <h1>Registro</h1> 
+        <form action=""> 
+            <label for="first">Nombre:</label> 
+            <input type="text" id="first" 
+                   name="first" 
+                   placeholder="Ingrese su nombre" required> 
+  
+            <label for="last">Apellido:</label> 
+            <input type="text" id="last" 
+                   name="last" 
+                   placeholder="Ingrese su apellido" required> 
+  
+            <label for="email">Email:</label> 
+            <input type="email" id="email" 
+                   name="email" 
+                   placeholder="Ingrese su email" required> 
+  
+            <label for="dob">Fecha de nacimiento:</label> 
+            <input type="date" 
+                   id="dob" name="dob" 
+                   placeholder="Enter your DOB" required> 
+  
+            <label for="password">Contraseña:</label> 
+            <input type="password" id="password" 
+                   name="password"
+                   placeholder="Ingrese una contraseña"
+                   pattern= 
+                   "^(?=.*\d)(?=.*[a-zA-Z])(?=.*[^a-zA-Z0-9])\S{8,}$" required                    
+                   title="Password must contain at least one number,  
+                       one alphabet, one symbol, and be at  
+                       least 8 characters long"> 
+  
+            <label for="repassword">Confirme su contraseña:</label> 
+            <input type="password" id="repassword" 
+                   name="repassword" 
+                   placeholder="Ingrese nuevamente su contraseña" required> 
+            <span id="pass"></span> 
+  
+            <label for="mobile">Contacto:</label> 
+            <input type="text" id="mobile" 
+                   name="mobile" 
+                   placeholder="Ingrese su numero" required 
+                   maxlength="10"> 
+  
+            <label for="gender">Genero:</label> 
+            <select id="gender" name="gender" required> 
+                <option value="male">Masculino</option> 
+                <option value="female">Femenino</option> 
+                <option value="other">Otro</option> 
+            </select> 
+  
+            <div class="wrap"> 
+                <button type="submit" onclick="solve()"> 
+                  Registrar
+                  </button> 
+            </div> 
+        </form> 
+    </div> 
+</body> 
+  
+</html>
