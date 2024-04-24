@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vendedor</title>
-    <link rel="stylesheet" href="./css/vendedor-style.css" />
+    <title>Admin</title>
+    <link rel="stylesheet" href="./css/admin.css" />
   </head>
   <body>
     <nav class="menu" tabindex="0">
@@ -15,12 +15,15 @@
         <h2 style="font-size: 15px; color: #070707">Vendedor</h2>
       </header>
       <ul>
-        <li tabindex="0" class="icon-inicio"><span>Inicio</span></li>
-        <li tabindex="0" class="icon-clientes"><span>Clientes</span></li>
-        <li tabindex="0" class="icon-cotizacion"><span>Cotización</span></li>
-        <li tabindex="0" class="icon-compra"><span>Compra</span></li>
+        <li href="admin.html" tabindex="0" class="icon-inicio">
+          <span>Inicio</span>
+        </li>
+        <li href="/iniciar-sesion-user.html" tabindex="0" class="icon-empresas">
+          <span>Empresas</span>
+        </li>
         <li tabindex="0" class="icon-stock"><span>Stock</span></li>
-        <li tabindex="0" class="icon-consultar"><span>Consultar</span></li>
+        <li tabindex="0" class="icon-impuesto"><span>Impuesto</span></li>
+        <li tabindex="0" class="icon-bdd"><span>BDD</span></li>
       </ul>
 
       <li class="cerrar-sesion">
@@ -28,10 +31,10 @@
       </li>
     </nav>
 
-    <main>
-      <div class="helper">
-        <span>INNOVASHOP</span>
-      </div>
-    </main>
+    <div class="container">
+      <b class="texto-bienvenida">Bienvenido Administrador</b>
+    </div>
+
+    <main></main>
   </body>
 </html>
