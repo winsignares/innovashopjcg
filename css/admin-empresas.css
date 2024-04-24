@@ -77,17 +77,22 @@ main {
   display: inline-block;
   padding: 10px 20px;
   text-decoration: none;
-  color: #000000; /* Color de texto original */
-  border: 2px solid #ffffff; /* Borde blanco original */
+  color: #000000;
+  /* Color de texto original */
+  border: 2px solid #ffffff;
+  /* Borde blanco original */
   border-radius: 5px;
   transition: all 0.3s ease;
-  margin-top: 160px; /* Margen superior original */
+  margin-top: 160px;
+  /* Margen superior original */
   text-align: center;
 }
 
 .cerrar-sesion a {
-  color: #000000; /* Cambiar color de texto */
-  border-color: #ffffff; /* Cambiar color de borde */
+  color: #000000;
+  /* Cambiar color de texto */
+  border-color: #ffffff;
+  /* Cambiar color de borde */
 }
 
 .menu ul li.icon-inicio {
@@ -183,6 +188,7 @@ main {
 
   .container {
     background-color: #dadada;
+    position: relative;
     margin: 0 auto;
     height: calc(100vh - 60px);
     width: calc(95vw - 60px);
@@ -190,6 +196,73 @@ main {
     border-radius: 20px;
     align-items: center;
     box-shadow: 0 0 10px #000000;
+
+    .search-bar {
+      margin-bottom: 20px;
+    }
+
+    .search-bar input[type="search"] {
+      margin: 10px;
+      width: 30%;
+      padding: 10px;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+    }
+
+    table {
+      width: 80%;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f0f0f0;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    .buttons {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .buttons button {
+      margin: 0 10px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .btn-agregar {
+      background-color: #8a8a8a;
+      color: #fff;
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+    }
+
+    .btn-habilitar {
+      background-color: #bdbdbd;
+      color: #fff;
+      right: 10px;
+    }
+
+    .btn-deshabilitar {
+      background-color: #444444;
+      color: #fff;
+      right: 10px;
+    }
   }
 
   @media screen and (max-width: 400px) {
@@ -239,5 +312,82 @@ main {
       transform: translate3d(0, 0, 0);
       box-shadow: 0 0 0 100em rgba(0, 0, 0, 0.6);
     }
+  }
+
+  .search-bar {
+    margin-bottom: 20px;
+  }
+
+  .search-bar input[type="search"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  th,
+  td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+
+  th {
+    background-color: #f0f0f0;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+
+  .buttons {
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .buttons button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .btn-agregar {
+    background-color: #8a8a8a;
+    color: #fff;
+    float: right;
+    position: absolute;
+    bottom: 10px;
+  }
+  
+  .btn-habilitar, .btn-deshabilitar {
+    background-color: #bdbdbd;
+    color: #fff;
+    position: absolute; 
+    bottom: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .btn-habilitar {
+    left: 10px; 
+  }
+  
+  .btn-deshabilitar {
+    left: 100px;
   }
 }
