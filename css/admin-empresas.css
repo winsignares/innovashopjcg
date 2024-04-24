@@ -123,6 +123,84 @@ main {
   outline: none;
 }
 
+
+
+.container {
+  background-color: #dadada;
+  position: relative;
+  margin: 0 auto;
+  height: calc(100vh - 60px);
+  width: calc(95vw - 60px);
+  display: block;
+  border-radius: 20px;
+  align-items: center;
+  box-shadow: 0 0 10px #000000;
+
+
+  .search-bar {
+    margin-bottom: 20px;
+  }
+
+  .search-bar input[type="search"] {
+    margin: 10px;
+    width: 30%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  th,
+  td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+
+  th {
+    color: #000000;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+
+  .buttons {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .buttons button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .btn-agregar {
+    background-color: #8a8a8a;
+    color: #fff;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+  }
+
+  .btn-habilitar .btn-deshabilitar{
+    background-color: #bdbdbd;
+    color: #fff;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
+}
+
 @media screen and (max-width: 1920px) and (min-width: 400px) {
   body {
     padding-left: 90px;
@@ -186,85 +264,6 @@ main {
     transform: translate3d(0px, -50%, 0);
   }
 
-  .container {
-    background-color: #dadada;
-    position: relative;
-    margin: 0 auto;
-    height: calc(100vh - 60px);
-    width: calc(95vw - 60px);
-    display: block;
-    border-radius: 20px;
-    align-items: center;
-    box-shadow: 0 0 10px #000000;
-
-    .search-bar {
-      margin-bottom: 20px;
-    }
-
-    .search-bar input[type="search"] {
-      margin: 10px;
-      width: 30%;
-      padding: 10px;
-      border: none;
-      border-radius: 10px;
-      font-size: 16px;
-    }
-
-    table {
-      width: 80%;
-      border-collapse: collapse;
-    }
-
-    th,
-    td {
-      border: 1px solid #ddd;
-      padding: 10px;
-      text-align: left;
-    }
-
-    th {
-      background-color: #f0f0f0;
-    }
-
-    tr:nth-child(even) {
-      background-color: #f9f9f9;
-    }
-
-    .buttons {
-      margin-top: 20px;
-      text-align: center;
-    }
-
-    .buttons button {
-      margin: 0 10px;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 10px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-
-    .btn-agregar {
-      background-color: #8a8a8a;
-      color: #fff;
-      position: absolute;
-      bottom: 10px;
-      right: 10px;
-    }
-
-    .btn-habilitar {
-      background-color: #bdbdbd;
-      color: #fff;
-      right: 10px;
-    }
-
-    .btn-deshabilitar {
-      background-color: #444444;
-      color: #fff;
-      right: 10px;
-    }
-  }
-
   @media screen and (max-width: 400px) {
     body {
       padding-left: 0;
@@ -312,82 +311,5 @@ main {
       transform: translate3d(0, 0, 0);
       box-shadow: 0 0 0 100em rgba(0, 0, 0, 0.6);
     }
-  }
-
-  .search-bar {
-    margin-bottom: 20px;
-  }
-
-  .search-bar input[type="search"] {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 10px;
-    font-size: 16px;
-  }
-
-  table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-
-  th,
-  td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: left;
-  }
-
-  th {
-    background-color: #f0f0f0;
-  }
-
-  tr:nth-child(even) {
-    background-color: #f9f9f9;
-  }
-
-  .buttons {
-    margin-top: 20px;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
-  }
-
-  .buttons button {
-    margin: 0 10px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 10px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-
-  .btn-agregar {
-    background-color: #8a8a8a;
-    color: #fff;
-    float: right;
-    position: absolute;
-    bottom: 10px;
-  }
-  
-  .btn-habilitar, .btn-deshabilitar {
-    background-color: #bdbdbd;
-    color: #fff;
-    position: absolute; 
-    bottom: 10px;
-    border: none;
-    border-radius: 10px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  .btn-habilitar {
-    left: 10px; 
-  }
-  
-  .btn-deshabilitar {
-    left: 100px;
   }
 }

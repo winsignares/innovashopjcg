@@ -74,6 +74,13 @@ main {
 }
 
 .cerrar-sesion {
+  text-align: center; /* Centra horizontalmente */
+  margin-top: 30px; /* Agrega margen hacia abajo */
+  display: flex; /* Utiliza flexbox para centrar verticalmente */
+  justify-content: center; /* Centra verticalmente */
+}
+
+div a.button-cerrar-sesion {
   display: inline-block;
   padding: 10px 20px;
   text-decoration: none;
@@ -81,13 +88,11 @@ main {
   border: 2px solid #ffffff; /* Borde blanco original */
   border-radius: 5px;
   transition: all 0.3s ease;
-  margin-top: 160px; /* Margen superior original */
-  text-align: center;
 }
 
-.cerrar-sesion a {
-  color: #000000; /* Cambiar color de texto */
-  border-color: #ffffff; /* Cambiar color de borde */
+.button-cerrar-sesion:hover {
+  background-color: #ffffff; /* Cambia el color de fondo al pasar el mouse */
+  color: #000000; /* Cambia el color del texto al pasar el mouse */
 }
 
 .menu ul li.icon-inicio {
@@ -116,6 +121,121 @@ main {
 
 .menu ul li:focus {
   outline: none;
+}
+
+.container {
+  background-color: #dadada;
+  margin: 2%;
+  height: calc(100vh - 60px);
+  width: calc(95vw - 60px);
+  display: block;
+  border-radius: 20px;
+  position: relative;
+  align-items: center;
+  overflow: hidden;
+  box-shadow: 0 0 10px #000000;
+}
+
+.new-empresa-container {
+  background-color: #f5f5f5;
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: 5%;
+  position: relative;
+  display: flex;
+  width: 90%;
+  height: 67%;
+  margin: 2% 2% 2% 2%;
+  margin-left: 3%;
+  margin-right: 3%;
+  flex-direction: column;
+  align-items: center;
+  color: #000000;
+  box-shadow: 0 0 10px #000000;
+}
+
+
+
+.empresas-container {
+  background-color: #dadada;
+}
+
+.title {
+  background-color: #bdbdbd;
+  padding: 10px 20px;
+  border-radius: 30px;
+  position: relative;
+  bottom: 50px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+.new-empresa-form {
+  width: 95%;
+  display: flex;
+  padding-left: 20%;
+  padding-right: 20%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.new-empresa-form label {
+  width: 40%;
+  margin-bottom: 29px;
+}
+
+.new-empresa-form input {
+  width: 80%;
+  padding: 10px;
+  border-width: 1px;
+  border-radius: 20px;
+  font-size: 16px;
+  margin: 3px;
+}
+
+.btn-regresar {
+  background-color: #ffffff;
+  color: #000000;
+  margin-top: 10%;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 1%;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 0 4px;
+}
+
+.btn-agregar {
+  background-color: #69696c;
+  color: white;
+  padding: 10px 20px;
+  margin: 15px 50% 0 50%;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+}
+
+.labels{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  margin-right: 50%;
+  margin-top: 12px;
+}
+
+.inputs{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-left: 50%;
 }
 
 @media screen and (max-width: 1920px) and (min-width: 400px) {
@@ -179,28 +299,6 @@ main {
   .menu ul li:hover span {
     opacity: 1;
     transform: translate3d(0px, -50%, 0);
-  }
-
-  .container {
-    background-color: #dadada;
-    margin: 0 auto;
-    height: calc(100vh - 60px);
-    width: calc(95vw - 60px);
-    display: block;
-    border-radius: 20px;
-    align-items: center;
-    box-shadow: 0 0 10px #000000;
-  }
-
-  .texto-bienvenida {
-    margin: 35px;
-    font-size: 40px;
-    justify-content: center;
-    padding-top: 25px;
-    line-height: 600px;
-    text-align: center;
-    display: flex;
-    color: #000000;
   }
 
   @media screen and (max-width: 400px) {
