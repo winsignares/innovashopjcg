@@ -237,11 +237,11 @@ div a.button-cerrar-sesion {
 }
 
 .menu div a.icon-clientes {
-  background-image: url(/img/clients_icon.png);
+  background-image: url(../img/clients_icon.png);
 }
 
 .menu div a.icon-cotizacion {
-  background-image: url(../img/quote_icon.png);
+  background-image: url(../img/icono-cotizacion.png);
 }
 
 .menu div a.icon-compra {
