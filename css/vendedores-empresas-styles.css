@@ -10,13 +10,13 @@ body {
     position: relative;
     height: 100vh;
   }
-  
-  .helper {
-    background-color: #dadada;
+
+  .helper-container{
+    background-color: #292929;
     position: relative;
     margin: 0 auto;
-    height: calc(100vh - 60px);
-    width: calc(80vw - 50px);
+    height: calc(92vh - 30px);
+    width: calc(70vw - 25px);
     display: flex;
     border-radius: 20px;
     align-items: center;
@@ -26,8 +26,36 @@ body {
     font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 25px;
     justify-content: center;
+  }
+
+  .tittle{
+    background-color: #bdbdbd;
+    padding: 10px 20px;
+    border-radius: 30px;
+    position: relative;
+    bottom: 250px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+
+  .helper {
+    background-color: #dadada;
+    position: relative;
+    margin: 0 auto;
+    height: calc(100vh - 60px);
+    width: calc(80vw - 50px);
+    display: block;
+    border-radius: 20px;
+    align-items: center;
+    box-shadow: 0 0 10px #000000;
+    overflow: hidden;
+    color: black;
+    font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 25px;
+    justify-content: center;
     
-   
   }
 
   .menu {
