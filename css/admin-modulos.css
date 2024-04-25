@@ -1,3 +1,5 @@
+
+
 body {
   background: #ffffff;
   margin: 0;
@@ -136,20 +138,6 @@ div a.button-cerrar-sesion {
   box-shadow: 0 0 10px #000000;
 }
 
-table {
-  margin: 2% 2%;
-  width: 96%;
-  position: relative;
-  border-radius: 20px;
-  margin-bottom: 20%;
-}
-
-.modulos {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 20px 0;
-}
 
 .label-text {
   font-size: 20px;
@@ -212,6 +200,37 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+.encabezado{
+  display: flex;
+}
+
+b{
+  margin: 10px 20px 0 20px;
+}
+
+.accordion{
+  position: relative;
+  margin-top: 2%;
+}
+
+strong{
+  display: flex;
+  position: relative;
+}
+
+.clientes{
+  display: flex;
+  flex-direction: column;
+}
+
+.botones{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 90%;
+  right: 5%;
 }
 
 @media screen and (max-width: 1920px) and (min-width: 400px) {

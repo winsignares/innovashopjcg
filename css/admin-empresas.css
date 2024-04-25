@@ -178,13 +178,18 @@ tr:nth-child(even) {
 }
 
 .buttons {
-  top: 10px;
   right: 10px;
   text-align: right;
   margin-left: 55%;
   margin-right: 2%;
+  margin-top: 29%;
   position: flex;
   flex-direction:row;
+}
+
+.funciones{
+  position: relative;
+  bottom: 10px;
 }
 
 .btn-habilitar .btn-deshabilitar {
@@ -192,8 +197,8 @@ tr:nth-child(even) {
   color: #fff;
   position: absolute;
   display: flex;
+  margin-top: 60%;
   margin-right: 10px;
-  bottom: 10px;
   right: 10px;
 }
 
