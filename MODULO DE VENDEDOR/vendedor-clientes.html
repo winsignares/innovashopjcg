@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vendedor</title>
+    <title>Vendedor | CLIENTES</title>
     <link rel="stylesheet" href="/css/vendedor-clientes-style.css" />
   </head>
   <body>
@@ -57,11 +57,29 @@
         <a href="/index.html" class="button-cerrar-sesion">Cerrar Sesión</a>
       </div>
     </nav>
+    <div class="container">
+      <div class="new-cliente-container">
+        <h2 class="title">Agregar Cliente</h2>
+        <form class="new-cliente-form">
+          <div class="labels">
+            <label for="nombre">Nombre:</label>
+            <label for="nit">NIT:</label>
+            <label for="nicho">Nicho:</label>
+            <label for="representante">Representante:</label>
+            <label for="contacto">Contacto:</label>
+          </div>
+          <div class="inputs">
+            <input type="text" id="nombre" />
+            <input type="text" id="nit" />
+            <input type="text" id="nicho" />
+            <input type="text" id="representante" />
+            <input type="text" id="contacto" />
+          </div>
 
-    <main>
-      <div class="helper">
-        <span>INNOVASHOP</span>
+          <button class="btn-aceptar" type="submit">Aceptar</button>
+        </form>
       </div>
-    </main>
+      <button class="btn-verlista">Ver Lista</button>
+    </div>
   </body>
 </html>
