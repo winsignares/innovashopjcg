@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin</title>
+    <link rel="stylesheet" href="./css/admin-modulos.css" />
+  </head>
+  <body>
+    <nav class="menu" tabindex="0">
+      <div class="smartphone-menu-trigger"></div>
+      <header class="avatar">
+        <img src="./img/foto_perfil.png" />
+        <h2 style="color: #070707; font-weight: bold">Pedrito</h2>
+        <h2 style="font-size: 15px; color: #070707">Admin</h2>
+      </header>
+      <ul>
+        <li href="admin.html" tabindex="0" class="icon-inicio">
+          <span>Inicio</span>
+        </li>
+        <li href="/iniciar-sesion-user.html" tabindex="0" class="icon-empresas">
+          <span>Empresas</span>
+        </li>
+        <li tabindex="0" class="icon-stock"><span>Modulos</span></li>
+        <li tabindex="0" class="icon-impuesto"><span>Impuesto</span></li>
+        <li tabindex="0" class="icon-bdd"><span>BDD</span></li>
+      </ul>
+
+      <div class="cerrar-sesion">
+        <a href="/index.html" class="button-cerrar-sesion">Cerrar Sesión</a>
+      </div>
+    </nav>
+
+    <div class="container">
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Estado</th>
+            <th>Ultima Sesión</th>
+            <th>Plazo Sesión</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="background-color: #f5f5f5">
+            <td>#02146</td>
+            <td>Ebay</td>
+            <td>Activo</td>
+            <td>2023-02-15</td>
+            <td>2023-04-15</td>
+          </tr>
+          <tr>
+            <td>#98765</td>
+            <td>Amazon</td>
+            <td>Inactivo</td>
+            <td>2023-01-10</td>
+            <td>2023-03-10</td>
+          </tr>
+        </tbody>
+        <div class="modulos">
+          <div class="clientes-ventas">
+            <label class="label-text">Clientes</label>
+            <label class="switch">
+              <input type="checkbox" /> <span class="slider round"></span>
+            </label>
+          </div>
+          <div class="clientes-ventas">
+            <label class="label-text">Ventas</label>
+            <label class="switch">
+              <input type="checkbox" /> <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+      </table>
+    </div>
+
+    <main></main>
+  </body>
+</html>

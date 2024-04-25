@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin</title>
-    <link rel="stylesheet" href="./css/admin.css" />
+    <link rel="stylesheet" href="./css/admin-add-empresas.css" />
   </head>
   <body>
     <nav class="menu" tabindex="0">
@@ -18,21 +18,42 @@
         <li href="admin.html" tabindex="0" class="icon-inicio">
           <span>Inicio</span>
         </li>
-        <li href="/iniciar-sesion-user.html" tabindex="0" class="icon-empresas">
+        <li  id="empresas" href="/iniciar-sesion-user.html" tabindex="0" class="icon-empresas">
           <span>Empresas</span>
         </li>
-        <li tabindex="0" class="icon-stock"><span>Stock</span></li>
+        <li tabindex="0" class="icon-stock"><span>Modulos</span></li>
         <li tabindex="0" class="icon-impuesto"><span>Impuesto</span></li>
         <li tabindex="0" class="icon-bdd"><span>BDD</span></li>
       </ul>
 
-      <li class="cerrar-sesion">
-        <a href="" class="button-cerrar-sesion">Cerrar Sesión</a>
-      </li>
+      <div class="cerrar-sesion">
+        <a href="/index.html" class="button-cerrar-sesion">Cerrar Sesión</a>
+      </div>
     </nav>
 
     <div class="container">
-      <b class="texto-bienvenida">Bienvenido Administrador</b>
+      <div class="new-empresa-container">
+        <h2 class="title">Agregar Empresa</h2>
+        <form class="new-empresa-form">
+          <div class="labels">
+            <label for="nombre">Nombre:</label>
+            <label for="nit">NIT:</label>
+            <label for="nicho">Nicho:</label>
+            <label for="representante">Representante:</label>
+            <label for="contacto">Contacto:</label>
+          </div>
+          <div class="inputs">
+            <input type="text" id="nombre" />
+            <input type="text" id="nit" />
+            <input type="text" id="nicho" />
+            <input type="text" id="representante" />
+            <input type="text" id="contacto" />
+          </div>
+
+          <button class="btn-agregar" type="submit">Agregar</button>
+        </form>
+      </div>
+      <button class="btn-regresar">Regresar</button>
     </div>
 
     <main></main>

@@ -11,6 +11,12 @@ main {
   height: 100vh;
 }
 
+#inicio{
+  background-color: #69696c;
+  border-left: #000000;
+  border-width: 15px;
+}
+
 .helper {
   background: rgba(0, 0, 0, 0.2);
   color: #070707;

@@ -11,6 +11,10 @@ main {
   height: 100vh;
 }
 
+#empresas{
+  background-color: #69696c;
+}
+
 .helper {
   background: rgba(0, 0, 0, 0.2);
   color: #070707;
@@ -74,19 +78,21 @@ main {
 }
 
 .cerrar-sesion {
-  text-align: center; /* Centra horizontalmente */
-  margin-top: 30px; /* Agrega margen hacia abajo */
+  text-align: center;
+  margin: 2px;
+  margin-top: 30px;
   display: flex; /* Utiliza flexbox para centrar verticalmente */
   justify-content: center; /* Centra verticalmente */
+  background-color: #69696c;
+  border-radius: 15px;
 }
 
 div a.button-cerrar-sesion {
   display: inline-block;
   padding: 10px 20px;
   text-decoration: none;
-  color: #000000; /* Color de texto original */
-  border: 2px solid #ffffff; /* Borde blanco original */
-  border-radius: 5px;
+  color: #000000; 
+  border-radius: 20px;
   transition: all 0.3s ease;
 }
 

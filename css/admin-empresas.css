@@ -123,8 +123,6 @@ main {
   outline: none;
 }
 
-
-
 .container {
   background-color: #dadada;
   position: relative;
@@ -135,70 +133,84 @@ main {
   border-radius: 20px;
   align-items: center;
   box-shadow: 0 0 10px #000000;
+  overflow: hidden;
+}
+
+.search-bar {
+  margin-bottom: 20px;
+}
+
+.search-bar input[type="search"] {
+  margin: 10px;
+  width: 30%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+}
 
 
-  .search-bar {
-    margin-bottom: 20px;
-  }
+table {
+  margin: 2% 2%;
+  width: 96%;
+  position: relative;
+  border-radius: 20px;
+  margin-bottom: 20%;
+}
 
-  .search-bar input[type="search"] {
-    margin: 10px;
-    width: 30%;
-    padding: 10px;
-    border: none;
-    border-radius: 10px;
-    font-size: 16px;
-  }
+th,
+td {
+  padding: 6px;
+  text-align: left;
+}
 
-  table {
-    width: 100%;
-    border-collapse: collapse;
-  }
+td{
+  cursor: pointer;
+}
 
-  th,
-  td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: left;
-  }
+th {
+  color: #000000;
+}
 
-  th {
-    color: #000000;
-  }
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+  color: #000000;
+}
 
-  tr:nth-child(even) {
-    background-color: #f9f9f9;
-  }
+.buttons {
+  top: 10px;
+  right: 10px;
+  text-align: right;
+  margin-left: 55%;
+  margin-right: 2%;
+  position: flex;
+  flex-direction:row;
+}
 
-  .buttons {
-    margin-top: 20px;
-    text-align: center;
-  }
+.btn-habilitar .btn-deshabilitar {
+  background-color: #bdbdbd;
+  color: #fff;
+  position: absolute;
+  display: flex;
+  margin-right: 10px;
+  bottom: 10px;
+  right: 10px;
+}
 
-  .buttons button {
-    margin: 0 10px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 10px;
-    font-size: 16px;
-    cursor: pointer;
-  }
+.buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
 
-  .btn-agregar {
-    background-color: #8a8a8a;
-    color: #fff;
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-  }
-
-  .btn-habilitar .btn-deshabilitar{
-    background-color: #bdbdbd;
-    color: #fff;
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-  }
+.btn-agregar {
+  background-color: #8a8a8a;
+  color: #fff;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
 }
 
 @media screen and (max-width: 1920px) and (min-width: 400px) {
