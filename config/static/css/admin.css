@@ -140,6 +140,7 @@ div a.button-cerrar-sesion {
 
 .menu div a.icon-inicio {
   background-image: url(../img/house_icon.png);
+  background-color: #69696c;
 }
 
 .menu div a.icon-empresas {

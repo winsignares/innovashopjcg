@@ -38,6 +38,7 @@ main {
   left: 0;
   z-index: 5;
   outline: none;
+  padding: 2;
 }
 
 .menu .avatar {
@@ -78,6 +79,7 @@ main {
   margin-bottom: 5px;
   margin-top: 20px;
 }
+
 
 .lista-iconos {
   display: flex;
