@@ -125,11 +125,11 @@ div a.button-cerrar-sesion {
 
 .menu a.icon-impuesto {
   background-image: url(../img/icons-impuesto.png);
-  background-color: #69696c;
 }
 
 .menu a.icon-bdd {
   background-image: url(../img/icon-bdd.png);
+  background-color: #69696c;
 }
 
 .menu a.icon-stock {
@@ -184,32 +184,16 @@ td {
   align-items: center;
 }
 
-.container .iva-container {
-  width: 80%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  padding-left: 200px;
-}
-
-.iva-container input {
-  width: 40%;
-  padding: 10px;
-  border-width: 1px;
-  border-radius: 20px;
+.db-container button {
+  background-color: #8a8a8a;
+  width: 100%;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
   font-size: 16px;
-  margin: 4px;
+  cursor: pointer;
 }
-
-.iva-container button {
-    background-color: #8a8a8a;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 10px;
-    font-size: 16px;
-    cursor: pointer;
-  }
 
 .container .accordion .accordion-button {
   background-color: #69696c;

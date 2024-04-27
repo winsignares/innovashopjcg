@@ -125,6 +125,7 @@ div a.button-cerrar-sesion {
 
 .menu a.icon-empresas {
   background-image: url(../img/icon-empresa.png);
+  background-color: #69696c;
 }
 
 .menu a.icon-impuesto {
@@ -139,15 +140,13 @@ div a.button-cerrar-sesion {
   background-image: url(../img/stock_icon.png);
 }
 
-.menu ul li:hover {
+.menu div a:hover {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-.menu ul li:focus {
+.menu div a:focus {
   outline: none;
 }
-
-
 
 .container {
   background-color: #dadada;
