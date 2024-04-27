@@ -10,26 +10,26 @@
     <nav class="menu" tabindex="0">
       <div class="smartphone-menu-trigger"></div>
       <header class="avatar">
-        <img src="./img/foto_perfil.png" />
+        <img src="../static/img/foto_perfil.png" />
         <h2 style="color: #070707; font-weight: bold">Pedrito</h2>
         <h2 style="font-size: 15px; color: #070707">Vendedor</h2>
       </header>
-      <ul>
-        <li href="admin.html" tabindex="0" class="icon-inicio">
+      <div class="lista-iconos">
+        <a href="admin.html" tabindex="0" class="icon-inicio">
           <span>Inicio</span>
-        </li>
-        <li
+        </a>
+        <a
           id="empresas"
-          href="/iniciar-sesion-user.html"
+          href="admin-empresas.html"
           tabindex="0"
           class="icon-empresas"
         >
           <span>Empresas</span>
-        </li>
-        <li tabindex="0" class="icon-stock"><span>Modulos</span></li>
-        <li tabindex="0" class="icon-impuesto"><span>Impuesto</span></li>
-        <li tabindex="0" class="icon-bdd"><span>BDD</span></li>
-      </ul>
+      </a>
+        <a tabindex="0" class="icon-stock"><span>Modulos</span></a>
+        <a tabindex="0" class="icon-impuesto"><span>Impuesto</span></a>
+        <a tabindex="0" class="icon-bdd"><span>BDD</span></a>
+      </div>
 
       <div class="cerrar-sesion">
         <a href="/index.html" class="button-cerrar-sesion">Cerrar Sesión</a>
@@ -58,7 +58,7 @@
           <button class="btn-agregar" type="submit">Agregar</button>
         </form>
       </div>
-      <button class="btn-regresar">Regresar</button>
+      <a href="admin-empresas.html" class="btn-regresar">Regresar</a>
     </div>
 
     <main></main>
