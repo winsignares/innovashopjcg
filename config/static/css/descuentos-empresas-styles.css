@@ -78,7 +78,7 @@ body {
     padding: 10px 20px;
     border-radius: 30px;
     position: relative;
-    bottom: 250px;
+    bottom: 100px;
     width: 95.5%;
     text-align: center;
     margin-top: 90px;
@@ -211,6 +211,8 @@ body {
     background-size: auto 20px;
     transition: all 0.15s linear;
     cursor: pointer;
+    height: 20px;
+    text-decoration: none;
   }
   .button-container {
     display: flex;
@@ -240,7 +242,7 @@ body {
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 16px;
-    margin-top: 28em;
+    margin-top: 6em;
   }
   .menu ul li.icon-inicio {
     background-image: url(../img/house_icon.png);

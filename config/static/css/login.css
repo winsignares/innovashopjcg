@@ -83,6 +83,13 @@ input {
 	margin: 8px 0;
 	width: 100%;
 }
+.boton-regresar {
+	position: fixed;
+	top: 0px;
+	left: 10px;
+	z-index: 1000;
+	background-color: black;
+  }
 
 .container {
 	background-color: #fff;
