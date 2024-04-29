@@ -24,6 +24,25 @@ main {
   box-shadow: 0 0 10px #000000;
 }
 
+.container-compra {
+  background-color: #ffffff;
+  margin: 2%;
+  height: calc(43vh - -10px);
+  width: calc(95vw - 315px);
+  display: block;
+  border-radius: 20px;
+  position: fixed;
+  align-items: center;
+  overflow: hidden;
+  box-shadow: 0 0 10px #000000;
+  text-align: center;
+}
+
+.container-compra h2 {
+  margin-top: 9%;
+  font-size: 90px;
+}
+
 .new-cliente-container {
   background-color: #353131;
   border-radius: 20px;
