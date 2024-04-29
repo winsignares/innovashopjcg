@@ -36,7 +36,7 @@ body {
     bottom: 250px;
     width: 100%;
     text-align: center;
-    margin-bottom: 20px;
+    margin-top: -120px;
     font-size: 24px;
   }
 
@@ -104,6 +104,7 @@ body {
     background-size: auto 20px;
     transition: all 0.15s linear;
     cursor: pointer;
+    margin-bottom: 20px;
   }
   .button-container {
     display: flex;
@@ -133,8 +134,13 @@ body {
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 16px;
-    margin-top: 8em;
+    margin-top: 18em;
   }
+a{
+  color: #000000;
+  text-decoration: none;
+}
+
   .menu ul li.icon-inicio {
     background-image: url(../img/house_icon.png);
   }
