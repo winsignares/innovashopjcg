@@ -53,75 +53,101 @@ main {
   margin-top: 30px;
 }
 
-.new-cliente-form {
-  width: 20%;
-  display: flex;
-  padding-left: 10%;
-  padding-right: 10%;
-  flex-direction: column;
-  align-items: center;
+.lista-container {
+  height: 400px; /* Altura fija del contenedor */
+  width: 1100px;
+  overflow-y: auto; /* Desbordamiento vertical con barra de desplazamiento */
+  display: flex; /* Hace que las columnas se ajusten horizontalmente */
+  background-color: #dadada; /* Color de fondo oscuro */
+  border-radius: 10px; /* Bordes redondeados */
 }
 
-.new-cliente-form label {
-  width: 10%;
-  margin-bottom: 46.7px;
+.columna {
+  flex: 1; /* Distribuye el espacio de manera uniforme entre las columnas */
+  padding: 20px 10px; /* Añade espacio interno a las columnas */
+  border-right: 2px solid #bdbdbd; /* Separador derecho */
+  text-align: center;
 }
 
-.new-cliente-form input {
-  width: 80%;
-  padding: 10px;
-  border-width: 1px;
-  border-radius: 20px;
-  font-size: 16px;
-  margin: 3px;
-  margin-bottom: 19px;
+.columna:last-child {
+  border-right: none; /* Eliminar separador derecho en la última columna */
 }
 
-.btn-verlista {
-  background-color: #ffffff;
-  color: #000000;
-  margin-top: 10%;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 50px;
-  font-size: 16px;
-  cursor: pointer;
-  position: absolute;
-  bottom: 1%;
+.Activo {
+  width: 16px;
+  height: 16px;
+}
+
+.Expirado {
+  width: 16px;
+  height: 16px;
+}
+
+.lista {
+  list-style: none; /* Quita los marcadores de lista */
+  padding: 0; /* Elimina el relleno predeterminado */
+  margin-top: 0; /* Elimina el margen superior */
+  margin-bottom: 10px; /* Agrega espacio entre las listas */
+}
+
+.lista li {
   margin-bottom: 20px;
-  left: 48%;
-  transform: translateX(-50%);
-  box-shadow: 0 0 4px;
+  color: #000000; /* Color de texto blanco */
+  font-family: "Arial", sans-serif; /* Fuente */
 }
 
-.btn-aceptar {
-  background-color: #69696c;
-  color: white;
-  padding: 10px 20px;
-  margin: 15px 50% 0 50%;
-  border: none;
-  border-radius: 20px;
-  font-size: 16px;
+.titulo-columna {
+  border-bottom: 2px solid #000000; /* Borde inferior sólido blanco */
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #000000; /* Color de texto blanco */
+  font-weight: bold; /* Texto en negrita */
+  text-transform: uppercase; /* Convertir texto a mayúsculas */
+  padding-bottom: 5px; /* Espacio inferior del título */
+}
+
+.columna h2 {
+  margin-top: 0; /* Elimina el margen superior del título */
+  flex: 1; /* Distribuye el espacio de manera uniforme entre las columnas */
+  padding: 0 20px; /* Añade espacio interno a las columnas */
+  margin-right: 10px; /* Agrega espacio entre las columnas */
+}
+
+.btn-agregar {
   cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 20px;
   position: relative;
-  margin-top: 50px;
-  right: 26px;
+  left: 3.5%;
+  top: 3%;
+  background-color: #8f8f8f;
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none;
 }
 
-.labels {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  margin-right: 50%;
-  margin-top: 7.9px;
+.btn-actualizar {
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 20px;
+  position: relative;
+  left: 36.9%;
+  top: 3%;
+  background-color: #8f8f8f;
+  color: #ffffff;
+  font-size: 16px;
 }
 
-.inputs {
+.btn-eliminar {
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 20px;
   position: relative;
-  display: flex;
-  flex-direction: column;
-  margin-left: 10%;
-  width: 200%;
+  left: 70%;
+  top: 3%;
+  background-color: #8f8f8f;
+  color: #ffffff;
+  font-size: 16px;
 }
 
 .menu {

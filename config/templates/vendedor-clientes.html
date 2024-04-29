@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -53,23 +53,29 @@
         <form class="new-cliente-form">
           <div class="labels">
             <label for="nombre">Nombre:</label>
-            <label for="nit">NIT:</label>
-            <label for="nicho">Nicho:</label>
-            <label for="representante">Representante:</label>
-            <label for="contacto">Contacto:</label>
+            <label for="id">ID:</label>
+            <label for="direccion">Dirección:</label>
+            <label for="telefono">Teléfono:</label>
+            <label for="correo-electronico" style="white-space: nowrap"
+              >Correo Electronico:</label
+            >
+            <label for="contrasena">Contraseña:</label>
           </div>
           <div class="inputs">
             <input type="text" id="nombre" />
-            <input type="text" id="nit" />
-            <input type="text" id="nicho" />
-            <input type="text" id="representante" />
-            <input type="text" id="contacto" />
+            <input type="text" id="id" />
+            <input type="text" id="direccion" />
+            <input type="text" id="telefono" />
+            <input type="text" id="correo-electronico" />
+            <input type="text" id="contrasena" />
           </div>
 
           <button class="btn-aceptar" type="submit">Aceptar</button>
         </form>
       </div>
-      <button class="btn-verlista">Ver Lista</button>
+      <a href="vendedor-clientes-lista.html" class="btn-verlista">
+        Ver Lista
+      </a>
     </div>
   </body>
 </html>
