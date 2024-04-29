@@ -72,6 +72,15 @@ main {
   margin-top: 30px;
 }
 
+.text-stock {
+  color: #ffffff;
+}
+
+.input-stock {
+  padding-left: 20px;
+  top: 30%;
+}
+
 .new-cliente-form {
   width: 20%;
   display: flex;
@@ -96,40 +105,32 @@ main {
   margin-bottom: 19px;
 }
 
-.btn-agregar-producto {
+.btn-aceptar {
   background-color: #ffffff;
-  color: #000000;
-  margin-top: 10%;
+  color: #272727;
   padding: 10px 20px;
+  margin: 15px 50% 0 50%;
   border: none;
-  border-radius: 50px;
+  border-radius: 20px;
   font-size: 16px;
   cursor: pointer;
-  position: absolute;
-  bottom: 1%;
-  margin-bottom: 20px;
-  left: 35%;
-  transform: translateX(-50%);
-  box-shadow: 0 0 4px;
-  text-decoration: none;
+  position: relative;
+  top: 50%;
+  right: -12px;
 }
 
-.btn-consultar-stock {
+.btn-volver {
   background-color: #ffffff;
-  color: #000000;
-  margin-top: 10%;
+  color: #272727;
   padding: 10px 20px;
+  margin: 15px 50% 0 50%;
   border: none;
-  border-radius: 50px;
+  border-radius: 20px;
   font-size: 16px;
   cursor: pointer;
   position: absolute;
-  bottom: 1%;
-  margin-bottom: 20px;
-  left: 60%;
-  transform: translateX(-50%);
-  box-shadow: 0 0 4px;
-  text-decoration: none;
+  top: 570px;
+  right: -55px;
 }
 
 .menu {

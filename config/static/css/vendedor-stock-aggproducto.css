@@ -14,7 +14,7 @@ main {
 .container {
   background-color: #dadada;
   margin: 2%;
-  height: calc(75vh - 40px);
+  height: calc(90vh - 15px);
   width: calc(95vw - 220px);
   display: block;
   border-radius: 20px;
