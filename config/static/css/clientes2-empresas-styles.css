@@ -13,19 +13,20 @@ main {
 
 .helper-container {
   background-color: #292929;
-  position: relative;
-  margin: 0 auto;
-  height: calc(92vh - 30px);
-  width: calc(70vw - 25px);
-  display: flex;
-  border-radius: 20px;
-  align-items: center;
-  box-shadow: 0 0 10px #000000;
-  overflow: hidden;
-  color: black;
-  font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 25px;
-  justify-content: center;
+    position: relative;
+    margin: 0 auto;
+    height: calc(92vh - 30px);
+    width: calc(70vw - 25px);
+    display: flex;
+    border-radius: 20px;
+    align-items: center;
+    box-shadow: 0 0 10px #000000;
+    overflow: hidden;
+    color: black;
+    font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 25px;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .tittle {
@@ -36,7 +37,7 @@ main {
   bottom: 250px;
   width: 100%;
   text-align: center;
-  margin-top: -120px;
+  margin-top: -100px;
   font-size: 24px;
 }
 
@@ -56,6 +57,32 @@ main {
   font-size: 25px;
   justify-content: center;
 }
+
+table {
+  margin: 1% 1%;
+  width: 98%;
+  position: relative;
+}
+
+th,
+td {
+  padding: 6px;
+  text-align: center;
+}
+
+td{
+  cursor: pointer;
+}
+
+th {
+  color: #000000;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+  color: #000000;
+}
+
 
 .menu {
   background: #c9c6c6;

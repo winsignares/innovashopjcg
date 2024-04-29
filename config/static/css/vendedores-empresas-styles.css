@@ -46,6 +46,7 @@ body {
     align-content: space-between;
     justify-content: center;
     margin-top: 70px;
+    color: white;
   }
 
   .new-cliente-form label {
