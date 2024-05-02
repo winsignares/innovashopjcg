@@ -1,0 +1,524 @@
+[
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "Marshmallow",
+        "importPath": "flask_marshmallow",
+        "description": "flask_marshmallow",
+        "isExtraImport": true,
+        "detail": "flask_marshmallow",
+        "documentation": {}
+    },
+    {
+        "label": "SQLAlchemy",
+        "importPath": "flask_sqlalchemy",
+        "description": "flask_sqlalchemy",
+        "isExtraImport": true,
+        "detail": "flask_sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "importPath": "config.db",
+        "description": "config.db",
+        "isExtraImport": true,
+        "detail": "config.db",
+        "documentation": {}
+    },
+    {
+        "label": "ma",
+        "importPath": "config.db",
+        "description": "config.db",
+        "isExtraImport": true,
+        "detail": "config.db",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "importPath": "config.db",
+        "description": "config.db",
+        "isExtraImport": true,
+        "detail": "config.db",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "importPath": "config.db",
+        "description": "config.db",
+        "isExtraImport": true,
+        "detail": "config.db",
+        "documentation": {}
+    },
+    {
+        "label": "ma",
+        "importPath": "config.db",
+        "description": "config.db",
+        "isExtraImport": true,
+        "detail": "config.db",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "importPath": "config.db",
+        "description": "config.db",
+        "isExtraImport": true,
+        "detail": "config.db",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "importPath": "config.db",
+        "description": "config.db",
+        "isExtraImport": true,
+        "detail": "config.db",
+        "documentation": {}
+    },
+    {
+        "label": "ma",
+        "importPath": "config.db",
+        "description": "config.db",
+        "isExtraImport": true,
+        "detail": "config.db",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "importPath": "config.db",
+        "description": "config.db",
+        "isExtraImport": true,
+        "detail": "config.db",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "importPath": "config.db",
+        "description": "config.db",
+        "isExtraImport": true,
+        "detail": "config.db",
+        "documentation": {}
+    },
+    {
+        "label": "ma",
+        "importPath": "config.db",
+        "description": "config.db",
+        "isExtraImport": true,
+        "detail": "config.db",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "importPath": "config.db",
+        "description": "config.db",
+        "isExtraImport": true,
+        "detail": "config.db",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "importPath": "config.db",
+        "description": "config.db",
+        "isExtraImport": true,
+        "detail": "config.db",
+        "documentation": {}
+    },
+    {
+        "label": "ma",
+        "importPath": "config.db",
+        "description": "config.db",
+        "isExtraImport": true,
+        "detail": "config.db",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "importPath": "config.db",
+        "description": "config.db",
+        "isExtraImport": true,
+        "detail": "config.db",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "importPath": "config.db",
+        "description": "config.db",
+        "isExtraImport": true,
+        "detail": "config.db",
+        "documentation": {}
+    },
+    {
+        "label": "ma",
+        "importPath": "config.db",
+        "description": "config.db",
+        "isExtraImport": true,
+        "detail": "config.db",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "importPath": "config.db",
+        "description": "config.db",
+        "isExtraImport": true,
+        "detail": "config.db",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "importPath": "config.db",
+        "description": "config.db",
+        "isExtraImport": true,
+        "detail": "config.db",
+        "documentation": {}
+    },
+    {
+        "label": "ma",
+        "importPath": "config.db",
+        "description": "config.db",
+        "isExtraImport": true,
+        "detail": "config.db",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "importPath": "config.db",
+        "description": "config.db",
+        "isExtraImport": true,
+        "detail": "config.db",
+        "documentation": {}
+    },
+    {
+        "label": "relationship",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "backref",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "ForeignKey",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "config.db",
+        "description": "config.db",
+        "peekOfCode": "app = Flask(__name__)\napp.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymsql://root@localhost/innovashop'\napp.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False\ndb = SQLAlchemy(app)\nma = Marshmallow(app)",
+        "detail": "config.db",
+        "documentation": {}
+    },
+    {
+        "label": "app.config['SQLALCHEMY_DATABASE_URI']",
+        "kind": 5,
+        "importPath": "config.db",
+        "description": "config.db",
+        "peekOfCode": "app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymsql://root@localhost/innovashop'\napp.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False\ndb = SQLAlchemy(app)\nma = Marshmallow(app)",
+        "detail": "config.db",
+        "documentation": {}
+    },
+    {
+        "label": "app.config['SQLALCHEMY_TRACK_MODIFICATIONS']",
+        "kind": 5,
+        "importPath": "config.db",
+        "description": "config.db",
+        "peekOfCode": "app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False\ndb = SQLAlchemy(app)\nma = Marshmallow(app)",
+        "detail": "config.db",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "kind": 5,
+        "importPath": "config.db",
+        "description": "config.db",
+        "peekOfCode": "db = SQLAlchemy(app)\nma = Marshmallow(app)",
+        "detail": "config.db",
+        "documentation": {}
+    },
+    {
+        "label": "ma",
+        "kind": 5,
+        "importPath": "config.db",
+        "description": "config.db",
+        "peekOfCode": "ma = Marshmallow(app)",
+        "detail": "config.db",
+        "documentation": {}
+    },
+    {
+        "label": "Cliente",
+        "kind": 6,
+        "importPath": "models.Cliente",
+        "description": "models.Cliente",
+        "peekOfCode": "class Cliente(db.Model):\n    __tablename__ = \"clientes\"\n    id = db.Column(db.Integer, primary_key=True)\n    identificacion = db.Column(db.String(255))\n    nombre = db.Column(db.String(255))\n    compras = db.relationship('Compra', backref='cliente')\n    def __init__(self, identificacion, nombre, compras):\n        self.identificacion = identificacion\n        self.cotizaciones = nombre\n        self.compras = compras",
+        "detail": "models.Cliente",
+        "documentation": {}
+    },
+    {
+        "label": "ClienteSchema",
+        "kind": 6,
+        "importPath": "models.Cliente",
+        "description": "models.Cliente",
+        "peekOfCode": "class ClienteSchema(ma.Schema):\n    class Meta:\n        fields = ('id', 'identificacion', 'nombre')\ncliente_schema = ClienteSchema()\nclientes_schema = ClienteSchema(many=True)",
+        "detail": "models.Cliente",
+        "documentation": {}
+    },
+    {
+        "label": "cliente_schema",
+        "kind": 5,
+        "importPath": "models.Cliente",
+        "description": "models.Cliente",
+        "peekOfCode": "cliente_schema = ClienteSchema()\nclientes_schema = ClienteSchema(many=True)",
+        "detail": "models.Cliente",
+        "documentation": {}
+    },
+    {
+        "label": "clientes_schema",
+        "kind": 5,
+        "importPath": "models.Cliente",
+        "description": "models.Cliente",
+        "peekOfCode": "clientes_schema = ClienteSchema(many=True)",
+        "detail": "models.Cliente",
+        "documentation": {}
+    },
+    {
+        "label": "Compra",
+        "kind": 6,
+        "importPath": "models.Compra",
+        "description": "models.Compra",
+        "peekOfCode": "class Compra(db.Model):\n    __tablename__ = \"compras\"\n    id = db.Column(db.Integer, primary_key=True)\n    cliente_id = db.Column(db.Integer, db.ForeignKey('cliente.id'))\n    codigo = db.Column(db.String(255))\n    nombre = db.Column(db.String(255))\n    cotizacion = db.Column(db.Integer)\n    stock = db.Column(db.Integer)\n    detalles = db.Column(db.String(255))\n    def __init__(self, codigo, nombre, clientes, cotizacion, stock, detalles):",
+        "detail": "models.Compra",
+        "documentation": {}
+    },
+    {
+        "label": "CompraSchema",
+        "kind": 6,
+        "importPath": "models.Compra",
+        "description": "models.Compra",
+        "peekOfCode": "class CompraSchema(ma.Schema):\n    class Meta:\n        fields = ('id', 'codigo', 'nombre', 'clientes', 'cotizacion', 'stock', 'detalles')\ncompra_schema = CompraSchema()\ncompras_schema = CompraSchema(many=True)",
+        "detail": "models.Compra",
+        "documentation": {}
+    },
+    {
+        "label": "compra_schema",
+        "kind": 5,
+        "importPath": "models.Compra",
+        "description": "models.Compra",
+        "peekOfCode": "compra_schema = CompraSchema()\ncompras_schema = CompraSchema(many=True)",
+        "detail": "models.Compra",
+        "documentation": {}
+    },
+    {
+        "label": "compras_schema",
+        "kind": 5,
+        "importPath": "models.Compra",
+        "description": "models.Compra",
+        "peekOfCode": "compras_schema = CompraSchema(many=True)",
+        "detail": "models.Compra",
+        "documentation": {}
+    },
+    {
+        "label": "Empresa",
+        "kind": 6,
+        "importPath": "models.Empresa",
+        "description": "models.Empresa",
+        "peekOfCode": "class Empresa(db.Model):\n    __tablename__ = \"empresas\" \n    id = db.Column(db.Integer, primary_key=True)\n    nombre = db.Column(db.String(255))\n    cotizaciones = db.Column(db.Boolean)\n    clientes = db.Column(db.Boolean)\n    compras = db.Column(db.Boolean)\n    informes = db.Column(db.Boolean)\n    parametros = db.Column(db.Boolean)\n    productos = db.Column(db.Boolean)",
+        "detail": "models.Empresa",
+        "documentation": {}
+    },
+    {
+        "label": "EmpresaSchema",
+        "kind": 6,
+        "importPath": "models.Empresa",
+        "description": "models.Empresa",
+        "peekOfCode": "class EmpresaSchema(ma.Schema):\n    class Meta:\n        fields = ('id', 'nombre', 'cotizaciones', 'clientes', 'compras', 'informes', 'parametros', 'productos', 'stock', 'vendedores', 'empresas', 'estado')\nempresa_schema = EmpresaSchema()\nempresas_schema = EmpresaSchema(many=True)",
+        "detail": "models.Empresa",
+        "documentation": {}
+    },
+    {
+        "label": "empresa_schema",
+        "kind": 5,
+        "importPath": "models.Empresa",
+        "description": "models.Empresa",
+        "peekOfCode": "empresa_schema = EmpresaSchema()\nempresas_schema = EmpresaSchema(many=True)",
+        "detail": "models.Empresa",
+        "documentation": {}
+    },
+    {
+        "label": "empresas_schema",
+        "kind": 5,
+        "importPath": "models.Empresa",
+        "description": "models.Empresa",
+        "peekOfCode": "empresas_schema = EmpresaSchema(many=True)",
+        "detail": "models.Empresa",
+        "documentation": {}
+    },
+    {
+        "label": "Productos",
+        "kind": 6,
+        "importPath": "models.Producto",
+        "description": "models.Producto",
+        "peekOfCode": "class Productos(db.Model):\n    __tablename__ = \"productos\"\n    id = db.Column(db.Integer, primary_key=True)\n    codigo = db.Column(db.String(255))\n    imagen = db.Column(db.String(255))\n    stock = db.Column(db.Integer)\n    producto = db.Column(db.String(255))\n    descuento_tiempo = db.Column(db.String(255))\n    precio = db.Column(db.Float)\n    def __init__(self, codigo, imagen, stock, producto, informes, descuento_tiempo, precio):",
+        "detail": "models.Producto",
+        "documentation": {}
+    },
+    {
+        "label": "ProductoSchema",
+        "kind": 6,
+        "importPath": "models.Producto",
+        "description": "models.Producto",
+        "peekOfCode": "class ProductoSchema(ma.Schema):\n    class Meta:\n        fields = ('id', 'codigo', 'imagen', 'stock', 'producto', 'informes', 'descuento_tiempo', 'precio')\nproducto_schema = ProductoSchema()\nproductos_schema = ProductoSchema(many=True)",
+        "detail": "models.Producto",
+        "documentation": {}
+    },
+    {
+        "label": "producto_schema",
+        "kind": 5,
+        "importPath": "models.Producto",
+        "description": "models.Producto",
+        "peekOfCode": "producto_schema = ProductoSchema()\nproductos_schema = ProductoSchema(many=True)",
+        "detail": "models.Producto",
+        "documentation": {}
+    },
+    {
+        "label": "productos_schema",
+        "kind": 5,
+        "importPath": "models.Producto",
+        "description": "models.Producto",
+        "peekOfCode": "productos_schema = ProductoSchema(many=True)",
+        "detail": "models.Producto",
+        "documentation": {}
+    },
+    {
+        "label": "Stocks",
+        "kind": 6,
+        "importPath": "models.Stock",
+        "description": "models.Stock",
+        "peekOfCode": "class Stocks(db.Model):\n    __tablename__ = \"stock\"\n    id = db.Column(db.Integer, primary_key=True)\n    identificacion = db.Column(db.String(255))\n    nombre = db.Column(db.String(255))\n    cotizacion = db.Column(db.Integer)\n    stock = db.Column(db.Integer)\n    pdf = db.Column(db.String(255))\n    def __init__(self, identificacion, nombre, cotizacion, stock, pdf):\n        self.nombre = nombre",
+        "detail": "models.Stock",
+        "documentation": {}
+    },
+    {
+        "label": "Stockchema",
+        "kind": 6,
+        "importPath": "models.Stock",
+        "description": "models.Stock",
+        "peekOfCode": "class Stockchema(ma.Schema):\n    class Meta:\n        fields = ('id', 'identificacion', 'nombre', 'cotizacion', 'stock', 'pdf')\nstock_schema = Stockchema()\nstocks_schema = Stockchema(many=True)",
+        "detail": "models.Stock",
+        "documentation": {}
+    },
+    {
+        "label": "stock_schema",
+        "kind": 5,
+        "importPath": "models.Stock",
+        "description": "models.Stock",
+        "peekOfCode": "stock_schema = Stockchema()\nstocks_schema = Stockchema(many=True)",
+        "detail": "models.Stock",
+        "documentation": {}
+    },
+    {
+        "label": "stocks_schema",
+        "kind": 5,
+        "importPath": "models.Stock",
+        "description": "models.Stock",
+        "peekOfCode": "stocks_schema = Stockchema(many=True)",
+        "detail": "models.Stock",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "kind": 6,
+        "importPath": "models.User",
+        "description": "models.User",
+        "peekOfCode": "class User(db.Model):\n    __tablename__ = \"User\"\n    id = db.Column(db.Integer, primary_key=True)\n    nombre = db.Column(db.String(255))\n    contraseña = db.Column(db.String(255))\n    rol = db.Column(db.String(255))\n    def __init__(self, nombre, contraseña, rol):\n        self.nombre = nombre\n        self.contraseña = contraseña\n        self.rol = rol",
+        "detail": "models.User",
+        "documentation": {}
+    },
+    {
+        "label": "UserSchema",
+        "kind": 6,
+        "importPath": "models.User",
+        "description": "models.User",
+        "peekOfCode": "class UserSchema(ma.Schema):\n    class Meta:\n        fields = ('id', 'nombre', 'contraseña', 'rol')\nuser_schema = UserSchema()\nusers_schema = UserSchema(many=True)",
+        "detail": "models.User",
+        "documentation": {}
+    },
+    {
+        "label": "create_default_data",
+        "kind": 2,
+        "importPath": "models.User",
+        "description": "models.User",
+        "peekOfCode": "def create_default_data():\n    if not User.query.first():\n        users = [\n            User(nombre='Jesus Garcia', contraseña='jgarcia123', rol='Empresa'),\n            User(nombre='Juan Verdugo', contraseña='jberdugo123', rol='Vendedor'),\n            User(nombre='David', contraseña='dcampo123', rol='Admin')\n        ]\n        db.session.add_all(users)\n        db.session.commit()\nwith app.app_context():",
+        "detail": "models.User",
+        "documentation": {}
+    },
+    {
+        "label": "user_schema",
+        "kind": 5,
+        "importPath": "models.User",
+        "description": "models.User",
+        "peekOfCode": "user_schema = UserSchema()\nusers_schema = UserSchema(many=True)",
+        "detail": "models.User",
+        "documentation": {}
+    },
+    {
+        "label": "users_schema",
+        "kind": 5,
+        "importPath": "models.User",
+        "description": "models.User",
+        "peekOfCode": "users_schema = UserSchema(many=True)",
+        "detail": "models.User",
+        "documentation": {}
+    },
+    {
+        "label": "Vendedor",
+        "kind": 6,
+        "importPath": "models.Vendedor",
+        "description": "models.Vendedor",
+        "peekOfCode": "class Vendedor(db.Model):\n    __tablename__ = \"vendedores\"\n    id = db.Column(db.Integer, primary_key=True)\n    identificacion = db.Column(db.String(255))\n    nombre = db.Column(db.String(255))\n    telefono = db.Column(db.String(255))\n    ventas = db.Column(db.Integer)\n    def __init__(self, identificacion, nombre, telefono, ventas):\n        self.identificacion = identificacion\n        self.nombre = nombre",
+        "detail": "models.Vendedor",
+        "documentation": {}
+    },
+    {
+        "label": "VendedorSchema",
+        "kind": 6,
+        "importPath": "models.Vendedor",
+        "description": "models.Vendedor",
+        "peekOfCode": "class VendedorSchema(ma.Schema):\n    class Meta:\n        fields = ('id', 'identificacion', 'nombre', 'telefono', 'ventas')\nvendedor_schema = VendedorSchema()\nvendedores_schema = VendedorSchema",
+        "detail": "models.Vendedor",
+        "documentation": {}
+    },
+    {
+        "label": "vendedor_schema",
+        "kind": 5,
+        "importPath": "models.Vendedor",
+        "description": "models.Vendedor",
+        "peekOfCode": "vendedor_schema = VendedorSchema()\nvendedores_schema = VendedorSchema",
+        "detail": "models.Vendedor",
+        "documentation": {}
+    },
+    {
+        "label": "vendedores_schema",
+        "kind": 5,
+        "importPath": "models.Vendedor",
+        "description": "models.Vendedor",
+        "peekOfCode": "vendedores_schema = VendedorSchema",
+        "detail": "models.Vendedor",
+        "documentation": {}
+    }
+]
