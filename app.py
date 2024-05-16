@@ -20,5 +20,17 @@ def obtenertoken():
 
 
 
+@app.route('/verificartoken', methods=['GET'])
+def verificartoken():
+    token = request.headers['Authorization']
+    token = token.replace("Bearer", "")
+    token = token.replace(" ", "")
+    vf = verificar_token(token)
+    return jsonify(vf)
+
+
+
+
+
 if __name__ == "__main__":
     app.run(debug=True)
