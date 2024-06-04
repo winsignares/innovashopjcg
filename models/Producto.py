@@ -18,7 +18,7 @@ class Productos(db.Model):
     # proveedor = db.relationship('Proveedor', backref=db.backref('productos', lazy=True))
     # empresa = db.relationship('EMP', backref=db.backref('productos', lazy=True))
 
-    def __init__(self, id, nombre, p_uni, unidades, p_venta, u_admin, alternos,iva, src=None):
+    def __init__(self, id, nombre, p_uni, unidades, p_venta, u_admin, alternos, iva, src=None):
         self.id = id
         self.nombre = nombre  
         self.p_uni = p_uni  

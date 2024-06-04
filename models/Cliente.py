@@ -14,7 +14,7 @@ class Cliente(db.Model):
     id_vendedor = db.Column(db.Integer, db.ForeignKey('vendedor.id'))
     vendedor = db.relationship('vendedor', backref=db.backref('clientes', lazy=True))
     
-    def __init__(self, id, nombre, email, dire, p_number, user, pswd, id_vendedor):
+    def __init__(self, id, nombre, email, p_number, user, pswd, dire, id_vendedor):
       self.id = id
       self.nombre = nombre
       self.email = email
@@ -29,4 +29,7 @@ with app.app_context():
 
 class ClientesSchema(ma.Schema):
     class Meta:
-        fields = ('id', 'nombre', 'email', 'p_number', 'user','pswd''dire')
+        fields = ('id', 'nombre', 'email', 'p_number', 'user', 'pswd', 'dire')
+
+cliente_schema= ClientesSchema()
+clientes_schema= ClientesSchema(many=True)

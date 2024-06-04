@@ -1,40 +1,37 @@
 from flask import Blueprint, jsonify, render_template, request, redirect, session
 from config.db import app, db, ma
-from models.ClienteModel import Cliente, ClientesSchema
+from models.Cliente import Cliente, cliente_schema, clientes_schema
 
 ruta_clientes = Blueprint("route_clientes", __name__)
 
-cliente_schema= ClientesSchema()
-clientes_schema= ClientesSchema(many=True)
-
-@app.route('/registrocliente', methods=['POST'])
-def registrar_cliente():
+@app.route('/newcliente', methods=['POST'])
+def client_register():
     if request.method == 'POST':
-        
-        id_cliente = request.form['id']
-        Nombre = request.form['nombre']
-        Email = request.form['email'] 
-        Direccion = request.form['direccion']
-        Telefono = request.form['telefono']
+        idc = request.form['id']
+        nombre = request.form['nombre']
+        p_number = request.form['telefono']
+        email = request.form['email'] 
         user = request.form['user'] 
-        password = request.form['password'] 
+        pswd = request.form['password'] 
+        dire = request.form['direccion']
 
-        cliente_existente = Cliente.query.filter_by(id=id_cliente).all()
-        usuario = Cliente.query.filter_by(user=user).all()
+        c_bdd = Cliente.query.filter_by(id=idc).all()
+        new_user = Cliente.query.filter_by(user=user).all()
         
-        if cliente_existente:
+        # Si la id se encuentra actualmente registrada, no se vuelve a registrar
+        if c_bdd:
             return jsonify({"error": "El ID ya esta en uso."}), 409
-        if usuario:
+        if new_user:
             return jsonify({"error": "El Usuario-Login ya esta en uso."}), 409
         
         nuevo_cliente = Cliente(
-            id=id_cliente,
-            nombre=Nombre,
-            email=Email,
-            direccion=Direccion,
-            telefono=Telefono,
+            id=idc,
+            nombre=nombre,
+            email=email,
+            dire=dire,
+            p_number=p_number,
             user = user,
-            password = password
+            pswd = pswd
         )
 
         db.session.add(nuevo_cliente)

@@ -4,16 +4,21 @@ class Compra(db.Model):
     __tablename__ = "compras"
     id = db.Column(db.Integer, primary_key=True)
     cliente_id = db.Column(db.Integer, db.ForeignKey('cliente.id'))
+    vendedor_id = db.Column(db.Integer, db.ForeignKey('vendedor.id'))
+    producto_id = db.Column(db.Integer, db.ForeignKey('productos.id'))
     codigo = db.Column(db.String(255))
     nombre = db.Column(db.String(255))
     cotizacion = db.Column(db.Integer)
     stock = db.Column(db.Integer)
     detalles = db.Column(db.String(255))
+    cliente = db.relationship('Cliente', backref=db.backref('compras', lazy=True))
+    vendedor = db.relationship('Vendedor', backref=db.backref('compras', lazy=True))
+    producto = db.relationship('Productos', backref=db.backref('compras', lazy=True))
 
-    def __init__(self, codigo, nombre, clientes, cotizacion, stock, detalles):
+    def __init__(self, codigo, nombre, cliente, cotizacion, stock, detalles):
         self.codigo = codigo
         self.nombre = nombre
-        self.clientes = clientes
+        self.cliente = cliente
         self.cotizacion = cotizacion
         self.stock = stock
         self.detalles = detalles
@@ -23,7 +28,7 @@ with app.app_context():
 
 class CompraSchema(ma.Schema):
     class Meta:
-        fields = ('id', 'codigo', 'nombre', 'clientes', 'cotizacion', 'stock', 'detalles')
+        fields = ('id', 'codigo', 'nombre', 'cliente', 'cotizacion', 'stock', 'detalles')
 
 compra_schema = CompraSchema()
 compras_schema = CompraSchema(many=True)

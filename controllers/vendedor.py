@@ -1,8 +1,8 @@
 from flask import Blueprint, Flask, render_template,json, jsonify, redirect, session, request
 from config.db import app, db, ma
-from models.VendedoresModel import Vendedor, VendedorSchema
-from models.ClienteModel import Cliente, ClientesSchema
-from models.ProductosModel import Productos, ProductoSchema
+from models.Vendedor import Vendedor, VendedorSchema
+from models.Cliente import Cliente, ClientesSchema
+from models.Producto import Productos, ProductoSchema
 
 ruta_vendedor = Blueprint("route_vendedor", __name__)
 

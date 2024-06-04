@@ -6,19 +6,21 @@ class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     nombre = db.Column(db.String(255))
     contraseña = db.Column(db.String(255))
-    rol = db.Column(db.String(255))
+    user = db.Column(db.String(255))
+    is_admin = db.Column(db.Boolean)
 
-    def __init__(self, nombre, contraseña, rol):
+    def __init__(self, nombre, contraseña, user, is_admin):
         self.nombre = nombre
         self.contraseña = contraseña
-        self.rol = rol
+        self.user = user
+        self.is_admin = is_admin
 
 def create_default_data():
     if not User.query.first():
         users = [
-            User(nombre='Jesus Garcia', contraseña='jgarcia123', rol='Empresa'),
-            User(nombre='Juan Verdugo', contraseña='jberdugo123', rol='Vendedor'),
-            User(nombre='David', contraseña='dcampo123', rol='Admin')
+            User(nombre='Jesus Garcia', contraseña='jgarcia123', user='jesusgarcia123', is_admin=True),
+            User(nombre='Juan Verdugo', contraseña='jberdugo123', user='juanberdugo123', is_admin=True),
+            User(nombre='David Campo', contraseña='dcampo123', user='davidcampo123', is_admin=True)
         ]
         db.session.add_all(users)
         db.session.commit()
@@ -29,7 +31,7 @@ with app.app_context():
 
 class UserSchema(ma.Schema):
     class Meta:
-        fields = ('id', 'nombre', 'contraseña', 'rol')
+        fields = ('id', 'nombre', 'contraseña', 'user', 'rol')
 
 user_schema = UserSchema()
 users_schema = UserSchema(many=True)

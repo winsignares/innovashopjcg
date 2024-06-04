@@ -4,9 +4,13 @@ import json
 
 app = Flask(__name__)
 
-@app.route('/', methods=['GET'])
-def index():
-    return "Hola mundo"
+from controllers.empresa import ruta_empresa
+from controllers.productos import ruta_productos
+from controllers.admin import ruta_administrador
+from controllers.vendedor import ruta_vendedor
+from controllers.proveedores import ruta_proveedores
+from controllers.cliente import ruta_clientes
+from controllers.user import ruta_user, User
 
 @app.route('/obtenertoken', methods=['GET'])
 def obtenertoken():
@@ -27,9 +31,6 @@ def verificartoken():
     token = token.replace(" ", "")
     vf = verificar_token(token)
     return jsonify(vf)
-
-
-
 
 
 if __name__ == "__main__":

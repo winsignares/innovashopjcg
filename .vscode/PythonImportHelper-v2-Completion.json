@@ -42,7 +42,359 @@
         "documentation": {}
     },
     {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timezone",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
         "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "Blueprint",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "render_template",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "session",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "Blueprint",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "render_template",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "session",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "Blueprint",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "render_template",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "session",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "Blueprint",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "Blueprint",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "render_template",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "session",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "make_response",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "Blueprint",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "Blueprint",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "render_template",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "session",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
         "importPath": "flask",
         "description": "flask",
         "isExtraImport": true,
@@ -90,6 +442,150 @@
         "documentation": {}
     },
     {
+        "label": "app",
+        "importPath": "config.db",
+        "description": "config.db",
+        "isExtraImport": true,
+        "detail": "config.db",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "importPath": "config.db",
+        "description": "config.db",
+        "isExtraImport": true,
+        "detail": "config.db",
+        "documentation": {}
+    },
+    {
+        "label": "ma",
+        "importPath": "config.db",
+        "description": "config.db",
+        "isExtraImport": true,
+        "detail": "config.db",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "importPath": "config.db",
+        "description": "config.db",
+        "isExtraImport": true,
+        "detail": "config.db",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "importPath": "config.db",
+        "description": "config.db",
+        "isExtraImport": true,
+        "detail": "config.db",
+        "documentation": {}
+    },
+    {
+        "label": "ma",
+        "importPath": "config.db",
+        "description": "config.db",
+        "isExtraImport": true,
+        "detail": "config.db",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "importPath": "config.db",
+        "description": "config.db",
+        "isExtraImport": true,
+        "detail": "config.db",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "importPath": "config.db",
+        "description": "config.db",
+        "isExtraImport": true,
+        "detail": "config.db",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "importPath": "config.db",
+        "description": "config.db",
+        "isExtraImport": true,
+        "detail": "config.db",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "importPath": "config.db",
+        "description": "config.db",
+        "isExtraImport": true,
+        "detail": "config.db",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "importPath": "config.db",
+        "description": "config.db",
+        "isExtraImport": true,
+        "detail": "config.db",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "importPath": "config.db",
+        "description": "config.db",
+        "isExtraImport": true,
+        "detail": "config.db",
+        "documentation": {}
+    },
+    {
+        "label": "ma",
+        "importPath": "config.db",
+        "description": "config.db",
+        "isExtraImport": true,
+        "detail": "config.db",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "importPath": "config.db",
+        "description": "config.db",
+        "isExtraImport": true,
+        "detail": "config.db",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "importPath": "config.db",
+        "description": "config.db",
+        "isExtraImport": true,
+        "detail": "config.db",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "importPath": "config.db",
+        "description": "config.db",
+        "isExtraImport": true,
+        "detail": "config.db",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "importPath": "config.db",
+        "description": "config.db",
+        "isExtraImport": true,
+        "detail": "config.db",
+        "documentation": {}
+    },
+    {
+        "label": "ma",
+        "importPath": "config.db",
+        "description": "config.db",
+        "isExtraImport": true,
+        "detail": "config.db",
+        "documentation": {}
+    },
+    {
         "label": "db",
         "importPath": "config.db",
         "description": "config.db",
@@ -138,30 +634,6 @@
         "documentation": {}
     },
     {
-        "label": "app",
-        "importPath": "config.db",
-        "description": "config.db",
-        "isExtraImport": true,
-        "detail": "config.db",
-        "documentation": {}
-    },
-    {
-        "label": "db",
-        "importPath": "config.db",
-        "description": "config.db",
-        "isExtraImport": true,
-        "detail": "config.db",
-        "documentation": {}
-    },
-    {
-        "label": "ma",
-        "importPath": "config.db",
-        "description": "config.db",
-        "isExtraImport": true,
-        "detail": "config.db",
-        "documentation": {}
-    },
-    {
         "label": "db",
         "importPath": "config.db",
         "description": "config.db",
@@ -234,6 +706,30 @@
         "documentation": {}
     },
     {
+        "label": "app",
+        "importPath": "config.db",
+        "description": "config.db",
+        "isExtraImport": true,
+        "detail": "config.db",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "importPath": "config.db",
+        "description": "config.db",
+        "isExtraImport": true,
+        "detail": "config.db",
+        "documentation": {}
+    },
+    {
+        "label": "ma",
+        "importPath": "config.db",
+        "description": "config.db",
+        "isExtraImport": true,
+        "detail": "config.db",
+        "documentation": {}
+    },
+    {
         "label": "db",
         "importPath": "config.db",
         "description": "config.db",
@@ -255,6 +751,335 @@
         "description": "config.db",
         "isExtraImport": true,
         "detail": "config.db",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "importPath": "config.db",
+        "description": "config.db",
+        "isExtraImport": true,
+        "detail": "config.db",
+        "documentation": {}
+    },
+    {
+        "label": "ma",
+        "importPath": "config.db",
+        "description": "config.db",
+        "isExtraImport": true,
+        "detail": "config.db",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "importPath": "config.db",
+        "description": "config.db",
+        "isExtraImport": true,
+        "detail": "config.db",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "models.User",
+        "description": "models.User",
+        "isExtraImport": true,
+        "detail": "models.User",
+        "documentation": {}
+    },
+    {
+        "label": "user_schema",
+        "importPath": "models.User",
+        "description": "models.User",
+        "isExtraImport": true,
+        "detail": "models.User",
+        "documentation": {}
+    },
+    {
+        "label": "users_schema",
+        "importPath": "models.User",
+        "description": "models.User",
+        "isExtraImport": true,
+        "detail": "models.User",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "models.User",
+        "description": "models.User",
+        "isExtraImport": true,
+        "detail": "models.User",
+        "documentation": {}
+    },
+    {
+        "label": "UsersSchema",
+        "importPath": "models.User",
+        "description": "models.User",
+        "isExtraImport": true,
+        "detail": "models.User",
+        "documentation": {}
+    },
+    {
+        "label": "Empresa",
+        "importPath": "models.Empresa",
+        "description": "models.Empresa",
+        "isExtraImport": true,
+        "detail": "models.Empresa",
+        "documentation": {}
+    },
+    {
+        "label": "EmpresaSchema",
+        "importPath": "models.Empresa",
+        "description": "models.Empresa",
+        "isExtraImport": true,
+        "detail": "models.Empresa",
+        "documentation": {}
+    },
+    {
+        "label": "Empresa",
+        "importPath": "models.Empresa",
+        "description": "models.Empresa",
+        "isExtraImport": true,
+        "detail": "models.Empresa",
+        "documentation": {}
+    },
+    {
+        "label": "EmpresaSchema",
+        "importPath": "models.Empresa",
+        "description": "models.Empresa",
+        "isExtraImport": true,
+        "detail": "models.Empresa",
+        "documentation": {}
+    },
+    {
+        "label": "Empresa",
+        "importPath": "models.Empresa",
+        "description": "models.Empresa",
+        "isExtraImport": true,
+        "detail": "models.Empresa",
+        "documentation": {}
+    },
+    {
+        "label": "empresa_schema",
+        "importPath": "models.Empresa",
+        "description": "models.Empresa",
+        "isExtraImport": true,
+        "detail": "models.Empresa",
+        "documentation": {}
+    },
+    {
+        "label": "empresas_schema",
+        "importPath": "models.Empresa",
+        "description": "models.Empresa",
+        "isExtraImport": true,
+        "detail": "models.Empresa",
+        "documentation": {}
+    },
+    {
+        "label": "user_schema",
+        "importPath": "controllers.user",
+        "description": "controllers.user",
+        "isExtraImport": true,
+        "detail": "controllers.user",
+        "documentation": {}
+    },
+    {
+        "label": "ruta_user",
+        "importPath": "controllers.user",
+        "description": "controllers.user",
+        "isExtraImport": true,
+        "detail": "controllers.user",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "controllers.user",
+        "description": "controllers.user",
+        "isExtraImport": true,
+        "detail": "controllers.user",
+        "documentation": {}
+    },
+    {
+        "label": "Cliente",
+        "importPath": "models.Cliente",
+        "description": "models.Cliente",
+        "isExtraImport": true,
+        "detail": "models.Cliente",
+        "documentation": {}
+    },
+    {
+        "label": "cliente_schema",
+        "importPath": "models.Cliente",
+        "description": "models.Cliente",
+        "isExtraImport": true,
+        "detail": "models.Cliente",
+        "documentation": {}
+    },
+    {
+        "label": "clientes_schema",
+        "importPath": "models.Cliente",
+        "description": "models.Cliente",
+        "isExtraImport": true,
+        "detail": "models.Cliente",
+        "documentation": {}
+    },
+    {
+        "label": "Cliente",
+        "importPath": "models.Cliente",
+        "description": "models.Cliente",
+        "isExtraImport": true,
+        "detail": "models.Cliente",
+        "documentation": {}
+    },
+    {
+        "label": "Cliente",
+        "importPath": "models.Cliente",
+        "description": "models.Cliente",
+        "isExtraImport": true,
+        "detail": "models.Cliente",
+        "documentation": {}
+    },
+    {
+        "label": "ClientesSchema",
+        "importPath": "models.Cliente",
+        "description": "models.Cliente",
+        "isExtraImport": true,
+        "detail": "models.Cliente",
+        "documentation": {}
+    },
+    {
+        "label": "Cliente",
+        "importPath": "models.Cliente",
+        "description": "models.Cliente",
+        "isExtraImport": true,
+        "detail": "models.Cliente",
+        "documentation": {}
+    },
+    {
+        "label": "ClientesSchema",
+        "importPath": "models.Cliente",
+        "description": "models.Cliente",
+        "isExtraImport": true,
+        "detail": "models.Cliente",
+        "documentation": {}
+    },
+    {
+        "label": "Proveedor",
+        "importPath": "models.Proveedor",
+        "description": "models.Proveedor",
+        "isExtraImport": true,
+        "detail": "models.Proveedor",
+        "documentation": {}
+    },
+    {
+        "label": "Proveedor",
+        "importPath": "models.Proveedor",
+        "description": "models.Proveedor",
+        "isExtraImport": true,
+        "detail": "models.Proveedor",
+        "documentation": {}
+    },
+    {
+        "label": "ProveedoresSchema",
+        "importPath": "models.Proveedor",
+        "description": "models.Proveedor",
+        "isExtraImport": true,
+        "detail": "models.Proveedor",
+        "documentation": {}
+    },
+    {
+        "label": "Productos",
+        "importPath": "models.Producto",
+        "description": "models.Producto",
+        "isExtraImport": true,
+        "detail": "models.Producto",
+        "documentation": {}
+    },
+    {
+        "label": "Productos",
+        "importPath": "models.Producto",
+        "description": "models.Producto",
+        "isExtraImport": true,
+        "detail": "models.Producto",
+        "documentation": {}
+    },
+    {
+        "label": "ProductoSchema",
+        "importPath": "models.Producto",
+        "description": "models.Producto",
+        "isExtraImport": true,
+        "detail": "models.Producto",
+        "documentation": {}
+    },
+    {
+        "label": "Productos",
+        "importPath": "models.Producto",
+        "description": "models.Producto",
+        "isExtraImport": true,
+        "detail": "models.Producto",
+        "documentation": {}
+    },
+    {
+        "label": "ProductoSchema",
+        "importPath": "models.Producto",
+        "description": "models.Producto",
+        "isExtraImport": true,
+        "detail": "models.Producto",
+        "documentation": {}
+    },
+    {
+        "label": "Vendedor",
+        "importPath": "models.Vendedor",
+        "description": "models.Vendedor",
+        "isExtraImport": true,
+        "detail": "models.Vendedor",
+        "documentation": {}
+    },
+    {
+        "label": "Vendedor",
+        "importPath": "models.Vendedor",
+        "description": "models.Vendedor",
+        "isExtraImport": true,
+        "detail": "models.Vendedor",
+        "documentation": {}
+    },
+    {
+        "label": "VendedorSchema",
+        "importPath": "models.Vendedor",
+        "description": "models.Vendedor",
+        "isExtraImport": true,
+        "detail": "models.Vendedor",
+        "documentation": {}
+    },
+    {
+        "label": "Vendedor",
+        "importPath": "models.Vendedor",
+        "description": "models.Vendedor",
+        "isExtraImport": true,
+        "detail": "models.Vendedor",
+        "documentation": {}
+    },
+    {
+        "label": "VendedorSchema",
+        "importPath": "models.Vendedor",
+        "description": "models.Vendedor",
+        "isExtraImport": true,
+        "detail": "models.Vendedor",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "wraps",
+        "importPath": "functools",
+        "description": "functools",
+        "isExtraImport": true,
+        "detail": "functools",
         "documentation": {}
     },
     {
@@ -282,6 +1107,14 @@
         "documentation": {}
     },
     {
+        "label": "ForeignKey",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
         "label": "*",
         "importPath": "config.common.token",
         "description": "config.common.token",
@@ -296,6 +1129,54 @@
         "importPath": "json",
         "description": "json",
         "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "ruta_empresa",
+        "importPath": "controllers.empresa",
+        "description": "controllers.empresa",
+        "isExtraImport": true,
+        "detail": "controllers.empresa",
+        "documentation": {}
+    },
+    {
+        "label": "ruta_productos",
+        "importPath": "controllers.productos",
+        "description": "controllers.productos",
+        "isExtraImport": true,
+        "detail": "controllers.productos",
+        "documentation": {}
+    },
+    {
+        "label": "ruta_administrador",
+        "importPath": "controllers.admin",
+        "description": "controllers.admin",
+        "isExtraImport": true,
+        "detail": "controllers.admin",
+        "documentation": {}
+    },
+    {
+        "label": "ruta_vendedor",
+        "importPath": "controllers.vendedor",
+        "description": "controllers.vendedor",
+        "isExtraImport": true,
+        "detail": "controllers.vendedor",
+        "documentation": {}
+    },
+    {
+        "label": "ruta_proveedores",
+        "importPath": "controllers.proveedores",
+        "description": "controllers.proveedores",
+        "isExtraImport": true,
+        "detail": "controllers.proveedores",
+        "documentation": {}
+    },
+    {
+        "label": "ruta_clientes",
+        "importPath": "controllers.cliente",
+        "description": "controllers.cliente",
+        "isExtraImport": true,
+        "detail": "controllers.cliente",
         "documentation": {}
     },
     {
@@ -389,6 +1270,330 @@
         "documentation": {}
     },
     {
+        "label": "portaladministrativo",
+        "kind": 2,
+        "importPath": "controllers.admin",
+        "description": "controllers.admin",
+        "peekOfCode": "def portaladministrativo():\n    empresas = Empresa.query.all()\n    if 'adminu' in session:\n        return render_template('admin.html',usuario = session['adminu'],  empresas=empresas)\n@app.route('/reg_empresa')\ndef crearempresa():\n    return render_template('admin-add-empresas.html')\n@app.route('/search_by')\ndef search():\n    query = request.args.get('query', '')",
+        "detail": "controllers.admin",
+        "documentation": {}
+    },
+    {
+        "label": "crearempresa",
+        "kind": 2,
+        "importPath": "controllers.admin",
+        "description": "controllers.admin",
+        "peekOfCode": "def crearempresa():\n    return render_template('admin-add-empresas.html')\n@app.route('/search_by')\ndef search():\n    query = request.args.get('query', '')\n    if query:\n        empresas = Empresa.query.filter(\n            (Empresa.id.like(f'%{query}%')) |\n            (Empresa.nombre.like(f'%{query}%'))\n        ).all()",
+        "detail": "controllers.admin",
+        "documentation": {}
+    },
+    {
+        "label": "search",
+        "kind": 2,
+        "importPath": "controllers.admin",
+        "description": "controllers.admin",
+        "peekOfCode": "def search():\n    query = request.args.get('query', '')\n    if query:\n        empresas = Empresa.query.filter(\n            (Empresa.id.like(f'%{query}%')) |\n            (Empresa.nombre.like(f'%{query}%'))\n        ).all()\n    else:\n        empresas = Empresa.query.all()\n    if 'adminu' in session:",
+        "detail": "controllers.admin",
+        "documentation": {}
+    },
+    {
+        "label": "ruta_administrador",
+        "kind": 5,
+        "importPath": "controllers.admin",
+        "description": "controllers.admin",
+        "peekOfCode": "ruta_administrador = Blueprint('route_administrador', __name__)\n@app.route('/admins', methods=['GET'])\ndef portaladministrativo():\n    empresas = Empresa.query.all()\n    if 'adminu' in session:\n        return render_template('admin.html',usuario = session['adminu'],  empresas=empresas)\n@app.route('/reg_empresa')\ndef crearempresa():\n    return render_template('admin-add-empresas.html')\n@app.route('/search_by')",
+        "detail": "controllers.admin",
+        "documentation": {}
+    },
+    {
+        "label": "client_register",
+        "kind": 2,
+        "importPath": "controllers.cliente",
+        "description": "controllers.cliente",
+        "peekOfCode": "def client_register():\n    if request.method == 'POST':\n        idc = request.form['id']\n        nombre = request.form['nombre']\n        p_number = request.form['telefono']\n        email = request.form['email'] \n        user = request.form['user'] \n        pswd = request.form['password'] \n        dire = request.form['direccion']\n        c_bdd = Cliente.query.filter_by(id=idc).all()",
+        "detail": "controllers.cliente",
+        "documentation": {}
+    },
+    {
+        "label": "portalcliente",
+        "kind": 2,
+        "importPath": "controllers.cliente",
+        "description": "controllers.cliente",
+        "peekOfCode": "def portalcliente():\n    if 'usuario' in session:\n        return render_template(\"./Portales/Portal_Cliente.html\")\n    else:\n        return redirect('/')",
+        "detail": "controllers.cliente",
+        "documentation": {}
+    },
+    {
+        "label": "ruta_clientes",
+        "kind": 5,
+        "importPath": "controllers.cliente",
+        "description": "controllers.cliente",
+        "peekOfCode": "ruta_clientes = Blueprint(\"route_clientes\", __name__)\n@app.route('/newcliente', methods=['POST'])\ndef client_register():\n    if request.method == 'POST':\n        idc = request.form['id']\n        nombre = request.form['nombre']\n        p_number = request.form['telefono']\n        email = request.form['email'] \n        user = request.form['user'] \n        pswd = request.form['password'] ",
+        "detail": "controllers.cliente",
+        "documentation": {}
+    },
+    {
+        "label": "portalempresa",
+        "kind": 2,
+        "importPath": "controllers.empresa",
+        "description": "controllers.empresa",
+        "peekOfCode": "def portalempresa():\n    if 'usuario' in session:\n        vendedores = Vendedor.query.all()\n        clientes = Cliente.query.all()\n        proveedores = Proveedor.query.all()\n        productos = Productos.query.all()\n        return render_template(\"./Portales/Portal_Empresa.html\", usuario = session['usuario'], vendedores=vendedores, clientes=clientes, proveedores=proveedores, productos=productos)\n    else:\n        return redirect('/')\n@app.route('/registroempresa', methods=['POST'])",
+        "detail": "controllers.empresa",
+        "documentation": {}
+    },
+    {
+        "label": "crear_empresa",
+        "kind": 2,
+        "importPath": "controllers.empresa",
+        "description": "controllers.empresa",
+        "peekOfCode": "def crear_empresa():\n    if request.method == 'POST':\n        id_empresa = request.form['companyid']\n        user = request.form['user'] \n        password = request.form['password'] \n        nombre = request.form['nombre']\n        email = request.form['email']\n        estado = request.form['status'] \n        fecha_i = request.form['fecha_Inicio']\n        f_plazo = request.form['fecha_final']",
+        "detail": "controllers.empresa",
+        "documentation": {}
+    },
+    {
+        "label": "ruta_empresa",
+        "kind": 5,
+        "importPath": "controllers.empresa",
+        "description": "controllers.empresa",
+        "peekOfCode": "ruta_empresa = Blueprint('ruta_empresa', __name__)\nempresa_schema = EmpresaSchema() \nempresas_schema = EmpresaSchema(many=True) \n@app.route('/Portal_Empresa', methods=['GET'])\ndef portalempresa():\n    if 'usuario' in session:\n        vendedores = Vendedor.query.all()\n        clientes = Cliente.query.all()\n        proveedores = Proveedor.query.all()\n        productos = Productos.query.all()",
+        "detail": "controllers.empresa",
+        "documentation": {}
+    },
+    {
+        "label": "empresa_schema",
+        "kind": 5,
+        "importPath": "controllers.empresa",
+        "description": "controllers.empresa",
+        "peekOfCode": "empresa_schema = EmpresaSchema() \nempresas_schema = EmpresaSchema(many=True) \n@app.route('/Portal_Empresa', methods=['GET'])\ndef portalempresa():\n    if 'usuario' in session:\n        vendedores = Vendedor.query.all()\n        clientes = Cliente.query.all()\n        proveedores = Proveedor.query.all()\n        productos = Productos.query.all()\n        return render_template(\"./Portales/Portal_Empresa.html\", usuario = session['usuario'], vendedores=vendedores, clientes=clientes, proveedores=proveedores, productos=productos)",
+        "detail": "controllers.empresa",
+        "documentation": {}
+    },
+    {
+        "label": "empresas_schema",
+        "kind": 5,
+        "importPath": "controllers.empresa",
+        "description": "controllers.empresa",
+        "peekOfCode": "empresas_schema = EmpresaSchema(many=True) \n@app.route('/Portal_Empresa', methods=['GET'])\ndef portalempresa():\n    if 'usuario' in session:\n        vendedores = Vendedor.query.all()\n        clientes = Cliente.query.all()\n        proveedores = Proveedor.query.all()\n        productos = Productos.query.all()\n        return render_template(\"./Portales/Portal_Empresa.html\", usuario = session['usuario'], vendedores=vendedores, clientes=clientes, proveedores=proveedores, productos=productos)\n    else:",
+        "detail": "controllers.empresa",
+        "documentation": {}
+    },
+    {
+        "label": "to_float",
+        "kind": 2,
+        "importPath": "controllers.productos",
+        "description": "controllers.productos",
+        "peekOfCode": "def to_float(value, default=0.0):\n    try:\n        return float(value) if value else default\n    except ValueError:\n        return default\n@productos_bp.route('/create', methods=['POST'])\ndef create_product():\n    id_producto = request.form['id']\n    nombre = request.form.get('nombre', '')\n    preciouni = to_float(request.form.get('preciouni'), 0.0)",
+        "detail": "controllers.productos",
+        "documentation": {}
+    },
+    {
+        "label": "create_product",
+        "kind": 2,
+        "importPath": "controllers.productos",
+        "description": "controllers.productos",
+        "peekOfCode": "def create_product():\n    id_producto = request.form['id']\n    nombre = request.form.get('nombre', '')\n    preciouni = to_float(request.form.get('preciouni'), 0.0)\n    alternos = request.form.get('alternos', '')\n    precioventa = to_float(request.form.get('precioventa'), 0.0)\n    cantidad = to_float(request.form.get('cantidad'), 0)\n    cantidadmin = to_float(request.form.get('cantidadmin'), 0)\n    iva = to_float(request.form.get('iva'), 0.0)\n    img = request.files.get('img')",
+        "detail": "controllers.productos",
+        "documentation": {}
+    },
+    {
+        "label": "search_products",
+        "kind": 2,
+        "importPath": "controllers.productos",
+        "description": "controllers.productos",
+        "peekOfCode": "def search_products():\n    termino = request.args.get('termino', '')\n    if not termino:\n        return jsonify([])  # Devuelve una lista vacía si el término está vacío\n    # Buscar productos por nombre (ilike es insensible a mayúsculas/minúsculas)\n    productos = Productos.query.filter(Productos.nombre.ilike(f\"%{termino}%\")).limit(10).all()\n    # Devolver una lista de objetos con el ID y el nombre para el frontend\n    return jsonify([{'id': producto.id, 'nombre': producto.nombre} for producto in productos])\n@productos_bp.route('/configure', methods=['POST'])\ndef configure_product():",
+        "detail": "controllers.productos",
+        "documentation": {}
+    },
+    {
+        "label": "configure_product",
+        "kind": 2,
+        "importPath": "controllers.productos",
+        "description": "controllers.productos",
+        "peekOfCode": "def configure_product():\n    id_producto = request.form.get(\"id\")\n    preciouni = to_float(request.form.get(\"preciouni\", 0))\n    precio_ganancia = to_float(request.form.get(\"precio_ganancia\", 0))\n    iva = to_float(request.form.get(\"iva\", 0))\n    if not id_producto:\n        return jsonify({\"error\": \"ID del producto es obligatorio\"}), 400\n    producto = Productos.query.filter_by(id=id_producto).first()\n    if producto:\n        ganancia = preciouni * (precio_ganancia / 100)",
+        "detail": "controllers.productos",
+        "documentation": {}
+    },
+    {
+        "label": "update_product",
+        "kind": 2,
+        "importPath": "controllers.productos",
+        "description": "controllers.productos",
+        "peekOfCode": "def update_product():\n    id_producto = request.form.get('id')\n    nombre = request.form.get('nombre')\n    alternos = request.form.get('alternos')\n    cantidad = request.form.get('cantidad')\n    cantidadmin = request.form.get('cantidadmin')\n    img = request.files.get('img')\n    producto_existente = Productos.query.filter_by(id=id_producto).first()\n    if producto_existente:\n        if img:",
+        "detail": "controllers.productos",
+        "documentation": {}
+    },
+    {
+        "label": "productos_bp",
+        "kind": 5,
+        "importPath": "controllers.productos",
+        "description": "controllers.productos",
+        "peekOfCode": "productos_bp = Blueprint(\"productos\", __name__)\nproducto_schema = ProductoSchema()\nproductos_schema = ProductoSchema(many=True)\ndef to_float(value, default=0.0):\n    try:\n        return float(value) if value else default\n    except ValueError:\n        return default\n@productos_bp.route('/create', methods=['POST'])\ndef create_product():",
+        "detail": "controllers.productos",
+        "documentation": {}
+    },
+    {
+        "label": "producto_schema",
+        "kind": 5,
+        "importPath": "controllers.productos",
+        "description": "controllers.productos",
+        "peekOfCode": "producto_schema = ProductoSchema()\nproductos_schema = ProductoSchema(many=True)\ndef to_float(value, default=0.0):\n    try:\n        return float(value) if value else default\n    except ValueError:\n        return default\n@productos_bp.route('/create', methods=['POST'])\ndef create_product():\n    id_producto = request.form['id']",
+        "detail": "controllers.productos",
+        "documentation": {}
+    },
+    {
+        "label": "productos_schema",
+        "kind": 5,
+        "importPath": "controllers.productos",
+        "description": "controllers.productos",
+        "peekOfCode": "productos_schema = ProductoSchema(many=True)\ndef to_float(value, default=0.0):\n    try:\n        return float(value) if value else default\n    except ValueError:\n        return default\n@productos_bp.route('/create', methods=['POST'])\ndef create_product():\n    id_producto = request.form['id']\n    nombre = request.form.get('nombre', '')",
+        "detail": "controllers.productos",
+        "documentation": {}
+    },
+    {
+        "label": "registrar_proveedor",
+        "kind": 2,
+        "importPath": "controllers.proveedores",
+        "description": "controllers.proveedores",
+        "peekOfCode": "def registrar_proveedor():\n    if request.method == 'POST':\n        id_proveedor = request.form['id']\n        Nombre = request.form['nombre']\n        Email = request.form['email'] \n        Direccion = request.form['direccion']\n        Telefono = request.form['telefono'] \n        proveedor_existente = Proveedor.query.filter_by(id=id_proveedor).all()\n        if proveedor_existente:\n            return jsonify({\"error\": \"El ID ya esta en uso.\"}), 409",
+        "detail": "controllers.proveedores",
+        "documentation": {}
+    },
+    {
+        "label": "ruta_proveedores",
+        "kind": 5,
+        "importPath": "controllers.proveedores",
+        "description": "controllers.proveedores",
+        "peekOfCode": "ruta_proveedores = Blueprint(\"route_proveedores\", __name__)\nproveedor_schema= ProveedoresSchema()\nproveedores_schema= ProveedoresSchema(many=True)\n@app.route('/registroproveedor', methods=['POST'])\ndef registrar_proveedor():\n    if request.method == 'POST':\n        id_proveedor = request.form['id']\n        Nombre = request.form['nombre']\n        Email = request.form['email'] \n        Direccion = request.form['direccion']",
+        "detail": "controllers.proveedores",
+        "documentation": {}
+    },
+    {
+        "label": "generate_expiration_date",
+        "kind": 2,
+        "importPath": "controllers.user",
+        "description": "controllers.user",
+        "peekOfCode": "def generate_expiration_date(days=0, hours=0, minutes=0, seconds=0):\n    current_date = datetime.now(tz=timezone.utc)\n    expiration_time = timedelta(days=days, hours=hours, minutes=minutes, seconds=seconds)\n    return current_date + expiration_time\ndef generate_token(user_id):\n    expiration_date = generate_expiration_date(seconds=200)\n    payload = {\n        \"exp\": expiration_date,\n        \"user_id\": user_id,\n    }",
+        "detail": "controllers.user",
+        "documentation": {}
+    },
+    {
+        "label": "generate_token",
+        "kind": 2,
+        "importPath": "controllers.user",
+        "description": "controllers.user",
+        "peekOfCode": "def generate_token(user_id):\n    expiration_date = generate_expiration_date(seconds=200)\n    payload = {\n        \"exp\": expiration_date,\n        \"user_id\": user_id,\n    }\n    token = jwt.encode(payload, SECRET_KEY, algorithm=\"HS256\")\n    return token\ndef verify_token(token):\n    try:",
+        "detail": "controllers.user",
+        "documentation": {}
+    },
+    {
+        "label": "verify_token",
+        "kind": 2,
+        "importPath": "controllers.user",
+        "description": "controllers.user",
+        "peekOfCode": "def verify_token(token):\n    try:\n        jwt.decode(token, SECRET_KEY, algorithms=[\"HS256\"])\n        return {\"error\": False, \"message\": \"Valid token\"}\n    except jwt.ExpiredSignatureError:\n        return {\"error\": True, \"message\": \"Expired token\"}\n    except jwt.InvalidTokenError:\n        return {\"error\": True, \"message\": \"Invalid token\"}\ndef token_required(f):\n    @wraps(f)",
+        "detail": "controllers.user",
+        "documentation": {}
+    },
+    {
+        "label": "token_required",
+        "kind": 2,
+        "importPath": "controllers.user",
+        "description": "controllers.user",
+        "peekOfCode": "def token_required(f):\n    @wraps(f)\n    def decorated(*args, **kwargs):\n        token = request.cookies.get('token')\n        if not token:\n            return jsonify({'message': 'Token is required!'}), 403\n        try:\n            jwt.decode(token, SECRET_KEY, algorithms=[\"HS256\"])\n        except jwt.ExpiredSignatureError:\n            return jsonify({'message': 'Token has expired!'}), 403",
+        "detail": "controllers.user",
+        "documentation": {}
+    },
+    {
+        "label": "login",
+        "kind": 2,
+        "importPath": "controllers.user",
+        "description": "controllers.user",
+        "peekOfCode": "def login():\n    username = request.form['user'].replace(' ', '')\n    pswd = request.form['pswd']\n    adminu = db.session.query(User).filter(User.user == adminu, User.pswd == pswd, User.is_admin == True).all()\n    vendor = db.session.query(Vendedor).filter(Vendedor.user == username, Vendedor.password == pswd).first()\n    company = db.session.query(Empresa).filter(Empresa.user == username, Empresa.password == pswd).first()\n    client = db.session.query(Cliente).filter(Cliente.user == username, Cliente.password == pswd).first()\n    if adminu:\n        token = generate_token(adminu.id)\n        session['user'] = user_schema.dump(adminu)",
+        "detail": "controllers.user",
+        "documentation": {}
+    },
+    {
+        "label": "protected_route",
+        "kind": 2,
+        "importPath": "controllers.user",
+        "description": "controllers.user",
+        "peekOfCode": "def protected_route():\n    return jsonify({'message': 'This is protected content'})",
+        "detail": "controllers.user",
+        "documentation": {}
+    },
+    {
+        "label": "auth_bp",
+        "kind": 5,
+        "importPath": "controllers.user",
+        "description": "controllers.user",
+        "peekOfCode": "auth_bp = Blueprint(\"auth\", __name__)\nuser_schema = UsersSchema()\nSECRET_KEY = \"newtoken\"\ndef generate_expiration_date(days=0, hours=0, minutes=0, seconds=0):\n    current_date = datetime.now(tz=timezone.utc)\n    expiration_time = timedelta(days=days, hours=hours, minutes=minutes, seconds=seconds)\n    return current_date + expiration_time\ndef generate_token(user_id):\n    expiration_date = generate_expiration_date(seconds=200)\n    payload = {",
+        "detail": "controllers.user",
+        "documentation": {}
+    },
+    {
+        "label": "user_schema",
+        "kind": 5,
+        "importPath": "controllers.user",
+        "description": "controllers.user",
+        "peekOfCode": "user_schema = UsersSchema()\nSECRET_KEY = \"newtoken\"\ndef generate_expiration_date(days=0, hours=0, minutes=0, seconds=0):\n    current_date = datetime.now(tz=timezone.utc)\n    expiration_time = timedelta(days=days, hours=hours, minutes=minutes, seconds=seconds)\n    return current_date + expiration_time\ndef generate_token(user_id):\n    expiration_date = generate_expiration_date(seconds=200)\n    payload = {\n        \"exp\": expiration_date,",
+        "detail": "controllers.user",
+        "documentation": {}
+    },
+    {
+        "label": "SECRET_KEY",
+        "kind": 5,
+        "importPath": "controllers.user",
+        "description": "controllers.user",
+        "peekOfCode": "SECRET_KEY = \"newtoken\"\ndef generate_expiration_date(days=0, hours=0, minutes=0, seconds=0):\n    current_date = datetime.now(tz=timezone.utc)\n    expiration_time = timedelta(days=days, hours=hours, minutes=minutes, seconds=seconds)\n    return current_date + expiration_time\ndef generate_token(user_id):\n    expiration_date = generate_expiration_date(seconds=200)\n    payload = {\n        \"exp\": expiration_date,\n        \"user_id\": user_id,",
+        "detail": "controllers.user",
+        "documentation": {}
+    },
+    {
+        "label": "registrar_vendedor",
+        "kind": 2,
+        "importPath": "controllers.vendedor",
+        "description": "controllers.vendedor",
+        "peekOfCode": "def registrar_vendedor():\n    if request.method == 'POST':\n        id_vendedor = request.form['id']\n        Nombre = request.form['nombre']\n        Email = request.form['email'] \n        Fecha_inicio = request.form['fecha_inicio']\n        user = request.form['user'] \n        password = request.form['password'] \n        vendedor_existente = Vendedor.query.filter_by(id=id_vendedor).all()\n        usuario = Vendedor.query.filter_by(user=user).all()",
+        "detail": "controllers.vendedor",
+        "documentation": {}
+    },
+    {
+        "label": "portalvendedor",
+        "kind": 2,
+        "importPath": "controllers.vendedor",
+        "description": "controllers.vendedor",
+        "peekOfCode": "def portalvendedor():\n    if 'usuario' in session:\n        clientes = Cliente.query.all()\n        productos = Productos.query.all()\n        return render_template(\"./Portales/Portal_Vendedores.html\", clientes=clientes, productos=productos)\n    else:\n        return redirect('/')",
+        "detail": "controllers.vendedor",
+        "documentation": {}
+    },
+    {
+        "label": "ruta_vendedor",
+        "kind": 5,
+        "importPath": "controllers.vendedor",
+        "description": "controllers.vendedor",
+        "peekOfCode": "ruta_vendedor = Blueprint(\"route_vendedor\", __name__)\nvendedor_schema = VendedorSchema()\nvendedores_schema = VendedorSchema(many=True)\n@app.route('/registrovendedor', methods=['POST'])\ndef registrar_vendedor():\n    if request.method == 'POST':\n        id_vendedor = request.form['id']\n        Nombre = request.form['nombre']\n        Email = request.form['email'] \n        Fecha_inicio = request.form['fecha_inicio']",
+        "detail": "controllers.vendedor",
+        "documentation": {}
+    },
+    {
+        "label": "vendedor_schema",
+        "kind": 5,
+        "importPath": "controllers.vendedor",
+        "description": "controllers.vendedor",
+        "peekOfCode": "vendedor_schema = VendedorSchema()\nvendedores_schema = VendedorSchema(many=True)\n@app.route('/registrovendedor', methods=['POST'])\ndef registrar_vendedor():\n    if request.method == 'POST':\n        id_vendedor = request.form['id']\n        Nombre = request.form['nombre']\n        Email = request.form['email'] \n        Fecha_inicio = request.form['fecha_inicio']\n        user = request.form['user'] ",
+        "detail": "controllers.vendedor",
+        "documentation": {}
+    },
+    {
+        "label": "vendedores_schema",
+        "kind": 5,
+        "importPath": "controllers.vendedor",
+        "description": "controllers.vendedor",
+        "peekOfCode": "vendedores_schema = VendedorSchema(many=True)\n@app.route('/registrovendedor', methods=['POST'])\ndef registrar_vendedor():\n    if request.method == 'POST':\n        id_vendedor = request.form['id']\n        Nombre = request.form['nombre']\n        Email = request.form['email'] \n        Fecha_inicio = request.form['fecha_inicio']\n        user = request.form['user'] \n        password = request.form['password'] ",
+        "detail": "controllers.vendedor",
+        "documentation": {}
+    },
+    {
         "label": "Cliente",
         "kind": 6,
         "importPath": "models.Cliente",
@@ -402,7 +1607,7 @@
         "kind": 6,
         "importPath": "models.Cliente",
         "description": "models.Cliente",
-        "peekOfCode": "class ClientesSchema(ma.Schema):\n    class Meta:\n        fields = ('id', 'nombre', 'email', 'p_number', 'user','pswd''dire')",
+        "peekOfCode": "class ClientesSchema(ma.Schema):\n    class Meta:\n        fields = ('id', 'nombre', 'email', 'p_number', 'user', 'pswd', 'dire')\ncliente_schema= ClientesSchema()\nclientes_schema= ClientesSchema(many=True)",
         "detail": "models.Cliente",
         "documentation": {}
     },
@@ -411,7 +1616,7 @@
         "kind": 6,
         "importPath": "models.Compra",
         "description": "models.Compra",
-        "peekOfCode": "class Compra(db.Model):\n    __tablename__ = \"compras\"\n    id = db.Column(db.Integer, primary_key=True)\n    cliente_id = db.Column(db.Integer, db.ForeignKey('cliente.id'))\n    codigo = db.Column(db.String(255))\n    nombre = db.Column(db.String(255))\n    cotizacion = db.Column(db.Integer)\n    stock = db.Column(db.Integer)\n    detalles = db.Column(db.String(255))\n    def __init__(self, codigo, nombre, clientes, cotizacion, stock, detalles):",
+        "peekOfCode": "class Compra(db.Model):\n    __tablename__ = \"compras\"\n    id = db.Column(db.Integer, primary_key=True)\n    cliente_id = db.Column(db.Integer, db.ForeignKey('cliente.id'))\n    vendedor_id = db.Column(db.Integer, db.ForeignKey('vendedor.id'))\n    producto_id = db.Column(db.Integer, db.ForeignKey('productos.id'))\n    codigo = db.Column(db.String(255))\n    nombre = db.Column(db.String(255))\n    cotizacion = db.Column(db.Integer)\n    stock = db.Column(db.Integer)",
         "detail": "models.Compra",
         "documentation": {}
     },
@@ -420,7 +1625,7 @@
         "kind": 6,
         "importPath": "models.Compra",
         "description": "models.Compra",
-        "peekOfCode": "class CompraSchema(ma.Schema):\n    class Meta:\n        fields = ('id', 'codigo', 'nombre', 'clientes', 'cotizacion', 'stock', 'detalles')\ncompra_schema = CompraSchema()\ncompras_schema = CompraSchema(many=True)",
+        "peekOfCode": "class CompraSchema(ma.Schema):\n    class Meta:\n        fields = ('id', 'codigo', 'nombre', 'cliente', 'cotizacion', 'stock', 'detalles')\ncompra_schema = CompraSchema()\ncompras_schema = CompraSchema(many=True)",
         "detail": "models.Compra",
         "documentation": {}
     },
@@ -443,20 +1648,56 @@
         "documentation": {}
     },
     {
+        "label": "Cotizacion",
+        "kind": 6,
+        "importPath": "models.Cotizacion",
+        "description": "models.Cotizacion",
+        "peekOfCode": "class Cotizacion(db.Model):\n    __tablename__ = \"cotizaciones\"\n    id = db.Column(db.Integer, primary_key=True)\n    cliente_id = db.Column(db.Integer, db.ForeignKey('cliente.id'))\n    vendedor_id = db.Column(db.Integer, db.ForeignKey('vendedor.id'))\n    producto_id = db.Column(db.Integer, db.ForeignKey('productos.id'))\n    codigo = db.Column(db.String(255))\n    nombre = db.Column(db.String(255))\n    stock = db.Column(db.Integer)\n    detalles = db.Column(db.String(255))",
+        "detail": "models.Cotizacion",
+        "documentation": {}
+    },
+    {
+        "label": "CotizacionSchema",
+        "kind": 6,
+        "importPath": "models.Cotizacion",
+        "description": "models.Cotizacion",
+        "peekOfCode": "class CotizacionSchema(ma.Schema):\n    class Meta:\n        fields = ('id', 'codigo', 'nombre', 'cliente', 'stock', 'detalles')\ncotizacion_schema = CotizacionSchema()\ncotizaciones_schema = CotizacionSchema(many=True)",
+        "detail": "models.Cotizacion",
+        "documentation": {}
+    },
+    {
+        "label": "cotizacion_schema",
+        "kind": 5,
+        "importPath": "models.Cotizacion",
+        "description": "models.Cotizacion",
+        "peekOfCode": "cotizacion_schema = CotizacionSchema()\ncotizaciones_schema = CotizacionSchema(many=True)",
+        "detail": "models.Cotizacion",
+        "documentation": {}
+    },
+    {
+        "label": "cotizaciones_schema",
+        "kind": 5,
+        "importPath": "models.Cotizacion",
+        "description": "models.Cotizacion",
+        "peekOfCode": "cotizaciones_schema = CotizacionSchema(many=True)",
+        "detail": "models.Cotizacion",
+        "documentation": {}
+    },
+    {
         "label": "Empresa",
         "kind": 6,
         "importPath": "models.Empresa",
         "description": "models.Empresa",
-        "peekOfCode": "class Empresa(db.Model):\n    __tablename__ = 'empresa'\n    id = db.Column(db.Integer, primary_key=True)\n    nombre = db.Column(db.String(50), nullable=False)\n    email = db.Column(db.String(50))\n    estado = db.Column(db.String(50), nullable=False, default=\"activo\")\n    fecha_i = db.Column(db.Date) \n    f_plazo = db.Column(db.Date)\n    user = db.Column(db.String(50), unique=True)\n    pswd = db.Column(db.String(50))",
+        "peekOfCode": "class Empresa(db.Model):\n    __tablename__ = 'empresa'\n    id = db.Column(db.Integer, primary_key=True)\n    user = db.Column(db.String(50), unique=True)\n    pswd = db.Column(db.String(50))\n    nombre = db.Column(db.String(50), nullable=False)\n    email = db.Column(db.String(50))\n    estado = db.Column(db.String(50), nullable=False, default=\"activo\")\n    fecha_i = db.Column(db.Date) \n    f_plazo = db.Column(db.Date)",
         "detail": "models.Empresa",
         "documentation": {}
     },
     {
-        "label": "EMPSchema",
+        "label": "EmpresaSchema",
         "kind": 6,
         "importPath": "models.Empresa",
         "description": "models.Empresa",
-        "peekOfCode": "class EMPSchema(ma.Schema):\n    class Meta:\n        fields = ('companyid','nombre', 'email', 'estado', 'fecha_i', 'f_plazo','user','pswd')",
+        "peekOfCode": "class EmpresaSchema(ma.Schema):\n    class Meta:\n        fields = ('id','user','pswd','nombre', 'email', 'estado', 'fecha_i', 'f_plazo')",
         "detail": "models.Empresa",
         "documentation": {}
     },
@@ -501,7 +1742,7 @@
         "kind": 6,
         "importPath": "models.User",
         "description": "models.User",
-        "peekOfCode": "class User(db.Model):\n    __tablename__ = \"user\"\n    id = db.Column(db.Integer, primary_key=True)\n    nombre = db.Column(db.String(255))\n    contraseña = db.Column(db.String(255))\n    rol = db.Column(db.String(255))\n    def __init__(self, nombre, contraseña, rol):\n        self.nombre = nombre\n        self.contraseña = contraseña\n        self.rol = rol",
+        "peekOfCode": "class User(db.Model):\n    __tablename__ = \"user\"\n    id = db.Column(db.Integer, primary_key=True)\n    nombre = db.Column(db.String(255))\n    contraseña = db.Column(db.String(255))\n    user = db.Column(db.String(255))\n    is_admin = db.Column(db.Boolean)\n    def __init__(self, nombre, contraseña, user, is_admin):\n        self.nombre = nombre\n        self.contraseña = contraseña",
         "detail": "models.User",
         "documentation": {}
     },
@@ -510,7 +1751,7 @@
         "kind": 6,
         "importPath": "models.User",
         "description": "models.User",
-        "peekOfCode": "class UserSchema(ma.Schema):\n    class Meta:\n        fields = ('id', 'nombre', 'contraseña', 'rol')\nuser_schema = UserSchema()\nusers_schema = UserSchema(many=True)",
+        "peekOfCode": "class UserSchema(ma.Schema):\n    class Meta:\n        fields = ('id', 'nombre', 'contraseña', 'user', 'rol')\nuser_schema = UserSchema()\nusers_schema = UserSchema(many=True)",
         "detail": "models.User",
         "documentation": {}
     },
@@ -519,7 +1760,7 @@
         "kind": 2,
         "importPath": "models.User",
         "description": "models.User",
-        "peekOfCode": "def create_default_data():\n    if not User.query.first():\n        users = [\n            User(nombre='Jesus Garcia', contraseña='jgarcia123', rol='Empresa'),\n            User(nombre='Juan Verdugo', contraseña='jberdugo123', rol='Vendedor'),\n            User(nombre='David', contraseña='dcampo123', rol='Admin')\n        ]\n        db.session.add_all(users)\n        db.session.commit()\nwith app.app_context():",
+        "peekOfCode": "def create_default_data():\n    if not User.query.first():\n        users = [\n            User(nombre='Jesus Garcia', contraseña='jgarcia123', user='jesusgarcia123', is_admin=True),\n            User(nombre='Juan Verdugo', contraseña='jberdugo123', user='juanberdugo123', is_admin=True),\n            User(nombre='David Campo', contraseña='dcampo123', user='davidcampo123', is_admin=True)\n        ]\n        db.session.add_all(users)\n        db.session.commit()\nwith app.app_context():",
         "detail": "models.User",
         "documentation": {}
     },
@@ -560,15 +1801,6 @@
         "documentation": {}
     },
     {
-        "label": "index",
-        "kind": 2,
-        "importPath": "app",
-        "description": "app",
-        "peekOfCode": "def index():\n    return \"Hola mundo\"\n@app.route('/obtenertoken', methods=['GET'])\ndef obtenertoken():\n    datatoken = generar_token(\"Gatcia\", 963)\n    var_token = datatoken['token']\n    response = {\n      \"statusCode\": 200,\n      \"body\": json.dumps(var_token)\n    }",
-        "detail": "app",
-        "documentation": {}
-    },
-    {
         "label": "obtenertoken",
         "kind": 2,
         "importPath": "app",
@@ -591,7 +1823,7 @@
         "kind": 5,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "app = Flask(__name__)\n@app.route('/', methods=['GET'])\ndef index():\n    return \"Hola mundo\"\n@app.route('/obtenertoken', methods=['GET'])\ndef obtenertoken():\n    datatoken = generar_token(\"Gatcia\", 963)\n    var_token = datatoken['token']\n    response = {\n      \"statusCode\": 200,",
+        "peekOfCode": "app = Flask(__name__)\nfrom controllers.empresa import ruta_empresa\nfrom controllers.productos import ruta_productos\nfrom controllers.admin import ruta_administrador\nfrom controllers.vendedor import ruta_vendedor\nfrom controllers.proveedores import ruta_proveedores\nfrom controllers.cliente import ruta_clientes\nfrom controllers.user import ruta_user, User\n@app.route('/obtenertoken', methods=['GET'])\ndef obtenertoken():",
         "detail": "app",
         "documentation": {}
     }
