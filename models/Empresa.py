@@ -1,4 +1,5 @@
 from config.db import app, db, ma 
+from models.Admin import Admin
 
 class Empresa(db.Model):
     __tablename__ = 'empresa'
@@ -11,7 +12,7 @@ class Empresa(db.Model):
     estado = db.Column(db.String(50), nullable=False, default="activo")
     fecha_i = db.Column(db.Date) 
     f_plazo = db.Column(db.Date)
-    id_admin = db.Column(db.Integer, db.ForeignKey('user.id'))
+    id_admin = db.Column(db.Integer, db.ForeignKey('admin.id'))
     admin = db.relationship('user', backref=db.backref('empresas', lazy=True))
     vendedores = db.relationship('vendedor', backref=db.backref('empresa', lazy=True))
     
@@ -31,4 +32,4 @@ with app.app_context():
 
 class EmpresaSchema(ma.Schema):
     class Meta:
-        fields = ('id','user','pswd','nombre', 'email', 'estado', 'fecha_i', 'f_plazo')
+        fields = ('id', 'user', 'pswd', 'nombre', 'email', 'estado', 'fecha_i', 'f_plazo')

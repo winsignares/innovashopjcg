@@ -11,7 +11,7 @@ class Productos(db.Model):
     u_admin = db.Column(db.Integer)
     alternos = db.Column(db.String(255))
     iva = db.Column(db.Float())
-    src = db.Column(db.String(255), nullable=True)
+    # src = db.Column(db.String(255), nullable=True)
     # proveedor_id = db.Column(db.Integer, db.ForeignKey('Proveedor.id'))
     # empresa_id = db.Column(db.Integer, db.ForeignKey('EMP.companyid'))
 
@@ -27,11 +27,11 @@ class Productos(db.Model):
         self.unidades = unidades 
         self.u_admin = u_admin  
         self.iva = iva
-        self.src = src
+        # self.src = src
 
 with app.app_context():
     db.create_all()
 
 class ProductoSchema(ma.Schema):
     class Meta:
-        fields = ('id', 'nombre', 'p_uni', 'unidades', 'p_venta',  'u_admin', 'alternos', 'u_admin', 'iva', 'src')
+        fields = ('id', 'nombre', 'p_uni', 'unidades', 'p_venta',  'u_admin', 'alternos', 'u_admin', 'iva')

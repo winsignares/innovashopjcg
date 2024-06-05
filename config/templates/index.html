@@ -5,23 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>InnovaShop</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      media="screen"
-      href="../static/css/style.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-    />
-    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static', filename='css/style.css') }}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
   </head>
   <body>
     <header>
       <nav class="navbar">
         <div class="container">
-          <a href="#" class="logo">InnovaShop</a>
+          <a href="{{ url_for('index') }}" class="logo">InnovaShop</a>
           <div class="dropdown">
             <button class="dropbtn">&#9776;</button>
             <div class="dropdown-content">
@@ -37,7 +29,7 @@
           <h1>Bienvenido</h1>
           <p>"Simplicidad y accesibilidad al alcance de un click"</p>
           <div class="action-buttons">
-            <a href="login.html" class="btn">Acceder</a>
+            <a href="{{ url_for('login') }}" class="btn">Acceder</a>
           </div>
         </div>
       </div>

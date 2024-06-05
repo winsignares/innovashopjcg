@@ -3,7 +3,7 @@ from flask import Blueprint, jsonify, request, redirect
 from config.db import app, db
 from models.Producto import Productos, ProductoSchema
 
-productos_bp = Blueprint("productos", __name__)
+productos_bp = Blueprint("ruta_productos", __name__)
 
 producto_schema = ProductoSchema()
 productos_schema = ProductoSchema(many=True)
@@ -24,15 +24,9 @@ def create_product():
     cantidad = to_float(request.form.get('cantidad'), 0)
     cantidadmin = to_float(request.form.get('cantidadmin'), 0)
     iva = to_float(request.form.get('iva'), 0.0)
-    img = request.files.get('img')
 
     if not nombre:
         return jsonify({"error": "El nombre es obligatorio"}), 400
-
-    if img:
-        filename = f"{nombre}.jpg"
-        file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
-        img.save(file_path)
 
     producto_existente = Productos.query.filter_by(id=id_producto).all()
 
@@ -47,8 +41,7 @@ def create_product():
         precioventa=float(precioventa),
         cantidad=cantidad,
         cantidadmin=cantidadmin,
-        iva=float(iva),
-        img=filename
+        iva=float(iva)
     )
     db.session.add(nuevo_producto)
     db.session.commit()
