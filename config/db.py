@@ -12,3 +12,5 @@ app.secret_key = "comecaca"
 
 db = SQLAlchemy(app)
 ma = Marshmallow(app)
+
+from models import Admin, Empresa, Cliente, Vendedor

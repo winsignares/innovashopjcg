@@ -11,14 +11,10 @@ ruta_empresa = Blueprint('ruta_empresa', __name__)
 empresa_schema = EmpresaSchema() 
 empresas_schema = EmpresaSchema(many=True) 
 
-@app.route('/Portal_Empresa', methods=['GET'])
+@app.route('/home_empresas', methods=['GET'])
 def portalempresa():
     if 'usuario' in session:
-        vendedores = Vendedor.query.all()
-        clientes = Cliente.query.all()
-        proveedores = Proveedor.query.all()
-        productos = Productos.query.all()
-        return render_template("./Portales/Portal_Empresa.html", usuario = session['usuario'], vendedores=vendedores, clientes=clientes, proveedores=proveedores, productos=productos)
+        return render_template("inicio_empresas.html", usuario = session['usuario'])
     else:
         return redirect('/')
     
@@ -61,5 +57,40 @@ def crear_empresa():
         db.session.commit()
 
     return redirect('/portaladmin')
+
+@app.route('/search_by')
+def search():
+    query = request.args.get('query', '')
+
+    if query:
+        empresas = Empresa.query.filter(
+            (Empresa.id.like(f'%{query}%')) |
+            (Empresa.nombre.like(f'%{query}%'))
+        ).all()
+    else:
+        empresas = Empresa.query.all()
+
+    if 'adminu' in session:
+        return render_template('admin-empresas.html', usuario=session['adminu'], empresas=empresas)
+
+
+
+@app.route('/reg_empresa')
+def crearempresa():
+    empresas = Empresa.query.all()
+    if 'adminu' in session:
+        return render_template('admin-add-empresas.html', usuario = session['adminu'])
+
+@app.route('/view_modules')
+def modulosempresa():
+    empresas = Empresa.query.all()
+    if 'adminu' in session:
+        return render_template('admin-modulos.html', empresas = empresas)
+
+@app.route('/set_impuestos')
+def set_impuestos():
+    empresas = Empresa.query.all()
+    if 'adminu' in session:
+        return render_template('admin-impuestos.html')
 
 

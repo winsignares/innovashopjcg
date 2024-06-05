@@ -3,6 +3,7 @@ from config.db import app, db, ma
 from models.Vendedor import Vendedor, VendedorSchema
 from models.Cliente import Cliente, ClientesSchema
 from models.Producto import Productos, ProductoSchema
+from controllers.vendedor import registrar_vendedor
 
 ruta_vendedor = Blueprint("route_vendedor", __name__)
 
@@ -40,15 +41,45 @@ def registrar_vendedor():
         db.session.add(nuevo_vendedor)
         db.session.commit()
 
-    return redirect('/Portal_Empresa')
+    return redirect('/registrar_vendedor')
 
+@app.route('/vendedor-clientes-lista')
+def listar_clientes():
+    vendedor_id = session['vendedor_id']
+    if "empresa" in session:
+        clientes = Cliente.query.filter_by(vendedor_id=vendedor_id).all()
+    return render_template('vendedor_clientes_lista.html', clientes=clientes)
 
-@app.route('/Portal_Vendedor')
+@app.route('/registrar_vendedor')
+def registrar_vendedor():
+    return render_template('vendedores-empresas.html')
+
+@app.route('/vendedor_clientes')
+def vendedor_clientes():
+    return render_template('vendedor_clientes.html')
+
+@app.route('/vendedor_consultar')
+def vendedor_consultar():
+    return render_template('vendedor_consultar.html')
+
+@app.route('/vendedor_cotizacion')
+def vendedor_cotizacion():
+    return render_template('vendedor_cotizacion.html')
+
+@app.route('/vendedor_compra')
+def vendedor_compra():
+    return render_template('vendedor_compra.html')
+
+@app.route('/vendedor_agg_productos')
+def vendedor_agg_productos():
+    return render_template('vendedor-stock-aggproductos.html')
+
+@app.route('/home_vendedor')
 def portalvendedor():
     
     if 'usuario' in session:
         clientes = Cliente.query.all()
         productos = Productos.query.all()
-        return render_template("./Portales/Portal_Vendedores.html", clientes=clientes, productos=productos)
+        return render_template("vendedor-inicio.html")
     else:
         return redirect('/')

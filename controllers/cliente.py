@@ -36,9 +36,9 @@ def client_register():
         db.session.add(nuevo_cliente)
         db.session.commit()
 
-    return redirect('vendedor-inicio.html')
+    return redirect('vendedor-clientes.html')
 
-@app.route('/Portal_Cliente')
+@app.route('/home_clientes')
 def portalcliente():
     
     if 'usuario' in session:
