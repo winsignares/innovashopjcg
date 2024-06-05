@@ -1,4 +1,4 @@
-import controllers.user
+import controllers.users
 from flask import Flask, jsonify, request, redirect, session, make_response, Blueprint, render_template
 from datetime import datetime, timedelta, timezone
 import jwt
@@ -8,14 +8,79 @@ from models.Empresa import Empresa, EmpresaSchema
 from models.Cliente import Cliente, ClientesSchema
 from functools import wraps
 from config.db import app, db, ma
-from controllers.admin import ruta_administrador
 
-ruta_user = Blueprint("auth", __name__)
+ruta_user = Blueprint("route_user", __name__)
 
 user_schema = AdminSchema()
 users_schema = AdminSchema(many=True)
 
 SECRET_KEY = "newtoken"
+
+def generar_token_admin(user_id):
+    fecha_vencimiento = datetime.now(tz=timezone.utc) + timedelta(seconds=150)
+    payload = {
+        "exp": fecha_vencimiento,
+        "user_id": user_id,
+    }
+    token = jwt.encode(payload, SECRET_KEY, algorithm="HS256")
+    return token
+
+@app.route('/ingresaradmin', methods=['POST'])
+def ingresaradmin():
+    userad = request.form['userad'].replace(' ', '')
+    passwordad = request.form['passwordad']
+    user = db.session.query(Admin).filter(Admin.userad == userad, Admin.passwordad == passwordad).first()
+    
+    if user:
+        token = generar_token_admin(user.id)
+        session['usuarioad'] = user_schema.dump(user)
+        response = redirect('/portaladmin')
+        response.set_cookie('token', token)
+        return response
+    else:
+        return redirect('/loginad')
+
+@app.route('/admins', methods=['GET'])
+def admins():
+    return render_template('admin.html')
+
+@app.route('/reg_empresa')
+def crearempresa():
+    empresas = Empresa.query.all()
+    if 'adminu' in session:
+        return render_template('admin-add-empresas.html', usuario = session['adminu'])
+
+@app.route('/view_modules')
+def modulosempresa():
+    empresas = Empresa.query.all()
+    if 'adminu' in session:
+        return render_template('admin-modulos.html')
+
+@app.route('/set_impuestos')
+def set_impuestos():
+    empresas = Empresa.query.all()
+    if 'adminu' in session:
+        return render_template('admin-impuestos.html')
+    
+@app.route('/login_v')
+def login_view():
+    return render_template('login.html')
+
+@app.route('/search_by')
+def search():
+    query = request.args.get('query', '')
+
+    if query:
+        empresas = Empresa.query.filter(
+            (Empresa.id.like(f'%{query}%')) |
+            (Empresa.nombre.like(f'%{query}%'))
+        ).all()
+    else:
+        empresas = Empresa.query.all()
+
+    if 'adminu' in session:
+        return render_template('admin-empresas.html', usuario=session['adminu'], empresas=empresas)
+
 
 def generar_fecha_vencimiento(dias=0, horas=0, minutos=0, segundos=0):
     fecha_actual = datetime.now(tz=timezone.utc)
@@ -55,45 +120,33 @@ def token_required(f):
         return f(*args, **kwargs)
     return decorated
 
-@app.route('/login', methods=[ 'POST', 'GET'])
-def login():
-    if request.method == 'POST':
-        username = request.form['user'].replace(' ', '')
-        pswd = request.form['pswd']
+@app.route('/ingresar', methods=[ 'POST'])
+def ingresar():
+    username = request.form.get('user').replace(' ', '')
+    pswd = request.form.get('pswd')
 
-        adminu = db.session.query(AdminSchema).filter(AdminSchema.user == username, AdminSchema.pswd == pswd).all()
-        vendor = db.session.query(Vendedor).filter(Vendedor.user == username, Vendedor.password == pswd).first()
-        company = db.session.query(Empresa).filter(Empresa.user == username, Empresa.password == pswd).first()
-        client = db.session.query(Cliente).filter(Cliente.user == username, Cliente.password == pswd).first()
+    if not username or not pswd:
+        return jsonify({'message': 'Invalid request'}), 400
 
-        if adminu:
-            token = generate_token(adminu.id)
-            session['adminu'] = user_schema.dump(adminu)
-            response = redirect('/admins')
+    users = [
+        {'model': Admin, 'redirect': '/admins'},
+        {'model': Vendedor, 'redirect': '/portal_vendor'},
+        {'model': Empresa, 'redirect': '/portal_company'},
+        {'model': Cliente, 'redirect': '/portal_client'}
+    ]
+
+    for user_config in users:
+        user = db.session.query(user_config['model']).filter_by(user=username, password=pswd).first()
+        if user:
+            token = generate_token(user.id)
+            session['user'] = user_schema.dump(user)
+            if user_config['model'] == Empresa:
+                session['company_id'] = user.companyid
+            response = redirect(user_config['redirect'])
             response.set_cookie('token', token)
             return response
-        elif vendor:
-            token = generate_token(vendor.id)
-            session['user'] = user_schema.dump(vendor)
-            response = redirect('/portal_vendor')
-            response.set_cookie('token', token)
-            return response
-        elif company:
-            token = generate_token(company.companyid)
-            session['user'] = user_schema.dump(company)
-            session['company_id'] = company.companyid
-            response = redirect('/portal_company')
-            response.set_cookie('token', token)
-            return response
-        elif client:
-            token = generate_token(client.id)
-            session['user'] = user_schema.dump(client)
-            response = redirect('/portal_client')
-            response.set_cookie('token', token)
-            return response
-        else:
-            redirect('/login_view')
-    return render_template('login.html')
+
+    return jsonify({'message': 'Invalid credentials'}), 401
 
 @app.route('/protected_route')
 @token_required

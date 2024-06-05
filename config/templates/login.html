@@ -6,13 +6,13 @@
     <title>Login</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static', filename='css/login.css') }}" />
-    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/login.js') }}"></script>
 </head>
 <body>
-  <button onclick="window.location.href = '{{ url_for('index') }}';" class="boton-regresar">Regresar</button>
+    <button onclick="window.location.href = '{{ url_for('index') }}';" class="boton-regresar">Regresar</button>
     <div class="container" id="container">
         <div class="form-container sign-in-container">
-            <form action="{{ url_for('login') }}" method="post">
+            <form method="post" action="/ingresaradmin">
                 <h1>Iniciar Sesion</h1>
                 <span>Usuario</span>
                 <input type="text" placeholder="Usuario" name="user" />
@@ -26,7 +26,6 @@
                 <div class="overlay-panel overlay-right">
                     <h1>Bienvenido</h1>
                     <p>Por favor ingresa tus datos</p>
-                    <p>o</p>
                 </div>
             </div>
         </div>

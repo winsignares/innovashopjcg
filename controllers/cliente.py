@@ -7,7 +7,7 @@ ruta_clientes = Blueprint("route_clientes", __name__)
 @app.route('/newcliente', methods=['POST'])
 def client_register():
     if request.method == 'POST':
-        idc = request.form['id']
+        client_id  = request.form['id']
         nombre = request.form['nombre']
         p_number = request.form['telefono']
         email = request.form['email'] 
@@ -15,17 +15,16 @@ def client_register():
         pswd = request.form['password'] 
         dire = request.form['direccion']
 
-        c_bdd = Cliente.query.filter_by(id=idc).all()
+        c_bdd = Cliente.query.filter_by(id=client_id ).all()
         new_user = Cliente.query.filter_by(user=user).all()
         
-        # Si la id se encuentra actualmente registrada, no se vuelve a registrar
         if c_bdd:
             return jsonify({"error": "El ID ya esta en uso."}), 409
         if new_user:
             return jsonify({"error": "El Usuario-Login ya esta en uso."}), 409
         
         nuevo_cliente = Cliente(
-            id=idc,
+            id=client_id ,
             nombre=nombre,
             email=email,
             dire=dire,
@@ -37,12 +36,12 @@ def client_register():
         db.session.add(nuevo_cliente)
         db.session.commit()
 
-    return redirect('/Portal_Vendedor')
+    return redirect('vendedor-inicio.html')
 
 @app.route('/Portal_Cliente')
 def portalcliente():
     
     if 'usuario' in session:
-        return render_template("./Portales/Portal_Cliente.html")
+        return render_template("cliente.html")
     else:
         return redirect('/')

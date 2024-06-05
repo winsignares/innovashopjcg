@@ -16,46 +16,6 @@
         "documentation": {}
     },
     {
-        "label": "render_template",
-        "importPath": "flask",
-        "description": "flask",
-        "isExtraImport": true,
-        "detail": "flask",
-        "documentation": {}
-    },
-    {
-        "label": "request",
-        "importPath": "flask",
-        "description": "flask",
-        "isExtraImport": true,
-        "detail": "flask",
-        "documentation": {}
-    },
-    {
-        "label": "redirect",
-        "importPath": "flask",
-        "description": "flask",
-        "isExtraImport": true,
-        "detail": "flask",
-        "documentation": {}
-    },
-    {
-        "label": "session",
-        "importPath": "flask",
-        "description": "flask",
-        "isExtraImport": true,
-        "detail": "flask",
-        "documentation": {}
-    },
-    {
-        "label": "Blueprint",
-        "importPath": "flask",
-        "description": "flask",
-        "isExtraImport": true,
-        "detail": "flask",
-        "documentation": {}
-    },
-    {
         "label": "jsonify",
         "importPath": "flask",
         "description": "flask",
@@ -416,30 +376,6 @@
         "documentation": {}
     },
     {
-        "label": "app",
-        "importPath": "config.db",
-        "description": "config.db",
-        "isExtraImport": true,
-        "detail": "config.db",
-        "documentation": {}
-    },
-    {
-        "label": "db",
-        "importPath": "config.db",
-        "description": "config.db",
-        "isExtraImport": true,
-        "detail": "config.db",
-        "documentation": {}
-    },
-    {
-        "label": "ma",
-        "importPath": "config.db",
-        "description": "config.db",
-        "isExtraImport": true,
-        "detail": "config.db",
-        "documentation": {}
-    },
-    {
         "label": "db",
         "importPath": "config.db",
         "description": "config.db",
@@ -733,127 +669,6 @@
         "description": "config.db",
         "isExtraImport": true,
         "detail": "config.db",
-        "documentation": {}
-    },
-    {
-        "label": "Admin",
-        "importPath": "models.Admin",
-        "description": "models.Admin",
-        "isExtraImport": true,
-        "detail": "models.Admin",
-        "documentation": {}
-    },
-    {
-        "label": "admin_shchema",
-        "importPath": "models.Admin",
-        "description": "models.Admin",
-        "isExtraImport": true,
-        "detail": "models.Admin",
-        "documentation": {}
-    },
-    {
-        "label": "admins_shchema",
-        "importPath": "models.Admin",
-        "description": "models.Admin",
-        "isExtraImport": true,
-        "detail": "models.Admin",
-        "documentation": {}
-    },
-    {
-        "label": "Admin",
-        "importPath": "models.Admin",
-        "description": "models.Admin",
-        "isExtraImport": true,
-        "detail": "models.Admin",
-        "documentation": {}
-    },
-    {
-        "label": "AdminSchema",
-        "importPath": "models.Admin",
-        "description": "models.Admin",
-        "isExtraImport": true,
-        "detail": "models.Admin",
-        "documentation": {}
-    },
-    {
-        "label": "Admin",
-        "importPath": "models.Admin",
-        "description": "models.Admin",
-        "isExtraImport": true,
-        "detail": "models.Admin",
-        "documentation": {}
-    },
-    {
-        "label": "Empresa",
-        "importPath": "models.Empresa",
-        "description": "models.Empresa",
-        "isExtraImport": true,
-        "detail": "models.Empresa",
-        "documentation": {}
-    },
-    {
-        "label": "EmpresaSchema",
-        "importPath": "models.Empresa",
-        "description": "models.Empresa",
-        "isExtraImport": true,
-        "detail": "models.Empresa",
-        "documentation": {}
-    },
-    {
-        "label": "Empresa",
-        "importPath": "models.Empresa",
-        "description": "models.Empresa",
-        "isExtraImport": true,
-        "detail": "models.Empresa",
-        "documentation": {}
-    },
-    {
-        "label": "EmpresaSchema",
-        "importPath": "models.Empresa",
-        "description": "models.Empresa",
-        "isExtraImport": true,
-        "detail": "models.Empresa",
-        "documentation": {}
-    },
-    {
-        "label": "Empresa",
-        "importPath": "models.Empresa",
-        "description": "models.Empresa",
-        "isExtraImport": true,
-        "detail": "models.Empresa",
-        "documentation": {}
-    },
-    {
-        "label": "EmpresaSchema",
-        "importPath": "models.Empresa",
-        "description": "models.Empresa",
-        "isExtraImport": true,
-        "detail": "models.Empresa",
-        "documentation": {}
-    },
-    {
-        "label": "controllers.user",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "controllers.user",
-        "description": "controllers.user",
-        "detail": "controllers.user",
-        "documentation": {}
-    },
-    {
-        "label": "user_schema",
-        "importPath": "controllers.user",
-        "description": "controllers.user",
-        "isExtraImport": true,
-        "detail": "controllers.user",
-        "documentation": {}
-    },
-    {
-        "label": "ruta_user",
-        "importPath": "controllers.user",
-        "description": "controllers.user",
-        "isExtraImport": true,
-        "detail": "controllers.user",
         "documentation": {}
     },
     {
@@ -918,6 +733,38 @@
         "description": "models.Cliente",
         "isExtraImport": true,
         "detail": "models.Cliente",
+        "documentation": {}
+    },
+    {
+        "label": "Empresa",
+        "importPath": "models.Empresa",
+        "description": "models.Empresa",
+        "isExtraImport": true,
+        "detail": "models.Empresa",
+        "documentation": {}
+    },
+    {
+        "label": "EmpresaSchema",
+        "importPath": "models.Empresa",
+        "description": "models.Empresa",
+        "isExtraImport": true,
+        "detail": "models.Empresa",
+        "documentation": {}
+    },
+    {
+        "label": "Empresa",
+        "importPath": "models.Empresa",
+        "description": "models.Empresa",
+        "isExtraImport": true,
+        "detail": "models.Empresa",
+        "documentation": {}
+    },
+    {
+        "label": "EmpresaSchema",
+        "importPath": "models.Empresa",
+        "description": "models.Empresa",
+        "isExtraImport": true,
+        "detail": "models.Empresa",
         "documentation": {}
     },
     {
@@ -1034,6 +881,23 @@
         "documentation": {}
     },
     {
+        "label": "controllers.users",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "controllers.users",
+        "description": "controllers.users",
+        "detail": "controllers.users",
+        "documentation": {}
+    },
+    {
+        "label": "ruta_user",
+        "importPath": "controllers.users",
+        "description": "controllers.users",
+        "isExtraImport": true,
+        "detail": "controllers.users",
+        "documentation": {}
+    },
+    {
         "label": "datetime",
         "importPath": "datetime",
         "description": "datetime",
@@ -1067,27 +931,35 @@
         "documentation": {}
     },
     {
+        "label": "Admin",
+        "importPath": "models.Admin",
+        "description": "models.Admin",
+        "isExtraImport": true,
+        "detail": "models.Admin",
+        "documentation": {}
+    },
+    {
+        "label": "AdminSchema",
+        "importPath": "models.Admin",
+        "description": "models.Admin",
+        "isExtraImport": true,
+        "detail": "models.Admin",
+        "documentation": {}
+    },
+    {
+        "label": "Admin",
+        "importPath": "models.Admin",
+        "description": "models.Admin",
+        "isExtraImport": true,
+        "detail": "models.Admin",
+        "documentation": {}
+    },
+    {
         "label": "wraps",
         "importPath": "functools",
         "description": "functools",
         "isExtraImport": true,
         "detail": "functools",
-        "documentation": {}
-    },
-    {
-        "label": "ruta_administrador",
-        "importPath": "controllers.admin",
-        "description": "controllers.admin",
-        "isExtraImport": true,
-        "detail": "controllers.admin",
-        "documentation": {}
-    },
-    {
-        "label": "ruta_administrador",
-        "importPath": "controllers.admin",
-        "description": "controllers.admin",
-        "isExtraImport": true,
-        "detail": "controllers.admin",
         "documentation": {}
     },
     {
@@ -1176,7 +1048,7 @@
         "kind": 5,
         "importPath": "config.db",
         "description": "config.db",
-        "peekOfCode": "app = Flask(__name__,\n            static_folder='config/static',\n            template_folder='config/templates')\napp.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root@localhost:3307/innovashop'\napp.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False\napp.secret_key = \"comecaca\"\ndb = SQLAlchemy(app)\nma = Marshmallow(app)",
+        "peekOfCode": "app = Flask(__name__,\n            static_folder='config/static')\napp.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root@localhost:3307/innovashop'\napp.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False\napp.secret_key = \"comecaca\"\ndb = SQLAlchemy(app)\nma = Marshmallow(app)",
         "detail": "config.db",
         "documentation": {}
     },
@@ -1226,74 +1098,11 @@
         "documentation": {}
     },
     {
-        "label": "admins",
-        "kind": 2,
-        "importPath": "controllers.admin",
-        "description": "controllers.admin",
-        "peekOfCode": "def admins():\n    return render_template('admin.html')\n@app.route('/reg_empresa')\ndef crearempresa():\n    empresas = Empresa.query.all()\n    if 'adminu' in session:\n        return render_template('admin-add-empresas.html', usuario = session['adminu'])\n@app.route('/view_modules')\ndef modulosempresa():\n    empresas = Empresa.query.all()",
-        "detail": "controllers.admin",
-        "documentation": {}
-    },
-    {
-        "label": "crearempresa",
-        "kind": 2,
-        "importPath": "controllers.admin",
-        "description": "controllers.admin",
-        "peekOfCode": "def crearempresa():\n    empresas = Empresa.query.all()\n    if 'adminu' in session:\n        return render_template('admin-add-empresas.html', usuario = session['adminu'])\n@app.route('/view_modules')\ndef modulosempresa():\n    empresas = Empresa.query.all()\n    if 'adminu' in session:\n        return render_template('admin-modulos.html')\n@app.route('/set_impuestos')",
-        "detail": "controllers.admin",
-        "documentation": {}
-    },
-    {
-        "label": "modulosempresa",
-        "kind": 2,
-        "importPath": "controllers.admin",
-        "description": "controllers.admin",
-        "peekOfCode": "def modulosempresa():\n    empresas = Empresa.query.all()\n    if 'adminu' in session:\n        return render_template('admin-modulos.html')\n@app.route('/set_impuestos')\ndef set_impuestos():\n    empresas = Empresa.query.all()\n    if 'adminu' in session:\n        return render_template('admin-impuestos.html')\n@app.route('/login_v', methods=['GET'])",
-        "detail": "controllers.admin",
-        "documentation": {}
-    },
-    {
-        "label": "set_impuestos",
-        "kind": 2,
-        "importPath": "controllers.admin",
-        "description": "controllers.admin",
-        "peekOfCode": "def set_impuestos():\n    empresas = Empresa.query.all()\n    if 'adminu' in session:\n        return render_template('admin-impuestos.html')\n@app.route('/login_v', methods=['GET'])\ndef login_view():\n    return render_template('login.html')\n@app.route('/search_by')\ndef search():\n    query = request.args.get('query', '')",
-        "detail": "controllers.admin",
-        "documentation": {}
-    },
-    {
-        "label": "login_view",
-        "kind": 2,
-        "importPath": "controllers.admin",
-        "description": "controllers.admin",
-        "peekOfCode": "def login_view():\n    return render_template('login.html')\n@app.route('/search_by')\ndef search():\n    query = request.args.get('query', '')\n    if query:\n        empresas = Empresa.query.filter(\n            (Empresa.id.like(f'%{query}%')) |\n            (Empresa.nombre.like(f'%{query}%'))\n        ).all()",
-        "detail": "controllers.admin",
-        "documentation": {}
-    },
-    {
-        "label": "search",
-        "kind": 2,
-        "importPath": "controllers.admin",
-        "description": "controllers.admin",
-        "peekOfCode": "def search():\n    query = request.args.get('query', '')\n    if query:\n        empresas = Empresa.query.filter(\n            (Empresa.id.like(f'%{query}%')) |\n            (Empresa.nombre.like(f'%{query}%'))\n        ).all()\n    else:\n        empresas = Empresa.query.all()\n    if 'adminu' in session:",
-        "detail": "controllers.admin",
-        "documentation": {}
-    },
-    {
-        "label": "ruta_administrador",
-        "kind": 5,
-        "importPath": "controllers.admin",
-        "description": "controllers.admin",
-        "peekOfCode": "ruta_administrador = Blueprint('route_administrador', __name__)\n@app.route('/admins', methods=['GET'])\ndef admins():\n    return render_template('admin.html')\n@app.route('/reg_empresa')\ndef crearempresa():\n    empresas = Empresa.query.all()\n    if 'adminu' in session:\n        return render_template('admin-add-empresas.html', usuario = session['adminu'])\n@app.route('/view_modules')",
-        "detail": "controllers.admin",
-        "documentation": {}
-    },
-    {
         "label": "client_register",
         "kind": 2,
         "importPath": "controllers.cliente",
         "description": "controllers.cliente",
-        "peekOfCode": "def client_register():\n    if request.method == 'POST':\n        idc = request.form['id']\n        nombre = request.form['nombre']\n        p_number = request.form['telefono']\n        email = request.form['email'] \n        user = request.form['user'] \n        pswd = request.form['password'] \n        dire = request.form['direccion']\n        c_bdd = Cliente.query.filter_by(id=idc).all()",
+        "peekOfCode": "def client_register():\n    if request.method == 'POST':\n        client_id  = request.form['id']\n        nombre = request.form['nombre']\n        p_number = request.form['telefono']\n        email = request.form['email'] \n        user = request.form['user'] \n        pswd = request.form['password'] \n        dire = request.form['direccion']\n        c_bdd = Cliente.query.filter_by(id=client_id ).all()",
         "detail": "controllers.cliente",
         "documentation": {}
     },
@@ -1302,7 +1111,7 @@
         "kind": 2,
         "importPath": "controllers.cliente",
         "description": "controllers.cliente",
-        "peekOfCode": "def portalcliente():\n    if 'usuario' in session:\n        return render_template(\"./Portales/Portal_Cliente.html\")\n    else:\n        return redirect('/')",
+        "peekOfCode": "def portalcliente():\n    if 'usuario' in session:\n        return render_template(\"cliente.html\")\n    else:\n        return redirect('/')",
         "detail": "controllers.cliente",
         "documentation": {}
     },
@@ -1311,7 +1120,7 @@
         "kind": 5,
         "importPath": "controllers.cliente",
         "description": "controllers.cliente",
-        "peekOfCode": "ruta_clientes = Blueprint(\"route_clientes\", __name__)\n@app.route('/newcliente', methods=['POST'])\ndef client_register():\n    if request.method == 'POST':\n        idc = request.form['id']\n        nombre = request.form['nombre']\n        p_number = request.form['telefono']\n        email = request.form['email'] \n        user = request.form['user'] \n        pswd = request.form['password'] ",
+        "peekOfCode": "ruta_clientes = Blueprint(\"route_clientes\", __name__)\n@app.route('/newcliente', methods=['POST'])\ndef client_register():\n    if request.method == 'POST':\n        client_id  = request.form['id']\n        nombre = request.form['nombre']\n        p_number = request.form['telefono']\n        email = request.form['email'] \n        user = request.form['user'] \n        pswd = request.form['password'] ",
         "detail": "controllers.cliente",
         "documentation": {}
     },
@@ -1451,6 +1260,78 @@
         "documentation": {}
     },
     {
+        "label": "generar_token_admin",
+        "kind": 2,
+        "importPath": "controllers.users",
+        "description": "controllers.users",
+        "peekOfCode": "def generar_token_admin(user_id):\n    fecha_vencimiento = datetime.now(tz=timezone.utc) + timedelta(seconds=150)\n    payload = {\n        \"exp\": fecha_vencimiento,\n        \"user_id\": user_id,\n    }\n    token = jwt.encode(payload, SECRET_KEY, algorithm=\"HS256\")\n    return token\n@app.route('/ingresaradmin', methods=['POST'])\ndef ingresaradmin():",
+        "detail": "controllers.users",
+        "documentation": {}
+    },
+    {
+        "label": "ingresaradmin",
+        "kind": 2,
+        "importPath": "controllers.users",
+        "description": "controllers.users",
+        "peekOfCode": "def ingresaradmin():\n    userad = request.form['userad'].replace(' ', '')\n    passwordad = request.form['passwordad']\n    user = db.session.query(Admin).filter(Admin.userad == userad, Admin.passwordad == passwordad).first()\n    if user:\n        token = generar_token_admin(user.id)\n        session['usuarioad'] = user_schema.dump(user)\n        response = redirect('/portaladmin')\n        response.set_cookie('token', token)\n        return response",
+        "detail": "controllers.users",
+        "documentation": {}
+    },
+    {
+        "label": "admins",
+        "kind": 2,
+        "importPath": "controllers.users",
+        "description": "controllers.users",
+        "peekOfCode": "def admins():\n    return render_template('admin.html')\n@app.route('/reg_empresa')\ndef crearempresa():\n    empresas = Empresa.query.all()\n    if 'adminu' in session:\n        return render_template('admin-add-empresas.html', usuario = session['adminu'])\n@app.route('/view_modules')\ndef modulosempresa():\n    empresas = Empresa.query.all()",
+        "detail": "controllers.users",
+        "documentation": {}
+    },
+    {
+        "label": "crearempresa",
+        "kind": 2,
+        "importPath": "controllers.users",
+        "description": "controllers.users",
+        "peekOfCode": "def crearempresa():\n    empresas = Empresa.query.all()\n    if 'adminu' in session:\n        return render_template('admin-add-empresas.html', usuario = session['adminu'])\n@app.route('/view_modules')\ndef modulosempresa():\n    empresas = Empresa.query.all()\n    if 'adminu' in session:\n        return render_template('admin-modulos.html')\n@app.route('/set_impuestos')",
+        "detail": "controllers.users",
+        "documentation": {}
+    },
+    {
+        "label": "modulosempresa",
+        "kind": 2,
+        "importPath": "controllers.users",
+        "description": "controllers.users",
+        "peekOfCode": "def modulosempresa():\n    empresas = Empresa.query.all()\n    if 'adminu' in session:\n        return render_template('admin-modulos.html')\n@app.route('/set_impuestos')\ndef set_impuestos():\n    empresas = Empresa.query.all()\n    if 'adminu' in session:\n        return render_template('admin-impuestos.html')\n@app.route('/login_v')",
+        "detail": "controllers.users",
+        "documentation": {}
+    },
+    {
+        "label": "set_impuestos",
+        "kind": 2,
+        "importPath": "controllers.users",
+        "description": "controllers.users",
+        "peekOfCode": "def set_impuestos():\n    empresas = Empresa.query.all()\n    if 'adminu' in session:\n        return render_template('admin-impuestos.html')\n@app.route('/login_v')\ndef login_view():\n    return render_template('login.html')\n@app.route('/search_by')\ndef search():\n    query = request.args.get('query', '')",
+        "detail": "controllers.users",
+        "documentation": {}
+    },
+    {
+        "label": "login_view",
+        "kind": 2,
+        "importPath": "controllers.users",
+        "description": "controllers.users",
+        "peekOfCode": "def login_view():\n    return render_template('login.html')\n@app.route('/search_by')\ndef search():\n    query = request.args.get('query', '')\n    if query:\n        empresas = Empresa.query.filter(\n            (Empresa.id.like(f'%{query}%')) |\n            (Empresa.nombre.like(f'%{query}%'))\n        ).all()",
+        "detail": "controllers.users",
+        "documentation": {}
+    },
+    {
+        "label": "search",
+        "kind": 2,
+        "importPath": "controllers.users",
+        "description": "controllers.users",
+        "peekOfCode": "def search():\n    query = request.args.get('query', '')\n    if query:\n        empresas = Empresa.query.filter(\n            (Empresa.id.like(f'%{query}%')) |\n            (Empresa.nombre.like(f'%{query}%'))\n        ).all()\n    else:\n        empresas = Empresa.query.all()\n    if 'adminu' in session:",
+        "detail": "controllers.users",
+        "documentation": {}
+    },
+    {
         "label": "generar_fecha_vencimiento",
         "kind": 2,
         "importPath": "controllers.users",
@@ -1487,11 +1368,11 @@
         "documentation": {}
     },
     {
-        "label": "login",
+        "label": "ingresar",
         "kind": 2,
         "importPath": "controllers.users",
         "description": "controllers.users",
-        "peekOfCode": "def login():\n    if request.method == 'POST':\n        username = request.form['user'].replace(' ', '')\n        pswd = request.form['pswd']\n        adminu = db.session.query(AdminSchema).filter(AdminSchema.user == username, AdminSchema.pswd == pswd).all()\n        vendor = db.session.query(Vendedor).filter(Vendedor.user == username, Vendedor.password == pswd).first()\n        company = db.session.query(Empresa).filter(Empresa.user == username, Empresa.password == pswd).first()\n        client = db.session.query(Cliente).filter(Cliente.user == username, Cliente.password == pswd).first()\n        if adminu:\n            token = generate_token(adminu.id)",
+        "peekOfCode": "def ingresar():\n    username = request.form.get('user').replace(' ', '')\n    pswd = request.form.get('pswd')\n    if not username or not pswd:\n        return jsonify({'message': 'Invalid request'}), 400\n    users = [\n        {'model': Admin, 'redirect': '/admins'},\n        {'model': Vendedor, 'redirect': '/portal_vendor'},\n        {'model': Empresa, 'redirect': '/portal_company'},\n        {'model': Cliente, 'redirect': '/portal_client'}",
         "detail": "controllers.users",
         "documentation": {}
     },
@@ -1509,7 +1390,7 @@
         "kind": 5,
         "importPath": "controllers.users",
         "description": "controllers.users",
-        "peekOfCode": "ruta_user = Blueprint(\"auth\", __name__)\nuser_schema = AdminSchema()\nusers_schema = AdminSchema(many=True)\nSECRET_KEY = \"newtoken\"\ndef generar_fecha_vencimiento(dias=0, horas=0, minutos=0, segundos=0):\n    fecha_actual = datetime.now(tz=timezone.utc)\n    tiempo_vencimiento = timedelta(days=dias, hours=horas, minutes=minutos, seconds=segundos)\n    return fecha_actual + tiempo_vencimiento\ndef generate_token(user_id):\n    fecha_vencimiento = generar_fecha_vencimiento(segundos=200)",
+        "peekOfCode": "ruta_user = Blueprint(\"route_user\", __name__)\nuser_schema = AdminSchema()\nusers_schema = AdminSchema(many=True)\nSECRET_KEY = \"newtoken\"\ndef generar_token_admin(user_id):\n    fecha_vencimiento = datetime.now(tz=timezone.utc) + timedelta(seconds=150)\n    payload = {\n        \"exp\": fecha_vencimiento,\n        \"user_id\": user_id,\n    }",
         "detail": "controllers.users",
         "documentation": {}
     },
@@ -1518,7 +1399,7 @@
         "kind": 5,
         "importPath": "controllers.users",
         "description": "controllers.users",
-        "peekOfCode": "user_schema = AdminSchema()\nusers_schema = AdminSchema(many=True)\nSECRET_KEY = \"newtoken\"\ndef generar_fecha_vencimiento(dias=0, horas=0, minutos=0, segundos=0):\n    fecha_actual = datetime.now(tz=timezone.utc)\n    tiempo_vencimiento = timedelta(days=dias, hours=horas, minutes=minutos, seconds=segundos)\n    return fecha_actual + tiempo_vencimiento\ndef generate_token(user_id):\n    fecha_vencimiento = generar_fecha_vencimiento(segundos=200)\n    payload = {",
+        "peekOfCode": "user_schema = AdminSchema()\nusers_schema = AdminSchema(many=True)\nSECRET_KEY = \"newtoken\"\ndef generar_token_admin(user_id):\n    fecha_vencimiento = datetime.now(tz=timezone.utc) + timedelta(seconds=150)\n    payload = {\n        \"exp\": fecha_vencimiento,\n        \"user_id\": user_id,\n    }\n    token = jwt.encode(payload, SECRET_KEY, algorithm=\"HS256\")",
         "detail": "controllers.users",
         "documentation": {}
     },
@@ -1527,7 +1408,7 @@
         "kind": 5,
         "importPath": "controllers.users",
         "description": "controllers.users",
-        "peekOfCode": "users_schema = AdminSchema(many=True)\nSECRET_KEY = \"newtoken\"\ndef generar_fecha_vencimiento(dias=0, horas=0, minutos=0, segundos=0):\n    fecha_actual = datetime.now(tz=timezone.utc)\n    tiempo_vencimiento = timedelta(days=dias, hours=horas, minutes=minutos, seconds=segundos)\n    return fecha_actual + tiempo_vencimiento\ndef generate_token(user_id):\n    fecha_vencimiento = generar_fecha_vencimiento(segundos=200)\n    payload = {\n        \"exp\": fecha_vencimiento,",
+        "peekOfCode": "users_schema = AdminSchema(many=True)\nSECRET_KEY = \"newtoken\"\ndef generar_token_admin(user_id):\n    fecha_vencimiento = datetime.now(tz=timezone.utc) + timedelta(seconds=150)\n    payload = {\n        \"exp\": fecha_vencimiento,\n        \"user_id\": user_id,\n    }\n    token = jwt.encode(payload, SECRET_KEY, algorithm=\"HS256\")\n    return token",
         "detail": "controllers.users",
         "documentation": {}
     },
@@ -1536,7 +1417,7 @@
         "kind": 5,
         "importPath": "controllers.users",
         "description": "controllers.users",
-        "peekOfCode": "SECRET_KEY = \"newtoken\"\ndef generar_fecha_vencimiento(dias=0, horas=0, minutos=0, segundos=0):\n    fecha_actual = datetime.now(tz=timezone.utc)\n    tiempo_vencimiento = timedelta(days=dias, hours=horas, minutes=minutos, seconds=segundos)\n    return fecha_actual + tiempo_vencimiento\ndef generate_token(user_id):\n    fecha_vencimiento = generar_fecha_vencimiento(segundos=200)\n    payload = {\n        \"exp\": fecha_vencimiento,\n        \"user_id\": user_id,",
+        "peekOfCode": "SECRET_KEY = \"newtoken\"\ndef generar_token_admin(user_id):\n    fecha_vencimiento = datetime.now(tz=timezone.utc) + timedelta(seconds=150)\n    payload = {\n        \"exp\": fecha_vencimiento,\n        \"user_id\": user_id,\n    }\n    token = jwt.encode(payload, SECRET_KEY, algorithm=\"HS256\")\n    return token\n@app.route('/ingresaradmin', methods=['POST'])",
         "detail": "controllers.users",
         "documentation": {}
     },
@@ -1797,7 +1678,7 @@
         "kind": 2,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "def index():\n    return render_template('index.html')\nif __name__ == \"__main__\":\n    app.run(debug=True)",
+        "peekOfCode": "def index():\n    return render_template('login.html')\nif __name__ == \"__main__\":\n    app.run(debug=True)",
         "detail": "app",
         "documentation": {}
     },
@@ -1806,7 +1687,7 @@
         "kind": 5,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "app = Flask(__name__, \n            static_folder='config/static',\n            template_folder='config/templates')\nfrom controllers.empresa import ruta_empresa\nfrom controllers.productos import productos_bp\nfrom controllers.admin import ruta_administrador\nfrom controllers.vendedor import ruta_vendedor\nfrom controllers.proveedores import ruta_proveedores\nfrom controllers.cliente import ruta_clientes\nfrom controllers.user import ruta_user",
+        "peekOfCode": "app = Flask(__name__, \n            static_folder='config/static',\n            template_folder='config/templates')\nfrom controllers.empresa import ruta_empresa\nfrom controllers.productos import productos_bp\nfrom controllers.vendedor import ruta_vendedor\nfrom controllers.proveedores import ruta_proveedores\nfrom controllers.cliente import ruta_clientes\nfrom controllers.users import ruta_user\napp.register_blueprint(ruta_user, url_prefix=\"/controller\")",
         "detail": "app",
         "documentation": {}
     }
