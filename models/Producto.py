@@ -11,12 +11,6 @@ class Productos(db.Model):
     u_admin = db.Column(db.Integer)
     alternos = db.Column(db.String(255))
     iva = db.Column(db.Float())
-    # src = db.Column(db.String(255), nullable=True)
-    # proveedor_id = db.Column(db.Integer, db.ForeignKey('Proveedor.id'))
-    # empresa_id = db.Column(db.Integer, db.ForeignKey('EMP.companyid'))
-
-    # proveedor = db.relationship('Proveedor', backref=db.backref('productos', lazy=True))
-    # empresa = db.relationship('EMP', backref=db.backref('productos', lazy=True))
 
     def __init__(self, id, nombre, p_uni, unidades, p_venta, u_admin, alternos, iva, src=None):
         self.id = id

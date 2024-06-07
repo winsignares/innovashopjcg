@@ -1,7 +1,7 @@
 from config.db import db, ma, app
 
-class Admin(db.Model):
-    __tablename__ = "admin"
+class Administrador(db.Model):
+    __tablename__ = "administrador"
 
     id = db.Column(db.Integer, primary_key=True)
     nombre = db.Column(db.String(255))
@@ -15,11 +15,11 @@ class Admin(db.Model):
         self.is_admin = is_admin
 
 def create_default_data():
-    if not Admin.query.first():
+    if not Administrador.query.first():
         admins = [
-            Admin(nombre='Jesus Garcia', pswd='jgarcia123', user='jesusgarcia123', is_admin=True),
-            Admin(nombre='Juan Verdugo', pswd='jberdugo123', user='juanberdugo123', is_admin=True),
-            Admin(nombre='David Campo', pswd='dcampo123', user='davidcampo123', is_admin=True)
+            Administrador(nombre='Jesus Garcia', pswd='jgarcia123', user='jesusgarcia123', is_admin=True),
+            Administrador(nombre='Juan Verdugo', pswd='jberdugo123', user='juanberdugo123', is_admin=True),
+            Administrador(nombre='David Campo', pswd='dcampo123', user='davidcampo123', is_admin=True)
         ]
         db.session.add_all(admins)
         db.session.commit()

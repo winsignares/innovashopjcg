@@ -10,10 +10,6 @@ class Compra(db.Model):
     nombre = db.Column(db.String(255))
     cotizacion = db.Column(db.Integer)
     stock = db.Column(db.Integer)
-    detalles = db.Column(db.String(255))
-    cliente = db.relationship('Cliente', backref=db.backref('compras', lazy=True))
-    vendedor = db.relationship('Vendedor', backref=db.backref('compras', lazy=True))
-    producto = db.relationship('Productos', backref=db.backref('compras', lazy=True))
 
     def __init__(self, codigo, nombre, cliente, cotizacion, stock, detalles):
         self.codigo = codigo

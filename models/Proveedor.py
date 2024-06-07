@@ -8,16 +8,13 @@ class Proveedor(db.Model):
     email = db.Column(db.String(50))
     p_number = db.Column(db.Integer)
     dire = db.Column(db.String(50))
-    id_empresa = db.Column(db.Integer, db.ForeignKey('empresa.id'))
-    empresa = db.relationship('empresa', backref=db.backref('proveedores', lazy=True))
     
-    def __init__(self,id, nombre, email, dire, p_number, id_empresa):
+    def __init__(self,id, nombre, email, dire, p_number):
       self.id = id
       self.nombre = nombre
       self.email = email
       self.p_number = p_number
       self.dire = dire
-      self.id_empresa = id_empresa
       
 with app.app_context():
     db.create_all()

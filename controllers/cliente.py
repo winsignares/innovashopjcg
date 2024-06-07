@@ -1,6 +1,6 @@
 from flask import Blueprint, jsonify, render_template, request, redirect, session
 from config.db import app, db, ma
-from models.Cliente import Cliente, cliente_schema, clientes_schema
+from models.Cliente import Cliente
 
 ruta_clientes = Blueprint("route_clientes", __name__)
 
@@ -26,11 +26,11 @@ def client_register():
         nuevo_cliente = Cliente(
             id=client_id ,
             nombre=nombre,
-            email=email,
-            dire=dire,
             p_number=p_number,
+            email=email,
             user = user,
-            pswd = pswd
+            pswd = pswd,
+            dire=dire
         )
 
         db.session.add(nuevo_cliente)
@@ -40,7 +40,6 @@ def client_register():
 
 @app.route('/home_clientes')
 def portalcliente():
-    
     if 'usuario' in session:
         return render_template("cliente.html")
     else:
