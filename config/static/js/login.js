@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('back-button').addEventListener('click', function() {
         window.location.href = '/acceder';
@@ -84,3 +85,5 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+=======
+>>>>>>> 60ef691bcfa307388cf9b2e8ec8558a96a6a6dfd
