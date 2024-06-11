@@ -331,6 +331,7 @@ def get_modules_for_company(empresa_id):
 
     return jsonify({"modules": module_status})
 
+
 @ruta_empresa.route('/empresa/productos', methods=['GET'])
 @token_required
 def get_productos():
