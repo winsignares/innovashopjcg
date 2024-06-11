@@ -376,10 +376,14 @@ def update_module_status():
 
     modulo_empresa = ModuloEmpresa.query.filter_by(empresa_id=empresa.id, modulo_id=modulo.id).first()
     if not modulo_empresa:
-        print(f"Relation Empresa-Modulo not found for empresa_id: {empresa.id} and modulo_id: {modulo.id}")  # Debugging statement
-        return jsonify({"error": "Relación Empresa-Modulo no encontrada"}), 404
-
-    modulo_empresa.estado = estado
+        # Create the ModuloEmpresa relationship if it does not exist
+        modulo_empresa = ModuloEmpresa(empresa_id=empresa.id, modulo_id=modulo.id, estado=estado)
+        db.session.add(modulo_empresa)
+        print(f"Relation Empresa-Modulo created for empresa_id: {empresa.id} and modulo_id: {modulo.id}")  # Debugging statement
+    else:
+        modulo_empresa.estado = estado
+        print(f"Relation Empresa-Modulo updated for empresa_id: {empresa.id} and modulo_id: {modulo.id}")  # Debugging statement
+    
     db.session.commit()
 
     return jsonify({"success": "Estado del módulo actualizado correctamente"})
