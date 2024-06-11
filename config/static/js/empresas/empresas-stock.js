@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const fetchProveedores = () => {
     return axios
-      .get("/proveedor/proveedores")
+      .get("/proveedor/proveedores-list")
       .then((response) => {
         return response.data;
       })
@@ -128,8 +128,8 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("nombre").value = product.nombre;
         document.getElementById("descripcion").value = product.descripcion;
         document.getElementById("precio").value = product.precio;
-        document.getElementById("existencias").value = product.existencias;
-        document.getElementById("min_existencias").value = product.min_existencias;
+        document.getElementById("existencias").value = product.existencias;  // Ensure these lines are correct
+        document.getElementById("min_existencias").value = product.min_existencias;  // Ensure these lines are correct
         document.getElementById("img_src").required = false; // Image is optional for editing
         document.getElementById("add-stock-form").dataset.editing = product.id;
         modal.show();

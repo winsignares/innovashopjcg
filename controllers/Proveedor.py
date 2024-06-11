@@ -2,6 +2,7 @@
 from flask import Blueprint, request, jsonify, session
 from config.db import db
 from models.Proveedor import Proveedor
+from models.ProveedorEmpresa import ProveedorEmpresas
 from models.Compra import Compra
 from .Auth import token_required, empresa_required
 
@@ -25,7 +26,14 @@ def get_proveedor():
         print("No enterprise in session")  # Debugging statement
         return jsonify({"error": "No enterprise in session"}), 400
 
-    proveedores = Proveedor.query.all()
+    proveedor_ids = ProveedorEmpresas.query.filter_by(empresa_id=empresa_id).with_entities(ProveedorEmpresas.proveedor_id).all()
+    print(f"Proveedor IDs: {proveedor_ids}")  # Debugging statement
+
+    if not proveedor_ids:
+        print("No proveedores found for this enterprise")  # Debugging statement
+        return jsonify({"error": "No proveedores found for this enterprise"}), 404
+
+    proveedores = Proveedor.query.filter(Proveedor.id.in_([id for (id,) in proveedor_ids])).all()
     print(f"Proveedores found: {proveedores}")  # Debugging statement
 
     proveedores_info = [{
@@ -40,8 +48,6 @@ def get_proveedor():
 
     return jsonify(proveedores_info)
 
-
-    return jsonify(proveedores_info)
 
 @ruta_proveedor.route('/add-proveedor', methods=['POST'])
 @token_required
@@ -65,6 +71,18 @@ def add_proveedor():
     )
         
     db.session.add(nuevo_proveedor)
+    db.session.commit()
+
+    empresa_id = session.get('empresa_id')
+    if not empresa_id:
+        return jsonify({"error": "No enterprise in session"}), 400
+
+    proveedor_empresa = ProveedorEmpresas(
+        empresa_id=empresa_id,
+        proveedor_id=nuevo_proveedor.id
+    )
+    
+    db.session.add(proveedor_empresa)
     db.session.commit()
 
     return jsonify({"success": True})
