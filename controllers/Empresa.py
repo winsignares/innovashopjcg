@@ -1,4 +1,4 @@
-from flask import Blueprint, request, jsonify, session, render_template, redirect, url_for
+from flask import Blueprint, request, jsonify, session, render_template, redirect, url_for, send_file
 from models.Empresa import Empresa, EmpresaSchema
 from models.Administrador import Administrador
 from models.Modulos import Modulo
@@ -9,6 +9,8 @@ from models.EmpresasDescuentosTime import EmpresasDescuentosTime
 from models.Producto import Producto
 from models.Compra import Compra
 from models.CompraDetalles import CompraDetalles
+from models.Cotizacion import Cotizacion
+from models.CotizacionDetalles import CotizacionEmpresaDetalles
 from .Auth import token_required, admin_required, empresa_required
 from config.db import db
 from .hashing_helper import hash_password
@@ -132,6 +134,37 @@ def modificar_sesion():
         return jsonify({"success": True})
     except Exception as e:
         return jsonify({"error": str(e)}), 500
+    
+@ruta_empresa.route('/cotizar', methods=['POST'])
+@token_required
+def cotizar():
+    data = request.json
+    empresa_id = session.get('empresa_id')
+    proveedor_id = data.get('proveedor_id')
+    producto_id = data.get('producto_id')
+    cantidad = data.get('cantidad')
+    precio_total = data.get('precio_total')
+
+    if not empresa_id or not proveedor_id or not producto_id or not cantidad or not precio_total:
+        return jsonify({"error": "Missing required fields"}), 400
+
+    cotizacion = Cotizacion(
+        empresa_id=empresa_id,
+        proveedor_id=proveedor_id
+    )
+    db.session.add(cotizacion)
+    db.session.commit()
+
+    cotizacion_detalle = CotizacionEmpresaDetalles(
+        cotizacion_id=cotizacion.id,
+        producto_id=producto_id,
+        cantidad=cantidad,
+        precio_total=precio_total
+    )
+    db.session.add(cotizacion_detalle)
+    db.session.commit()
+
+    return jsonify({"success": "Cotización realizada con éxito", "total_precio": precio_total})
 
 
 @ruta_empresa.route('/eliminar-empresa/<int:empresa_id>', methods=['DELETE'])
@@ -257,15 +290,15 @@ def register_empresa():
             modulo = Modulo(nombre=module_name, descripcion=module_name)
             db.session.add(modulo)
             db.session.commit()
-            print(f"Created module: {module_name}")  # Debugging statement
 
-    estado = module_name in default_active_modules
-    modulo_empresa = ModuloEmpresa(empresa_id=new_empresa.id, modulo_id=modulo.id, estado=estado)
-    db.session.add(modulo_empresa)
+        estado = module_name in default_active_modules
+        modulo_empresa = ModuloEmpresa(empresa_id=new_empresa.id, modulo_id=modulo.id, estado=estado)
+        db.session.add(modulo_empresa)
 
     db.session.commit()
 
     return empresa_schema.jsonify(new_empresa)
+
 
 @ruta_empresa.route('/<int:empresa_id>/modules', methods=['GET'])
 @token_required
@@ -276,7 +309,7 @@ def get_modules_for_company(empresa_id):
 
     modules = db.session.query(Modulo.nombre, ModuloEmpresa.estado).join(ModuloEmpresa, Modulo.id == ModuloEmpresa.modulo_id).filter(ModuloEmpresa.empresa_id == empresa_id).all()
 
-    # If no modules are found, create the default modules and associate them with the empresa
+    # Check if modules are not found and create them if necessary
     if not modules:
         default_active_modules = ['clientes', 'vendedores', 'compras', 'cotizaciones', 'stock', 'informes', 'proveedores']
         for module_name in DEFAULT_MODULES:
@@ -285,7 +318,7 @@ def get_modules_for_company(empresa_id):
                 modulo = Modulo(nombre=module_name, descripcion=module_name)
                 db.session.add(modulo)
                 db.session.commit()
-            
+
             estado = module_name in default_active_modules
             modulo_empresa = ModuloEmpresa(empresa_id=empresa.id, modulo_id=modulo.id, estado=estado)
             db.session.add(modulo_empresa)
@@ -294,7 +327,7 @@ def get_modules_for_company(empresa_id):
         # Fetch the modules again after creating them
         modules = db.session.query(Modulo.nombre, ModuloEmpresa.estado).join(ModuloEmpresa, Modulo.id == ModuloEmpresa.modulo_id).filter(ModuloEmpresa.empresa_id == empresa_id).all()
 
-    module_status = {module.nombre: module.estado for module in modules}
+    module_status = {module[0]: module[1] for module in modules}
 
     return jsonify({"modules": module_status})
 
@@ -376,14 +409,10 @@ def update_module_status():
 
     modulo_empresa = ModuloEmpresa.query.filter_by(empresa_id=empresa.id, modulo_id=modulo.id).first()
     if not modulo_empresa:
-        # Create the ModuloEmpresa relationship if it does not exist
-        modulo_empresa = ModuloEmpresa(empresa_id=empresa.id, modulo_id=modulo.id, estado=estado)
-        db.session.add(modulo_empresa)
-        print(f"Relation Empresa-Modulo created for empresa_id: {empresa.id} and modulo_id: {modulo.id}")  # Debugging statement
-    else:
-        modulo_empresa.estado = estado
-        print(f"Relation Empresa-Modulo updated for empresa_id: {empresa.id} and modulo_id: {modulo.id}")  # Debugging statement
-    
+        print(f"Relation Empresa-Modulo not found for empresa_id: {empresa.id} and modulo_id: {modulo.id}")  # Debugging statement
+        return jsonify({"error": "Relación Empresa-Modulo no encontrada"}), 404
+
+    modulo_empresa.estado = estado
     db.session.commit()
 
     return jsonify({"success": "Estado del módulo actualizado correctamente"})
