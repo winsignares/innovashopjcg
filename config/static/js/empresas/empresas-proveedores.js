@@ -30,6 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const loadProveedores = () => {
         axios.get('/proveedor/proveedores-list')
             .then(function(response) {
+                console.log("Response from /proveedor/proveedores-list:", response);  // Debugging statement
                 const proveedoresList = document.getElementById('companies-list');
                 proveedoresList.innerHTML = '';
                 response.data.forEach(proveedor => {
@@ -45,6 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
             })
             .catch(function(error) {
                 console.error('Error fetching proveedores:', error);
+                console.log("Error response data:", error.response.data);  // Debugging statement
             });
     };
 

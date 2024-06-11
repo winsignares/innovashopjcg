@@ -4,7 +4,11 @@ document.addEventListener("DOMContentLoaded", function () {
       .get("/producto/productos")
       .then((response) => {
         const products = response.data;
-        renderProducts(products);
+        if (products.length === 0) {
+          renderNoProductsMessage();
+        } else {
+          renderProducts(products);
+        }
       })
       .catch((error) => {
         console.error("Error fetching products:", error);
@@ -33,6 +37,11 @@ document.addEventListener("DOMContentLoaded", function () {
         console.error("Error fetching all products:", error);
         return [];
       });
+  };
+
+  const renderNoProductsMessage = () => {
+    const productContainer = document.getElementById("product-list");
+    productContainer.innerHTML = "<p>No hay productos disponibles.</p>";
   };
 
   const renderProducts = (products) => {
@@ -84,7 +93,7 @@ document.addEventListener("DOMContentLoaded", function () {
     Promise.all([fetchProveedores(), fetchAllProducts()]).then(
       ([proveedores, allProducts]) => {
         const proveedorSelect = document.getElementById("proveedor_id");
-        proveedorSelect.innerHTML = "";
+        proveedorSelect.innerHTML = "<option value=''>Seleccionar</option>";
         proveedores.forEach((proveedor) => {
           const option = document.createElement("option");
           option.value = proveedor.id;
@@ -95,31 +104,32 @@ document.addEventListener("DOMContentLoaded", function () {
           proveedorSelect.appendChild(option);
         });
 
-        const productoAlternoSelect = document.getElementById(
-          "producto_alterno_id"
-        );
-        productoAlternoSelect.innerHTML = "";
-        allProducts.forEach((prod) => {
-          const option = document.createElement("option");
-          option.value = prod.id;
-          option.textContent = prod.nombre;
-          if (prod.id === product.producto_alterno_id) {
-            option.selected = true;
-          }
-          productoAlternoSelect.appendChild(option);
-        });
+        const productoAlternoSelect = document.getElementById("producto_alterno_id");
+        productoAlternoSelect.innerHTML = "<option value=''>Seleccionar</option>";
+        if (allProducts.length === 0) {
+          const noProductsOption = document.createElement("option");
+          noProductsOption.value = "";
+          noProductsOption.textContent = "No hay ningun producto para ser alterno en este momento";
+          productoAlternoSelect.appendChild(noProductsOption);
+        } else {
+          allProducts.forEach((prod) => {
+            const option = document.createElement("option");
+            option.value = prod.id;
+            option.textContent = prod.nombre;
+            if (prod.id === product.producto_alterno_id) {
+              option.selected = true;
+            }
+            productoAlternoSelect.appendChild(option);
+          });
+        }
 
-        const modal = new bootstrap.Modal(
-          document.getElementById("addStockModal")
-        );
-        document.getElementById("addStockModalLabel").textContent =
-          "Editar Producto";
+        const modal = new bootstrap.Modal(document.getElementById("addStockModal"));
+        document.getElementById("addStockModalLabel").textContent = "Editar Producto";
         document.getElementById("nombre").value = product.nombre;
         document.getElementById("descripcion").value = product.descripcion;
         document.getElementById("precio").value = product.precio;
         document.getElementById("existencias").value = product.existencias;
-        document.getElementById("min_existencias").value =
-          product.min_existencias;
+        document.getElementById("min_existencias").value = product.min_existencias;
         document.getElementById("img_src").required = false; // Image is optional for editing
         document.getElementById("add-stock-form").dataset.editing = product.id;
         modal.show();
@@ -170,43 +180,13 @@ document.addEventListener("DOMContentLoaded", function () {
             alert("Hubo un error al añadir el producto.");
           });
       }
-      const cotizarButton = document.getElementById('cotizar-button');
-
-    cotizarButton.addEventListener('click', function () {
-        const formData = new FormData(document.getElementById('add-stock-form'));
-        const proveedorId = formData.get('proveedor_id');
-        const productId = formData.get('producto_alterno_id');
-        const precio = parseFloat(formData.get('precio'));
-        const cantidad = parseInt(formData.get('existencias'));
-
-        if (!proveedorId || !productId || !precio || !cantidad) {
-            alert("Por favor, complete todos los campos necesarios para la cotización.");
-            return;
-        }
-
-        const totalPrecio = precio * cantidad;
-
-        axios.post('/empresa/cotizar', {
-            proveedor_id: proveedorId,
-            producto_id: productId,
-            cantidad: cantidad,
-            precio_total: totalPrecio
-        })
-        .then(function(response) {
-            alert("Cotización realizada con éxito. Total: $" + totalPrecio);
-        })
-        .catch(function(error) {
-            console.error("Error realizando la cotización:", error);
-            alert("Hubo un error al realizar la cotización.");
-        });
-    });
     });
 
   // Fetch and populate proveedor and producto_alterno options when the page loads
   Promise.all([fetchProveedores(), fetchAllProducts()]).then(
     ([proveedores, allProducts]) => {
       const proveedorSelect = document.getElementById("proveedor_id");
-      proveedorSelect.innerHTML = "";
+      proveedorSelect.innerHTML = "<option value=''>Seleccionar</option>";
       proveedores.forEach((proveedor) => {
         const option = document.createElement("option");
         option.value = proveedor.id;
@@ -214,18 +194,58 @@ document.addEventListener("DOMContentLoaded", function () {
         proveedorSelect.appendChild(option);
       });
 
-      const productoAlternoSelect = document.getElementById(
-        "producto_alterno_id"
-      );
-      productoAlternoSelect.innerHTML = "";
-      allProducts.forEach((product) => {
-        const option = document.createElement("option");
-        option.value = product.id;
-        option.textContent = product.nombre;
-        productoAlternoSelect.appendChild(option);
-      });
+      const productoAlternoSelect = document.getElementById("producto_alterno_id");
+      productoAlternoSelect.innerHTML = "<option value=''>Seleccionar</option>";
+      if (allProducts.length === 0) {
+        const noProductsOption = document.createElement("option");
+        noProductsOption.value = "";
+        noProductsOption.textContent = "No hay ningun producto para ser alterno en este momento";
+        productoAlternoSelect.appendChild(noProductsOption);
+      } else {
+        allProducts.forEach((product) => {
+          const option = document.createElement("option");
+          option.value = product.id;
+          option.textContent = product.nombre;
+          productoAlternoSelect.appendChild(option);
+        });
+      }
     }
   );
+
+  // Add Cotizar functionality
+  document.getElementById('cotizar-button').addEventListener('click', function() {
+    const formData = new FormData(document.getElementById('add-stock-form'));
+    const proveedorId = formData.get('proveedor_id');
+    const productId = formData.get('producto_alterno_id');
+    const precio = parseFloat(formData.get('precio'));
+    const cantidad = parseInt(formData.get('existencias'));
+
+    if (!proveedorId || !precio || !cantidad) {
+      alert("Por favor, complete todos los campos necesarios para la cotización.");
+      return;
+    }
+
+    const totalPrecio = precio * cantidad;
+
+    const cotizacionData = {
+      proveedor_id: proveedorId,
+      producto_id: productId || null,  // Producto alterno can be nullable
+      cantidad: cantidad,
+      precio_total: totalPrecio
+    };
+
+    console.log("Sending cotizacion data:", cotizacionData);  // Debugging statement
+
+    axios.post('/empresa/cotizar', cotizacionData)
+    .then(function(response) {
+      alert("Cotización realizada con éxito. Total: $" + totalPrecio);
+      // Optionally, redirect to a different page or update the UI
+    })
+    .catch(function(error) {
+      console.error("Error realizando la cotización:", error);
+      alert("Hubo un error al realizar la cotización.");
+    });
+});
 
   fetchProducts();
 });

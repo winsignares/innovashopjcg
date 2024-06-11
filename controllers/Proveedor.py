@@ -16,16 +16,17 @@ def get_proveedores():
 @ruta_proveedor.route('/proveedores-list', methods=['GET'])
 @token_required
 def get_proveedor():
+    print("Route /proveedores-list accessed")  # Debugging statement
+
     empresa_id = session.get('empresa_id')
+    print(f"Session empresa_id: {empresa_id}")  # Debugging statement
+
     if not empresa_id:
+        print("No enterprise in session")  # Debugging statement
         return jsonify({"error": "No enterprise in session"}), 400
 
-    compras = Compra.query.filter_by(empresa_id=empresa_id).all()
-    if not compras:
-        return jsonify({"error": "No purchases found for this enterprise"}), 404
-
-    proveedor_ids = list(set(compra.proveedor_id for compra in compras))
-    proveedores = Proveedor.query.filter(Proveedor.id.in_(proveedor_ids)).all()
+    proveedores = Proveedor.query.all()
+    print(f"Proveedores found: {proveedores}")  # Debugging statement
 
     proveedores_info = [{
         "id": proveedor.id,
@@ -34,6 +35,11 @@ def get_proveedor():
         "telefono": proveedor.telefono,
         "direccion": proveedor.direccion
     } for proveedor in proveedores]
+
+    print(f"Proveedores info to return: {proveedores_info}")  # Debugging statement
+
+    return jsonify(proveedores_info)
+
 
     return jsonify(proveedores_info)
 

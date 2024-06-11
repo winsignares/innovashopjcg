@@ -139,24 +139,36 @@ def modificar_sesion():
 @token_required
 def cotizar():
     data = request.json
-    empresa_id = session.get('empresa_id')
+    print(f"Received data: {data}")  # Debugging statement
+
     proveedor_id = data.get('proveedor_id')
     producto_id = data.get('producto_id')
     cantidad = data.get('cantidad')
     precio_total = data.get('precio_total')
 
-    if not empresa_id or not proveedor_id or not producto_id or not cantidad or not precio_total:
-        return jsonify({"error": "Missing required fields"}), 400
+    print(f"proveedor_id: {proveedor_id}, producto_id: {producto_id}, cantidad: {cantidad}, precio_total: {precio_total}")  # Debugging statement
 
-    cotizacion = Cotizacion(
+    if not proveedor_id or not cantidad or not precio_total:
+        print("Missing required fields")  # Debugging statement
+        return jsonify({"error": "Todos los campos son obligatorios"}), 400
+
+    empresa_id = session.get('empresa_id')
+    print(f"Session empresa_id: {empresa_id}")  # Debugging statement
+
+    if not empresa_id:
+        print("No enterprise in session")  # Debugging statement
+        return jsonify({"error": "No enterprise in session"}), 400
+
+    nueva_cotizacion = Cotizacion(
         empresa_id=empresa_id,
-        proveedor_id=proveedor_id
+        proveedor_id=proveedor_id,
+        fecha=datetime.utcnow()
     )
-    db.session.add(cotizacion)
+    db.session.add(nueva_cotizacion)
     db.session.commit()
 
     cotizacion_detalle = CotizacionEmpresaDetalles(
-        cotizacion_id=cotizacion.id,
+        cotizacion_id=nueva_cotizacion.id,
         producto_id=producto_id,
         cantidad=cantidad,
         precio_total=precio_total
@@ -164,7 +176,8 @@ def cotizar():
     db.session.add(cotizacion_detalle)
     db.session.commit()
 
-    return jsonify({"success": "Cotización realizada con éxito", "total_precio": precio_total})
+    return jsonify({"success": True, "cotizacion_id": nueva_cotizacion.id})
+
 
 
 @ruta_empresa.route('/eliminar-empresa/<int:empresa_id>', methods=['DELETE'])
