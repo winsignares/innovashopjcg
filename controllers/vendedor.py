@@ -3,7 +3,6 @@ from config.db import app, db, ma
 from models.Vendedor import Vendedor, VendedorSchema
 from models.Cliente import Cliente, ClientesSchema
 from models.Producto import Productos, ProductoSchema
-from controllers.vendedor import registrar_vendedor
 
 ruta_vendedor = Blueprint("route_vendedor", __name__)
 
@@ -51,7 +50,7 @@ def listar_clientes():
     return render_template('vendedor_clientes_lista.html', clientes=clientes)
 
 @app.route('/registrar_vendedor')
-def registrar_vendedor():
+def mostrar_registro_vendedor():
     return render_template('vendedores-empresas.html')
 
 @app.route('/vendedor_clientes')

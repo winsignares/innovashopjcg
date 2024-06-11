@@ -11,10 +11,8 @@ class Cliente(db.Model):
     user = db.Column(db.String(50), unique=True)
     pswd = db.Column(db.String(50))
     dire = db.Column(db.String(255))
-    id_vendedor = db.Column(db.Integer, db.ForeignKey('vendedor.id'))
-    vendedor = db.relationship('vendedor', backref=db.backref('clientes', lazy=True))
     
-    def __init__(self, id, nombre, email, p_number, user, pswd, dire, id_vendedor):
+    def __init__(self, id, nombre, email, p_number, user, pswd, dire):
       self.id = id
       self.nombre = nombre
       self.email = email
@@ -22,7 +20,6 @@ class Cliente(db.Model):
       self.user = user
       self.pswd = pswd
       self.dire = dire
-      self.id_vendedor = id_vendedor
 
 with app.app_context():
     db.create_all()

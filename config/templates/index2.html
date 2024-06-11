@@ -15,7 +15,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
     />
-    <script src="main.js"></script>
   </head>
   <body>
     <header>
@@ -30,25 +29,25 @@
           <h1>InnovaShop</h1>
           <p>ESCOJA SU ROL DE ACCESO</p>
           <div class="action-buttons">
-            <a href="admin.html" class="btn">Administrador</a>
-            <a href="inicio_empresas.html" class="btn">Empresa</a>
-            <a href="vendedor-inicio.html" class="btn"
-              >Vendedor</a
+            <a href="/admin/login" id="admin-button" class="btn"
+              >Administrador</a
             >
-            <a href="registrarse-user.html" class="btn">Usuario</a>
+            <a href="/user/login" class="btn">Usuarios</a>
           </div>
         </div>
       </div>
     </header>
 
     <div class="action-buttons" style="text-align: center">
-      <a href="index.html" class="btn">Volver</a>
+      <a href="/" class="btn">Volver</a>
     </div>
 
     <footer>
       <div class="container">
-        <p>Derechos de autor © 2024 - InnovaShop</p>
+        <p>&copy;Derechos de autor 2024 - InnovaShop</p>
       </div>
     </footer>
+    <script src="../static/js/main.js"></script>
+    <!-- Correct path to main.js -->
   </body>
 </html>

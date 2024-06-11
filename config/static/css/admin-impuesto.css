@@ -108,6 +108,7 @@ div a.button-cerrar-sesion {
   border: 2px solid #ffffff;
   border-radius: 5px;
   transition: all 0.3s ease;
+  background-color: white;
 }
 
 .button-cerrar-sesion:hover {
@@ -144,15 +145,91 @@ div a.button-cerrar-sesion {
   outline: none;
 }
 
-.container .search-bar {
-  margin-bottom: 30px;
+.container {
+  background-color: #dadada;
+  margin: 20px;
+  height: calc(100vh - 60px);
+  width: calc(95vw - 220px) !important;
+  display: block;
+  border-radius: 20px;
+  position: fixed;
+  align-items: center;
+  overflow: hidden;
+  box-shadow: 0 0 10px #000000;
 }
 
-.container .search-bar input[type="search"] {
-  left: 35px;
-  top: 100px;
-  position: absolute;
+.btn-ver-modulos {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  border: none !important;
+  padding: 10px 20px !important;
+  cursor: pointer !important;
+  border-radius: 5px !important;
+  transition: background-color 0.3s ease !important;
+}
+
+.btn-ver-modulos:hover {
+  background-color: #333333 !important;
+}
+
+.table-container {
+  max-height: 500px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  top: 0;
+  position: sticky;
+  margin-bottom: 30px;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+.table-container::-webkit-scrollbar {
+  display: none; /* WebKit browsers */
+}
+
+.table-hover tbody tr:hover {
+  background-color: #f0f0f0;
+}
+
+.table-hover tbody tr.active {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.table th, .table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.table-hover tbody tr.selected td {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+
+.table th {
+  padding: 15px 15px;
+  background-color: #f2f2f2;
+  color: #333;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.search-bar {
+  margin-bottom: 20px;
+}
+
+.search-bar input[type="search"] {
   margin: 10px;
+  margin-bottom: 0px;
   width: 30%;
   padding: 10px;
   border: none;
@@ -160,72 +237,8 @@ div a.button-cerrar-sesion {
   font-size: 16px;
 }
 
-.container {
-  background-color: #dadada;
-  margin: 1.5%;
-  height: 94%;
-  width: 94%;
-  display: flex;
-  flex-direction: column;
-  border-radius: 20px;
-  position: fixed;
-  align-items: center;
-  padding-top: 18vh;
-  overflow: hidden;
-  box-shadow: 0 0 10px #000000;
-}
-
-ul {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  list-style: none;
-  margin-right: 30px;
-  max-height: 300px;
-  overflow-y: scroll;
-  overflow-x: hidden;
-}
-
-ul header {
-  display: flex;
-  margin-right: 460px;
-}
-
-ul header h3 {
-  margin-left: 490px;
-}
-
-ul li {
-  background-color: #a1a1a1;
-  width: 90%;
-  border-radius: 30px;
-  margin-bottom: 10px;
-  padding: 10px;
-  padding-bottom: 10px;
-  font-size: 25px;
-  cursor: pointer;
-}
-
-
-ul li:active{
-  background-color: #000000;
-  color: #ffffff;
-  transition: background-color;
-}
-
-ul .column2 {
-  position: relative;
-  left: 685px;
-}
-
-ul .column1 {
-  position: relative;
-  left: 230px;
-}
-
 .container .accordion {
-  width: 95%;
+  width: 100%;
   display: block;
   align-items: center;
 }
@@ -240,15 +253,16 @@ ul .column1 {
   position: relative;
 }
 
-.percentages .iva-container{
+.percentages .iva{
   margin-left: 40px;
 }
 
 .percentages input {
-  width: 210px;
+  text-align: center;
+  width: 56px;
   padding: 10px;
   border-width: 1px;
-  border-radius: 20px;
+  border-radius: 10px;
   font-size: 16px;
   margin: 4px;
 }
@@ -262,12 +276,16 @@ ul .column1 {
   font-size: 16px;
   cursor: pointer;
   margin-top: 8px;
-  margin-left: 70px;
+  margin-left: 15px;
 }
 
 .container .accordion .accordion-button {
   background-color: #69696c;
   color: white;
+}
+
+.hidden {
+  display: none;
 }
 
 @media screen and (max-width: 900px) and (min-width: 400px) {

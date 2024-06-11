@@ -11,7 +11,7 @@ main {
   height: 100vh;
 }
 
-#empresas{
+#empresas {
   background-color: #69696c;
 }
 
@@ -80,7 +80,6 @@ main {
   margin-top: 20px;
 }
 
-
 .lista-iconos {
   display: flex;
   flex-direction: column;
@@ -128,10 +127,11 @@ div a.button-cerrar-sesion {
   display: inline-block;
   padding: 10px 20px;
   text-decoration: none;
-  color: #000000; /* Color de texto original */
-  border: 2px solid #ffffff; /* Borde blanco original */
+  color: #000000;
+  border: 2px solid #ffffff;
   border-radius: 5px;
   transition: all 0.3s ease;
+  background-color: white;
 }
 
 .button-cerrar-sesion:hover {
@@ -180,7 +180,6 @@ div a.button-cerrar-sesion {
   box-shadow: 0 0 10px #000000;
 }
 
-
 .new-empresa-container {
   background-color: #f5f5f5;
   border-radius: 20px;
@@ -188,8 +187,8 @@ div a.button-cerrar-sesion {
   margin-top: 5%;
   position: relative;
   display: flex;
-  width: 90%;
-  height: 67%;
+  width: 91%;
+  height: 72%;
   margin: 2% 2% 2% 2%;
   margin-left: 3%;
   margin-right: 3%;
@@ -197,6 +196,8 @@ div a.button-cerrar-sesion {
   align-items: center;
   color: #000000;
   box-shadow: 0 0 10px #000000;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .empresas-container {
@@ -206,17 +207,16 @@ div a.button-cerrar-sesion {
 .title {
   background-color: #bdbdbd;
   padding: 10px 20px;
+  top: auto;
   border-radius: 30px;
-  position: relative;
-  bottom: 50px;
+  position: sticky;
   width: 100%;
   text-align: center;
-  margin-bottom: 20px;
 }
-
 
 .new-empresa-form {
   width: 95%;
+  height: 70%;
   display: flex;
   padding-left: 20%;
   padding-right: 20%;
@@ -225,8 +225,9 @@ div a.button-cerrar-sesion {
 }
 
 .new-empresa-form label {
-  width: 40%;
-  margin-bottom: 29px;
+  width: 100%;
+  margin-bottom: 26px;
+  margin: 1px #000;
 }
 
 .new-empresa-form input {
@@ -236,6 +237,10 @@ div a.button-cerrar-sesion {
   border-radius: 20px;
   font-size: 16px;
   margin: 4px;
+}
+
+input.error {
+  border: 2px solid red;
 }
 
 .btn-regresar {
@@ -258,7 +263,7 @@ div a.button-cerrar-sesion {
   background-color: #69696c;
   color: white;
   padding: 10px 20px;
-  margin: 15px 50% 0 50%;
+  margin: 5px 50% 20px 50%;
   border: none;
   border-radius: 20px;
   font-size: 16px;
@@ -266,16 +271,17 @@ div a.button-cerrar-sesion {
   position: relative;
 }
 
-.labels{
+.labels {
   position: absolute;
   display: flex;
   flex-direction: column;
   margin-right: 50%;
   margin-top: 12px;
   font-size: 19px;
+  margin: 1px #000;
 }
 
-.inputs{
+.inputs {
   position: relative;
   display: flex;
   flex-direction: column;

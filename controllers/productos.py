@@ -2,7 +2,6 @@ import os
 from flask import Blueprint, jsonify, request, redirect
 from config.db import app, db
 from models.Producto import Productos, ProductoSchema
-from controllers.proveedores import registrar_proveedor
 
 productos_bp = Blueprint("ruta_productos", __name__)
 

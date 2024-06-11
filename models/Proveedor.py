@@ -1,27 +1,22 @@
-from config.db import app, db, ma 
+from config.db import db, ma, app
 
 class Proveedor(db.Model):
-    __tablename__ = 'proveedor'
-    
+    __tablename__ = "proveedores"
     id = db.Column(db.Integer, primary_key=True)
-    nombre= db.Column(db.String(50), unique=True)
-    email = db.Column(db.String(50))
-    p_number = db.Column(db.Integer)
-    dire = db.Column(db.String(50))
-    id_empresa = db.Column(db.Integer, db.ForeignKey('empresa.id'))
-    empresa = db.relationship('empresa', backref=db.backref('proveedores', lazy=True))
-    
-    def __init__(self,id, nombre, email, dire, p_number, id_empresa):
-      self.id = id
-      self.nombre = nombre
-      self.email = email
-      self.p_number = p_number
-      self.dire = dire
-      self.id_empresa = id_empresa
-      
+    nombre = db.Column(db.String(255), unique=True)
+    contacto = db.Column(db.String(255))
+    telefono = db.Column(db.String(255))
+    direccion = db.Column(db.String(255))
+
+    def __init__(self, nombre, contacto, telefono, direccion):
+        self.nombre = nombre
+        self.contacto = contacto
+        self.telefono = telefono
+        self.direccion = direccion
+
 with app.app_context():
     db.create_all()
 
-class ProveedoresSchema(ma.Schema):
+class ProveedorSchema(ma.Schema):
     class Meta:
-        fields = ('id', 'nombre', 'email', 'dire', 'p_number')
+        fields = ('id', 'nombre', 'contacto', 'telefono', 'direccion')

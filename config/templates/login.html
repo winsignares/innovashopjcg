@@ -6,16 +6,17 @@
     <title>Login</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static', filename='css/login.css') }}" />
-    <script src="{{ url_for('static', filename='js/login.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
     <div class="container" id="container">
         <div class="form-container sign-in-container">
-            <form method="post" action="/ingresar">
+            <form id="login-form">
                 <h1>Iniciar Sesion</h1>
                 <span>Usuario</span>
-                <input type="text" placeholder="Usuario" name="user" />
-                <input type="password" placeholder="Contraseña" name="pswd" />
+                <input type="text" placeholder="Usuario" id="usuario" />
+                <input type="password" placeholder="Contraseña" id="password"/>
                 <a href="#">¿Olvidaste tu contraseña?</a>
                 <button type="submit">Aceptar</button>
             </form>
@@ -25,9 +26,11 @@
                 <div class="overlay-panel overlay-right">
                     <h1>Bienvenido</h1>
                     <p>Por favor ingresa tus datos</p>
+                    <button id="back-button" class="button-regresar">Regresar</button>
                 </div>
             </div>
         </div>
     </div>
+    <script src="{{ url_for('static', filename='js/login.js') }}"></script>
 </body>
 </html>
