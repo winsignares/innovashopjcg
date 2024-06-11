@@ -44,11 +44,11 @@ def create_default_admin():
 
     existing_admin = Administrador.query.filter_by(usuario=default_admin_user).first()
     if not existing_admin:
-        hashed_password = hash_password(default_admin_password)
+        hash_password = hash_password(default_admin_password)
         new_admin = Administrador(
             nombre=default_admin_name,
             usuario=default_admin_user,
-            contraseña=hashed_password
+            contraseña=hash_password
         )
         db.session.add(new_admin)
         db.session.commit()
