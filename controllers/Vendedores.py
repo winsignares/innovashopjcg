@@ -99,3 +99,7 @@ def show_home():
 @ruta_vendedor.route('/clientes')
 def show_clientes():
     return render_template('vendedores-templates/vendedor-clientes-lista.html')
+
+@ruta_vendedor.route('/stock')
+def show_stock():
+    return render_template('vendedores-templates/vendedor-stock.html')

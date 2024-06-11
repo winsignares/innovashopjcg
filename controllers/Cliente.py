@@ -204,7 +204,7 @@ def add_cliente():
 @ruta_cliente.route('/cliente/<int:id>', methods=['PUT'])
 @token_required
 def edit_cliente(id):
-    cliente = Usuario.query.filter_by(cedula=id, rol="cliente").first()
+    cliente = Usuario.query.filter_by(id=id, rol="cliente").first()
     if not cliente:
         return jsonify({"error": "Cliente not found"}), 404
 
