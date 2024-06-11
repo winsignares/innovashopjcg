@@ -2,6 +2,7 @@
 from flask import Flask, render_template, request, jsonify, redirect, session, make_response
 from config.db import app, db  # Assuming this sets up your Flask app
 from models.Administrador import Administrador
+from controllers.hashing_helper import hash_password
 
 from controllers.Auth import ruta_auth
 from controllers.Administrador import ruta_admin
