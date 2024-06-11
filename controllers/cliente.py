@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 from flask import Blueprint, Flask, render_template, redirect, request, json, jsonify, session
 from datetime import datetime, timedelta, timezone
 import jwt
@@ -7,11 +6,6 @@ from models.Usuario import Usuario, UsuarioSchema
 from models.ClientesEmpresas import ClientesEmpresas
 from .Auth import token_required
 from .hashing_helper import verify_password, hash_password
-=======
-from flask import Blueprint, jsonify, render_template, request, redirect, session
-from config.db import app, db, ma
-from models.Cliente import Cliente
->>>>>>> 60ef691bcfa307388cf9b2e8ec8558a96a6a6dfd
 
 ruta_cliente = Blueprint('ruta_cliente', __name__)
 
@@ -47,7 +41,6 @@ def add_clientes():
         # Create new client user
         nuevo_cliente = Usuario(
             nombre=nombre,
-<<<<<<< HEAD
             apellidos=apellidos,
             usuario=email,
             contraseña=contraseña,
@@ -56,13 +49,6 @@ def add_clientes():
             direccion=direccion,
             telefono=telefono,
             email=email
-=======
-            p_number=p_number,
-            email=email,
-            user = user,
-            pswd = pswd,
-            dire=dire
->>>>>>> 60ef691bcfa307388cf9b2e8ec8558a96a6a6dfd
         )
         
         db.session.add(nuevo_cliente)
@@ -80,12 +66,3 @@ def add_clientes():
 
         return jsonify({"success": True})
 
-<<<<<<< HEAD
-=======
-@app.route('/home_clientes')
-def portalcliente():
-    if 'usuario' in session:
-        return render_template("cliente.html")
-    else:
-        return redirect('/')
->>>>>>> 60ef691bcfa307388cf9b2e8ec8558a96a6a6dfd

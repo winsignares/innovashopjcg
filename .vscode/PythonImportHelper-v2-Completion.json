@@ -384,15 +384,6 @@
         "documentation": {}
     },
     {
-        "label": "flask_sqlalchemy",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "flask_sqlalchemy",
-        "description": "flask_sqlalchemy",
-        "detail": "flask_sqlalchemy",
-        "documentation": {}
-    },
-    {
         "label": "SQLAlchemy",
         "importPath": "flask_sqlalchemy",
         "description": "flask_sqlalchemy",
@@ -401,22 +392,8 @@
         "documentation": {}
     },
     {
-<<<<<<< HEAD
         "label": "pymysql",
         "kind": 6,
-=======
-        "label": "SQLAlchemy",
-        "importPath": "flask_sqlalchemy",
-        "description": "flask_sqlalchemy",
-        "isExtraImport": true,
-        "detail": "flask_sqlalchemy",
-        "documentation": {}
-    },
-    {
-        "label": "User",
-        "importPath": "models",
-        "description": "models",
->>>>>>> 60ef691bcfa307388cf9b2e8ec8558a96a6a6dfd
         "isExtraImport": true,
         "importPath": "pymysql",
         "description": "pymysql",
@@ -460,387 +437,7 @@
         "importPath": "models.Administrador",
         "description": "models.Administrador",
         "isExtraImport": true,
-<<<<<<< HEAD
         "detail": "models.Administrador",
-=======
-        "detail": "config.db",
-        "documentation": {}
-    },
-    {
-        "label": "ma",
-        "importPath": "config.db",
-        "description": "config.db",
-        "isExtraImport": true,
-        "detail": "config.db",
-        "documentation": {}
-    },
-    {
-        "label": "db",
-        "importPath": "config.db",
-        "description": "config.db",
-        "isExtraImport": true,
-        "detail": "config.db",
-        "documentation": {}
-    },
-    {
-        "label": "app",
-        "importPath": "config.db",
-        "description": "config.db",
-        "isExtraImport": true,
-        "detail": "config.db",
-        "documentation": {}
-    },
-    {
-        "label": "app",
-        "importPath": "config.db",
-        "description": "config.db",
-        "isExtraImport": true,
-        "detail": "config.db",
-        "documentation": {}
-    },
-    {
-        "label": "db",
-        "importPath": "config.db",
-        "description": "config.db",
-        "isExtraImport": true,
-        "detail": "config.db",
-        "documentation": {}
-    },
-    {
-        "label": "app",
-        "importPath": "config.db",
-        "description": "config.db",
-        "isExtraImport": true,
-        "detail": "config.db",
-        "documentation": {}
-    },
-    {
-        "label": "db",
-        "importPath": "config.db",
-        "description": "config.db",
-        "isExtraImport": true,
-        "detail": "config.db",
-        "documentation": {}
-    },
-    {
-        "label": "ma",
-        "importPath": "config.db",
-        "description": "config.db",
-        "isExtraImport": true,
-        "detail": "config.db",
-        "documentation": {}
-    },
-    {
-        "label": "app",
-        "importPath": "config.db",
-        "description": "config.db",
-        "isExtraImport": true,
-        "detail": "config.db",
-        "documentation": {}
-    },
-    {
-        "label": "db",
-        "importPath": "config.db",
-        "description": "config.db",
-        "isExtraImport": true,
-        "detail": "config.db",
-        "documentation": {}
-    },
-    {
-        "label": "ma",
-        "importPath": "config.db",
-        "description": "config.db",
-        "isExtraImport": true,
-        "detail": "config.db",
-        "documentation": {}
-    },
-    {
-        "label": "app",
-        "importPath": "config.db",
-        "description": "config.db",
-        "isExtraImport": true,
-        "detail": "config.db",
-        "documentation": {}
-    },
-    {
-        "label": "db",
-        "importPath": "config.db",
-        "description": "config.db",
-        "isExtraImport": true,
-        "detail": "config.db",
-        "documentation": {}
-    },
-    {
-        "label": "ma",
-        "importPath": "config.db",
-        "description": "config.db",
-        "isExtraImport": true,
-        "detail": "config.db",
-        "documentation": {}
-    },
-    {
-        "label": "db",
-        "importPath": "config.db",
-        "description": "config.db",
-        "isExtraImport": true,
-        "detail": "config.db",
-        "documentation": {}
-    },
-    {
-        "label": "ma",
-        "importPath": "config.db",
-        "description": "config.db",
-        "isExtraImport": true,
-        "detail": "config.db",
-        "documentation": {}
-    },
-    {
-        "label": "app",
-        "importPath": "config.db",
-        "description": "config.db",
-        "isExtraImport": true,
-        "detail": "config.db",
-        "documentation": {}
-    },
-    {
-        "label": "db",
-        "importPath": "config.db",
-        "description": "config.db",
-        "isExtraImport": true,
-        "detail": "config.db",
-        "documentation": {}
-    },
-    {
-        "label": "ma",
-        "importPath": "config.db",
-        "description": "config.db",
-        "isExtraImport": true,
-        "detail": "config.db",
-        "documentation": {}
-    },
-    {
-        "label": "app",
-        "importPath": "config.db",
-        "description": "config.db",
-        "isExtraImport": true,
-        "detail": "config.db",
-        "documentation": {}
-    },
-    {
-        "label": "db",
-        "importPath": "config.db",
-        "description": "config.db",
-        "isExtraImport": true,
-        "detail": "config.db",
-        "documentation": {}
-    },
-    {
-        "label": "ma",
-        "importPath": "config.db",
-        "description": "config.db",
-        "isExtraImport": true,
-        "detail": "config.db",
-        "documentation": {}
-    },
-    {
-        "label": "app",
-        "importPath": "config.db",
-        "description": "config.db",
-        "isExtraImport": true,
-        "detail": "config.db",
-        "documentation": {}
-    },
-    {
-        "label": "app",
-        "importPath": "config.db",
-        "description": "config.db",
-        "isExtraImport": true,
-        "detail": "config.db",
-        "documentation": {}
-    },
-    {
-        "label": "db",
-        "importPath": "config.db",
-        "description": "config.db",
-        "isExtraImport": true,
-        "detail": "config.db",
-        "documentation": {}
-    },
-    {
-        "label": "ma",
-        "importPath": "config.db",
-        "description": "config.db",
-        "isExtraImport": true,
-        "detail": "config.db",
-        "documentation": {}
-    },
-    {
-        "label": "db",
-        "importPath": "config.db",
-        "description": "config.db",
-        "isExtraImport": true,
-        "detail": "config.db",
-        "documentation": {}
-    },
-    {
-        "label": "ma",
-        "importPath": "config.db",
-        "description": "config.db",
-        "isExtraImport": true,
-        "detail": "config.db",
-        "documentation": {}
-    },
-    {
-        "label": "app",
-        "importPath": "config.db",
-        "description": "config.db",
-        "isExtraImport": true,
-        "detail": "config.db",
-        "documentation": {}
-    },
-    {
-        "label": "app",
-        "importPath": "config.db",
-        "description": "config.db",
-        "isExtraImport": true,
-        "detail": "config.db",
-        "documentation": {}
-    },
-    {
-        "label": "db",
-        "importPath": "config.db",
-        "description": "config.db",
-        "isExtraImport": true,
-        "detail": "config.db",
-        "documentation": {}
-    },
-    {
-        "label": "ma",
-        "importPath": "config.db",
-        "description": "config.db",
-        "isExtraImport": true,
-        "detail": "config.db",
-        "documentation": {}
-    },
-    {
-        "label": "db",
-        "importPath": "config.db",
-        "description": "config.db",
-        "isExtraImport": true,
-        "detail": "config.db",
-        "documentation": {}
-    },
-    {
-        "label": "ma",
-        "importPath": "config.db",
-        "description": "config.db",
-        "isExtraImport": true,
-        "detail": "config.db",
-        "documentation": {}
-    },
-    {
-        "label": "app",
-        "importPath": "config.db",
-        "description": "config.db",
-        "isExtraImport": true,
-        "detail": "config.db",
-        "documentation": {}
-    },
-    {
-        "label": "db",
-        "importPath": "config.db",
-        "description": "config.db",
-        "isExtraImport": true,
-        "detail": "config.db",
-        "documentation": {}
-    },
-    {
-        "label": "ma",
-        "importPath": "config.db",
-        "description": "config.db",
-        "isExtraImport": true,
-        "detail": "config.db",
-        "documentation": {}
-    },
-    {
-        "label": "app",
-        "importPath": "config.db",
-        "description": "config.db",
-        "isExtraImport": true,
-        "detail": "config.db",
-        "documentation": {}
-    },
-    {
-        "label": "db",
-        "importPath": "config.db",
-        "description": "config.db",
-        "isExtraImport": true,
-        "detail": "config.db",
-        "documentation": {}
-    },
-    {
-        "label": "ma",
-        "importPath": "config.db",
-        "description": "config.db",
-        "isExtraImport": true,
-        "detail": "config.db",
-        "documentation": {}
-    },
-    {
-        "label": "app",
-        "importPath": "config.db",
-        "description": "config.db",
-        "isExtraImport": true,
-        "detail": "config.db",
-        "documentation": {}
-    },
-    {
-        "label": "Cliente",
-        "importPath": "models.Cliente",
-        "description": "models.Cliente",
-        "isExtraImport": true,
-        "detail": "models.Cliente",
-        "documentation": {}
-    },
-    {
-        "label": "Cliente",
-        "importPath": "models.Cliente",
-        "description": "models.Cliente",
-        "isExtraImport": true,
-        "detail": "models.Cliente",
-        "documentation": {}
-    },
-    {
-        "label": "Cliente",
-        "importPath": "models.Cliente",
-        "description": "models.Cliente",
-        "isExtraImport": true,
-        "detail": "models.Cliente",
-        "documentation": {}
-    },
-    {
-        "label": "ClientesSchema",
-        "importPath": "models.Cliente",
-        "description": "models.Cliente",
-        "isExtraImport": true,
-        "detail": "models.Cliente",
-        "documentation": {}
-    },
-    {
-        "label": "Cliente",
-        "importPath": "models.Cliente",
-        "description": "models.Cliente",
-        "isExtraImport": true,
-        "detail": "models.Cliente",
-        "documentation": {}
-    },
-    {
-        "label": "ClientesSchema",
-        "importPath": "models.Cliente",
-        "description": "models.Cliente",
-        "isExtraImport": true,
-        "detail": "models.Cliente",
->>>>>>> 60ef691bcfa307388cf9b2e8ec8558a96a6a6dfd
         "documentation": {}
     },
     {
@@ -972,23 +569,9 @@
         "documentation": {}
     },
     {
-<<<<<<< HEAD
         "label": "app",
         "importPath": "config.db",
         "description": "config.db",
-=======
-        "label": "Vendedor",
-        "importPath": "models.Vendedor",
-        "description": "models.Vendedor",
-        "isExtraImport": true,
-        "detail": "models.Vendedor",
-        "documentation": {}
-    },
-    {
-        "label": "VendedorSchema",
-        "importPath": "models.Vendedor",
-        "description": "models.Vendedor",
->>>>>>> 60ef691bcfa307388cf9b2e8ec8558a96a6a6dfd
         "isExtraImport": true,
         "detail": "config.db",
         "documentation": {}
@@ -1002,7 +585,6 @@
         "documentation": {}
     },
     {
-<<<<<<< HEAD
         "label": "ma",
         "importPath": "config.db",
         "description": "config.db",
@@ -1022,10 +604,6 @@
         "label": "db",
         "importPath": "config.db",
         "description": "config.db",
-=======
-        "label": "controllers.users",
-        "kind": 6,
->>>>>>> 60ef691bcfa307388cf9b2e8ec8558a96a6a6dfd
         "isExtraImport": true,
         "detail": "config.db",
         "documentation": {}
@@ -1039,7 +617,6 @@
         "documentation": {}
     },
     {
-<<<<<<< HEAD
         "label": "app",
         "importPath": "config.db",
         "description": "config.db",
@@ -1120,8 +697,6 @@
         "documentation": {}
     },
     {
-=======
->>>>>>> 60ef691bcfa307388cf9b2e8ec8558a96a6a6dfd
         "label": "datetime",
         "importPath": "datetime",
         "description": "datetime",
@@ -1275,7 +850,6 @@
         "documentation": {}
     },
     {
-<<<<<<< HEAD
         "label": "Modulo",
         "importPath": "models.Modulos",
         "description": "models.Modulos",
@@ -1293,65 +867,6 @@
     },
     {
         "label": "hashlib",
-=======
-        "label": "relationship",
-        "importPath": "sqlalchemy.orm",
-        "description": "sqlalchemy.orm",
-        "isExtraImport": true,
-        "detail": "sqlalchemy.orm",
-        "documentation": {}
-    },
-    {
-        "label": "backref",
-        "importPath": "sqlalchemy.orm",
-        "description": "sqlalchemy.orm",
-        "isExtraImport": true,
-        "detail": "sqlalchemy.orm",
-        "documentation": {}
-    },
-    {
-        "label": "ForeignKey",
-        "importPath": "sqlalchemy",
-        "description": "sqlalchemy",
-        "isExtraImport": true,
-        "detail": "sqlalchemy",
-        "documentation": {}
-    },
-    {
-        "label": "ForeignKey",
-        "importPath": "sqlalchemy",
-        "description": "sqlalchemy",
-        "isExtraImport": true,
-        "detail": "sqlalchemy",
-        "documentation": {}
-    },
-    {
-        "label": "Administrador",
-        "importPath": "models.User",
-        "description": "models.User",
-        "isExtraImport": true,
-        "detail": "models.User",
-        "documentation": {}
-    },
-    {
-        "label": "Administrador",
-        "importPath": "models.User",
-        "description": "models.User",
-        "isExtraImport": true,
-        "detail": "models.User",
-        "documentation": {}
-    },
-    {
-        "label": "AdminSchema",
-        "importPath": "models.User",
-        "description": "models.User",
-        "isExtraImport": true,
-        "detail": "models.User",
-        "documentation": {}
-    },
-    {
-        "label": "json",
->>>>>>> 60ef691bcfa307388cf9b2e8ec8558a96a6a6dfd
         "kind": 6,
         "isExtraImport": true,
         "importPath": "hashlib",
@@ -1413,43 +928,7 @@
         "importPath": "controllers.hashing_helper",
         "description": "controllers.hashing_helper",
         "isExtraImport": true,
-<<<<<<< HEAD
         "detail": "controllers.hashing_helper",
-=======
-        "detail": "controllers.productos",
-        "documentation": {}
-    },
-    {
-        "label": "ruta_vendedor",
-        "importPath": "controllers.vendedor",
-        "description": "controllers.vendedor",
-        "isExtraImport": true,
-        "detail": "controllers.vendedor",
-        "documentation": {}
-    },
-    {
-        "label": "vendedor_schema",
-        "importPath": "controllers.vendedor",
-        "description": "controllers.vendedor",
-        "isExtraImport": true,
-        "detail": "controllers.vendedor",
-        "documentation": {}
-    },
-    {
-        "label": "ruta_proveedores",
-        "importPath": "controllers.proveedores",
-        "description": "controllers.proveedores",
-        "isExtraImport": true,
-        "detail": "controllers.proveedores",
-        "documentation": {}
-    },
-    {
-        "label": "ruta_clientes",
-        "importPath": "controllers.cliente",
-        "description": "controllers.cliente",
-        "isExtraImport": true,
-        "detail": "controllers.cliente",
->>>>>>> 60ef691bcfa307388cf9b2e8ec8558a96a6a6dfd
         "documentation": {}
     },
     {
@@ -1457,11 +936,7 @@
         "kind": 5,
         "importPath": "config.db",
         "description": "config.db",
-<<<<<<< HEAD
         "peekOfCode": "app = Flask(__name__)\napp.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root@localhost:3307/incjg'\napp.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False\napp.secret_key = \"0febc2ce4e68016ccf8bc4fd8b9687b9\"\ndb = SQLAlchemy(app)\nma = Marshmallow(app)",
-=======
-        "peekOfCode": "app = Flask(__name__,\n            static_folder='config/static')\napp.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root@localhost:3307/injcg'\napp.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False\napp.secret_key = \"comecaca\"\ndb = SQLAlchemy(app)\nma = Marshmallow(app)\nfrom models import User, Empresa, Cliente, Vendedor",
->>>>>>> 60ef691bcfa307388cf9b2e8ec8558a96a6a6dfd
         "detail": "config.db",
         "documentation": {}
     },
@@ -1470,11 +945,7 @@
         "kind": 5,
         "importPath": "config.db",
         "description": "config.db",
-<<<<<<< HEAD
         "peekOfCode": "app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root@localhost:3307/incjg'\napp.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False\napp.secret_key = \"0febc2ce4e68016ccf8bc4fd8b9687b9\"\ndb = SQLAlchemy(app)\nma = Marshmallow(app)",
-=======
-        "peekOfCode": "app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root@localhost:3307/injcg'\napp.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False\napp.secret_key = \"comecaca\"\ndb = SQLAlchemy(app)\nma = Marshmallow(app)\nfrom models import User, Empresa, Cliente, Vendedor",
->>>>>>> 60ef691bcfa307388cf9b2e8ec8558a96a6a6dfd
         "detail": "config.db",
         "documentation": {}
     },
@@ -1483,11 +954,7 @@
         "kind": 5,
         "importPath": "config.db",
         "description": "config.db",
-<<<<<<< HEAD
         "peekOfCode": "app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False\napp.secret_key = \"0febc2ce4e68016ccf8bc4fd8b9687b9\"\ndb = SQLAlchemy(app)\nma = Marshmallow(app)",
-=======
-        "peekOfCode": "app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False\napp.secret_key = \"comecaca\"\ndb = SQLAlchemy(app)\nma = Marshmallow(app)\nfrom models import User, Empresa, Cliente, Vendedor",
->>>>>>> 60ef691bcfa307388cf9b2e8ec8558a96a6a6dfd
         "detail": "config.db",
         "documentation": {}
     },
@@ -1496,11 +963,7 @@
         "kind": 5,
         "importPath": "config.db",
         "description": "config.db",
-<<<<<<< HEAD
         "peekOfCode": "app.secret_key = \"0febc2ce4e68016ccf8bc4fd8b9687b9\"\ndb = SQLAlchemy(app)\nma = Marshmallow(app)",
-=======
-        "peekOfCode": "app.secret_key = \"comecaca\"\ndb = SQLAlchemy(app)\nma = Marshmallow(app)\nfrom models import User, Empresa, Cliente, Vendedor",
->>>>>>> 60ef691bcfa307388cf9b2e8ec8558a96a6a6dfd
         "detail": "config.db",
         "documentation": {}
     },
@@ -1509,11 +972,7 @@
         "kind": 5,
         "importPath": "config.db",
         "description": "config.db",
-<<<<<<< HEAD
         "peekOfCode": "db = SQLAlchemy(app)\nma = Marshmallow(app)",
-=======
-        "peekOfCode": "db = SQLAlchemy(app)\nma = Marshmallow(app)\nfrom models import User, Empresa, Cliente, Vendedor",
->>>>>>> 60ef691bcfa307388cf9b2e8ec8558a96a6a6dfd
         "detail": "config.db",
         "documentation": {}
     },
@@ -1522,11 +981,7 @@
         "kind": 5,
         "importPath": "config.db",
         "description": "config.db",
-<<<<<<< HEAD
         "peekOfCode": "ma = Marshmallow(app)",
-=======
-        "peekOfCode": "ma = Marshmallow(app)\nfrom models import User, Empresa, Cliente, Vendedor",
->>>>>>> 60ef691bcfa307388cf9b2e8ec8558a96a6a6dfd
         "detail": "config.db",
         "documentation": {}
     },
@@ -1675,7 +1130,6 @@
         "documentation": {}
     },
     {
-<<<<<<< HEAD
         "label": "logout",
         "kind": 2,
         "importPath": "controllers.Auth",
@@ -1691,47 +1145,11 @@
         "description": "controllers.Auth",
         "peekOfCode": "administrador_schema = AdministradorSchema()\nadministradores_schema = AdministradorSchema(many=True)\nuser_schema = UsuarioSchema()\nusers_schema = UsuarioSchema(many=True)\nempresa_schema = EmpresaSchema()\nempresas_schema = EmpresaSchema(many=True)\nruta_auth = Blueprint('auth_route', __name__)\nSECRET_KEY = 'Bendiciones-para-todos'\ndef generar_token(user_id):\n    fecha_vencimiento = datetime.now(tz=timezone.utc) + timedelta(seconds=150)",
         "detail": "controllers.Auth",
-=======
-        "label": "productos_bp",
-        "kind": 5,
-        "importPath": "controllers.productos",
-        "description": "controllers.productos",
-        "peekOfCode": "productos_bp = Blueprint(\"ruta_productos\", __name__)\nproducto_schema = ProductoSchema()\nproductos_schema = ProductoSchema(many=True)\ndef to_float(value, default=0.0):\n    try:\n        return float(value) if value else default\n    except ValueError:\n        return default\n@productos_bp.route('/registrar_productos', methods=['POST'])\ndef registrar_producto():",
-        "detail": "controllers.productos",
-        "documentation": {}
-    },
-    {
-        "label": "producto_schema",
-        "kind": 5,
-        "importPath": "controllers.productos",
-        "description": "controllers.productos",
-        "peekOfCode": "producto_schema = ProductoSchema()\nproductos_schema = ProductoSchema(many=True)\ndef to_float(value, default=0.0):\n    try:\n        return float(value) if value else default\n    except ValueError:\n        return default\n@productos_bp.route('/registrar_productos', methods=['POST'])\ndef registrar_producto():\n    id_producto = request.form['id']",
-        "detail": "controllers.productos",
-        "documentation": {}
-    },
-    {
-        "label": "productos_schema",
-        "kind": 5,
-        "importPath": "controllers.productos",
-        "description": "controllers.productos",
-        "peekOfCode": "productos_schema = ProductoSchema(many=True)\ndef to_float(value, default=0.0):\n    try:\n        return float(value) if value else default\n    except ValueError:\n        return default\n@productos_bp.route('/registrar_productos', methods=['POST'])\ndef registrar_producto():\n    id_producto = request.form['id']\n    nombre = request.form.get('nombre', '')",
-        "detail": "controllers.productos",
-        "documentation": {}
-    },
-    {
-        "label": "ruta_proveedores",
-        "kind": 5,
-        "importPath": "controllers.proveedores",
-        "description": "controllers.proveedores",
-        "peekOfCode": "ruta_proveedores = Blueprint(\"route_proveedores\", __name__)\nproveedor_schema= ProveedoresSchema()\nproveedores_schema= ProveedoresSchema(many=True)",
-        "detail": "controllers.proveedores",
->>>>>>> 60ef691bcfa307388cf9b2e8ec8558a96a6a6dfd
         "documentation": {}
     },
     {
         "label": "administradores_schema",
         "kind": 5,
-<<<<<<< HEAD
         "importPath": "controllers.Auth",
         "description": "controllers.Auth",
         "peekOfCode": "administradores_schema = AdministradorSchema(many=True)\nuser_schema = UsuarioSchema()\nusers_schema = UsuarioSchema(many=True)\nempresa_schema = EmpresaSchema()\nempresas_schema = EmpresaSchema(many=True)\nruta_auth = Blueprint('auth_route', __name__)\nSECRET_KEY = 'Bendiciones-para-todos'\ndef generar_token(user_id):\n    fecha_vencimiento = datetime.now(tz=timezone.utc) + timedelta(seconds=150)\n    payload = {",
@@ -1781,12 +1199,6 @@
         "description": "controllers.Auth",
         "peekOfCode": "ruta_auth = Blueprint('auth_route', __name__)\nSECRET_KEY = 'Bendiciones-para-todos'\ndef generar_token(user_id):\n    fecha_vencimiento = datetime.now(tz=timezone.utc) + timedelta(seconds=150)\n    payload = {\n        \"exp\": fecha_vencimiento,\n        \"user_id\": user_id,\n    }\n    token = jwt.encode(payload, SECRET_KEY, algorithm=\"HS256\")\n    return token",
         "detail": "controllers.Auth",
-=======
-        "importPath": "controllers.users",
-        "description": "controllers.users",
-        "peekOfCode": "ruta_user = Blueprint(\"route_user\", __name__)\nSECRET_KEY = \"newtoken\"\ndef generar_token_admin(user_id):\n    fecha_vencimiento = datetime.now(tz=timezone.utc) + timedelta(seconds=150)\n    payload = {\n        \"exp\": fecha_vencimiento,\n        \"user_id\": user_id,\n    }\n    token = jwt.encode(payload, SECRET_KEY, algorithm=\"HS256\")\n    return token",
-        "detail": "controllers.users",
->>>>>>> 60ef691bcfa307388cf9b2e8ec8558a96a6a6dfd
         "documentation": {}
     },
     {
@@ -1808,83 +1220,7 @@
         "documentation": {}
     },
     {
-<<<<<<< HEAD
         "label": "ruta_cliente",
-=======
-        "label": "listar_clientes",
-        "kind": 2,
-        "importPath": "controllers.vendedor",
-        "description": "controllers.vendedor",
-        "peekOfCode": "def listar_clientes():\n    vendedor_id = session['vendedor_id']\n    if \"empresa\" in session:\n        clientes = Cliente.query.filter_by(vendedor_id=vendedor_id).all()\n    return render_template('vendedor_clientes_lista.html', clientes=clientes)\n@app.route('/registrar_vendedor')\ndef mostrar_registro_vendedor():\n    return render_template('vendedores-empresas.html')\n@app.route('/vendedor_clientes')\ndef vendedor_clientes():",
-        "detail": "controllers.vendedor",
-        "documentation": {}
-    },
-    {
-        "label": "mostrar_registro_vendedor",
-        "kind": 2,
-        "importPath": "controllers.vendedor",
-        "description": "controllers.vendedor",
-        "peekOfCode": "def mostrar_registro_vendedor():\n    return render_template('vendedores-empresas.html')\n@app.route('/vendedor_clientes')\ndef vendedor_clientes():\n    return render_template('vendedor_clientes.html')\n@app.route('/vendedor_consultar')\ndef vendedor_consultar():\n    return render_template('vendedor_consultar.html')\n@app.route('/vendedor_cotizacion')\ndef vendedor_cotizacion():",
-        "detail": "controllers.vendedor",
-        "documentation": {}
-    },
-    {
-        "label": "vendedor_clientes",
-        "kind": 2,
-        "importPath": "controllers.vendedor",
-        "description": "controllers.vendedor",
-        "peekOfCode": "def vendedor_clientes():\n    return render_template('vendedor_clientes.html')\n@app.route('/vendedor_consultar')\ndef vendedor_consultar():\n    return render_template('vendedor_consultar.html')\n@app.route('/vendedor_cotizacion')\ndef vendedor_cotizacion():\n    return render_template('vendedor_cotizacion.html')\n@app.route('/vendedor_compra')\ndef vendedor_compra():",
-        "detail": "controllers.vendedor",
-        "documentation": {}
-    },
-    {
-        "label": "vendedor_consultar",
-        "kind": 2,
-        "importPath": "controllers.vendedor",
-        "description": "controllers.vendedor",
-        "peekOfCode": "def vendedor_consultar():\n    return render_template('vendedor_consultar.html')\n@app.route('/vendedor_cotizacion')\ndef vendedor_cotizacion():\n    return render_template('vendedor_cotizacion.html')\n@app.route('/vendedor_compra')\ndef vendedor_compra():\n    return render_template('vendedor_compra.html')\n@app.route('/vendedor_agg_productos')\ndef vendedor_agg_productos():",
-        "detail": "controllers.vendedor",
-        "documentation": {}
-    },
-    {
-        "label": "vendedor_cotizacion",
-        "kind": 2,
-        "importPath": "controllers.vendedor",
-        "description": "controllers.vendedor",
-        "peekOfCode": "def vendedor_cotizacion():\n    return render_template('vendedor_cotizacion.html')\n@app.route('/vendedor_compra')\ndef vendedor_compra():\n    return render_template('vendedor_compra.html')\n@app.route('/vendedor_agg_productos')\ndef vendedor_agg_productos():\n    return render_template('vendedor-stock-aggproductos.html')\n@app.route('/home_vendedor')\ndef portalvendedor():",
-        "detail": "controllers.vendedor",
-        "documentation": {}
-    },
-    {
-        "label": "vendedor_compra",
-        "kind": 2,
-        "importPath": "controllers.vendedor",
-        "description": "controllers.vendedor",
-        "peekOfCode": "def vendedor_compra():\n    return render_template('vendedor_compra.html')\n@app.route('/vendedor_agg_productos')\ndef vendedor_agg_productos():\n    return render_template('vendedor-stock-aggproductos.html')\n@app.route('/home_vendedor')\ndef portalvendedor():\n    if 'usuario' in session:\n        clientes = Cliente.query.all()\n        productos = Productos.query.all()",
-        "detail": "controllers.vendedor",
-        "documentation": {}
-    },
-    {
-        "label": "vendedor_agg_productos",
-        "kind": 2,
-        "importPath": "controllers.vendedor",
-        "description": "controllers.vendedor",
-        "peekOfCode": "def vendedor_agg_productos():\n    return render_template('vendedor-stock-aggproductos.html')\n@app.route('/home_vendedor')\ndef portalvendedor():\n    if 'usuario' in session:\n        clientes = Cliente.query.all()\n        productos = Productos.query.all()\n        return render_template(\"vendedor-inicio.html\")\n    else:\n        return redirect('/')",
-        "detail": "controllers.vendedor",
-        "documentation": {}
-    },
-    {
-        "label": "portalvendedor",
-        "kind": 2,
-        "importPath": "controllers.vendedor",
-        "description": "controllers.vendedor",
-        "peekOfCode": "def portalvendedor():\n    if 'usuario' in session:\n        clientes = Cliente.query.all()\n        productos = Productos.query.all()\n        return render_template(\"vendedor-inicio.html\")\n    else:\n        return redirect('/')",
-        "detail": "controllers.vendedor",
-        "documentation": {}
-    },
-    {
-        "label": "ruta_vendedor",
->>>>>>> 60ef691bcfa307388cf9b2e8ec8558a96a6a6dfd
         "kind": 5,
         "importPath": "controllers.Cliente",
         "description": "controllers.Cliente",
@@ -1974,7 +1310,6 @@
         "documentation": {}
     },
     {
-<<<<<<< HEAD
         "label": "empresas_schema",
         "kind": 5,
         "importPath": "controllers.Empresa",
@@ -2062,95 +1397,6 @@
         "description": "models.Administrador",
         "peekOfCode": "class AdministradorSchema(ma.Schema):\n    class Meta:\n        fields = ('id', 'nombre', 'usuario', 'contraseña')",
         "detail": "models.Administrador",
-=======
-        "label": "Cliente",
-        "kind": 6,
-        "importPath": "models.Cliente",
-        "description": "models.Cliente",
-        "peekOfCode": "class Cliente(db.Model):\n    __tablename__ = 'cliente'\n    id = db.Column(db.Integer, primary_key=True)\n    nombre= db.Column(db.String(255), unique=True)\n    email = db.Column(db.String(255))\n    p_number = db.Column(db.Integer)\n    user = db.Column(db.String(50), unique=True)\n    pswd = db.Column(db.String(50))\n    dire = db.Column(db.String(255))\n    def __init__(self, id, nombre, email, p_number, user, pswd, dire):",
-        "detail": "models.Cliente",
-        "documentation": {}
-    },
-    {
-        "label": "ClientesSchema",
-        "kind": 6,
-        "importPath": "models.Cliente",
-        "description": "models.Cliente",
-        "peekOfCode": "class ClientesSchema(ma.Schema):\n    class Meta:\n        fields = ('id', 'nombre', 'email', 'p_number', 'user', 'pswd', 'dire')\ncliente_schema= ClientesSchema()\nclientes_schema= ClientesSchema(many=True)",
-        "detail": "models.Cliente",
-        "documentation": {}
-    },
-    {
-        "label": "Compra",
-        "kind": 6,
-        "importPath": "models.Compra",
-        "description": "models.Compra",
-        "peekOfCode": "class Compra(db.Model):\n    __tablename__ = \"compras\"\n    id = db.Column(db.Integer, primary_key=True)\n    cliente_id = db.Column(db.Integer, db.ForeignKey('cliente.id'))\n    vendedor_id = db.Column(db.Integer, db.ForeignKey('vendedor.id'))\n    producto_id = db.Column(db.Integer, db.ForeignKey('productos.id'))\n    codigo = db.Column(db.String(255))\n    nombre = db.Column(db.String(255))\n    cotizacion = db.Column(db.Integer)\n    stock = db.Column(db.Integer)",
-        "detail": "models.Compra",
-        "documentation": {}
-    },
-    {
-        "label": "CompraSchema",
-        "kind": 6,
-        "importPath": "models.Compra",
-        "description": "models.Compra",
-        "peekOfCode": "class CompraSchema(ma.Schema):\n    class Meta:\n        fields = ('id', 'codigo', 'nombre', 'cliente', 'cotizacion', 'stock', 'detalles')\ncompra_schema = CompraSchema()\ncompras_schema = CompraSchema(many=True)",
-        "detail": "models.Compra",
-        "documentation": {}
-    },
-    {
-        "label": "compra_schema",
-        "kind": 5,
-        "importPath": "models.Compra",
-        "description": "models.Compra",
-        "peekOfCode": "compra_schema = CompraSchema()\ncompras_schema = CompraSchema(many=True)",
-        "detail": "models.Compra",
-        "documentation": {}
-    },
-    {
-        "label": "compras_schema",
-        "kind": 5,
-        "importPath": "models.Compra",
-        "description": "models.Compra",
-        "peekOfCode": "compras_schema = CompraSchema(many=True)",
-        "detail": "models.Compra",
-        "documentation": {}
-    },
-    {
-        "label": "Cotizacion",
-        "kind": 6,
-        "importPath": "models.Cotizacion",
-        "description": "models.Cotizacion",
-        "peekOfCode": "class Cotizacion(db.Model):\n    __tablename__ = \"cotizaciones\"\n    id = db.Column(db.Integer, primary_key=True)\n    cliente_id = db.Column(db.Integer, db.ForeignKey('cliente.id'))\n    vendedor_id = db.Column(db.Integer, db.ForeignKey('vendedor.id'))\n    producto_id = db.Column(db.Integer, db.ForeignKey('productos.id'))\n    codigo = db.Column(db.String(255))\n    nombre = db.Column(db.String(255))\n    stock = db.Column(db.Integer)\n    detalles = db.Column(db.String(255))",
-        "detail": "models.Cotizacion",
-        "documentation": {}
-    },
-    {
-        "label": "CotizacionSchema",
-        "kind": 6,
-        "importPath": "models.Cotizacion",
-        "description": "models.Cotizacion",
-        "peekOfCode": "class CotizacionSchema(ma.Schema):\n    class Meta:\n        fields = ('id', 'codigo', 'nombre', 'cliente', 'stock', 'detalles')\ncotizacion_schema = CotizacionSchema()\ncotizaciones_schema = CotizacionSchema(many=True)",
-        "detail": "models.Cotizacion",
-        "documentation": {}
-    },
-    {
-        "label": "cotizacion_schema",
-        "kind": 5,
-        "importPath": "models.Cotizacion",
-        "description": "models.Cotizacion",
-        "peekOfCode": "cotizacion_schema = CotizacionSchema()\ncotizaciones_schema = CotizacionSchema(many=True)",
-        "detail": "models.Cotizacion",
-        "documentation": {}
-    },
-    {
-        "label": "cotizaciones_schema",
-        "kind": 5,
-        "importPath": "models.Cotizacion",
-        "description": "models.Cotizacion",
-        "peekOfCode": "cotizaciones_schema = CotizacionSchema(many=True)",
-        "detail": "models.Cotizacion",
->>>>>>> 60ef691bcfa307388cf9b2e8ec8558a96a6a6dfd
         "documentation": {}
     },
     {
@@ -2192,17 +1438,10 @@
     {
         "label": "ModuloEmpresa",
         "kind": 6,
-<<<<<<< HEAD
         "importPath": "models.Modulos_Empresas",
         "description": "models.Modulos_Empresas",
         "peekOfCode": "class ModuloEmpresa(db.Model):\n    __tablename__ = \"modulosempresas\"\n    id = db.Column(db.Integer, primary_key=True)\n    empresa_id = db.Column(db.Integer, db.ForeignKey('empresas.id'), nullable=False)\n    modulo_id = db.Column(db.Integer, db.ForeignKey('modulos.id'), nullable=False)\n    estado = db.Column(db.Boolean, default=False)\n    def __init__(self, empresa_id, modulo_id, estado=False):\n        self.empresa_id = empresa_id\n        self.modulo_id = modulo_id\n        self.estado = estado",
         "detail": "models.Modulos_Empresas",
-=======
-        "importPath": "models.Proveedor",
-        "description": "models.Proveedor",
-        "peekOfCode": "class Proveedor(db.Model):\n    __tablename__ = 'proveedor'\n    id = db.Column(db.Integer, primary_key=True)\n    nombre= db.Column(db.String(50), unique=True)\n    email = db.Column(db.String(50))\n    p_number = db.Column(db.Integer)\n    dire = db.Column(db.String(50))\n    def __init__(self,id, nombre, email, dire, p_number):\n      self.id = id\n      self.nombre = nombre",
-        "detail": "models.Proveedor",
->>>>>>> 60ef691bcfa307388cf9b2e8ec8558a96a6a6dfd
         "documentation": {}
     },
     {
@@ -2215,66 +1454,12 @@
         "documentation": {}
     },
     {
-<<<<<<< HEAD
         "label": "Usuario",
         "kind": 6,
         "importPath": "models.Usuario",
         "description": "models.Usuario",
         "peekOfCode": "class Usuario(db.Model):\n    __tablename__ = \"usuarios\"\n    id = db.Column(db.Integer, primary_key=True)\n    nombre = db.Column(db.String(255))\n    apellidos = db.Column(db.String(255))\n    telefono = db.Column(db.String(255))\n    email = db.Column(db.String(255))\n    cedula = db.Column(db.String(255))\n    usuario = db.Column(db.String(255))\n    contraseña = db.Column(db.String(255))",
         "detail": "models.Usuario",
-=======
-        "label": "Administrador",
-        "kind": 6,
-        "importPath": "models.User",
-        "description": "models.User",
-        "peekOfCode": "class Administrador(db.Model):\n    __tablename__ = \"administrador\"\n    id = db.Column(db.Integer, primary_key=True)\n    nombre = db.Column(db.String(255))\n    pswd = db.Column(db.String(255))\n    user = db.Column(db.String(255))\n    def __init__(self, nombre, pswd, user, is_admin):\n        self.nombre = nombre\n        self.pswd = pswd\n        self.user = user",
-        "detail": "models.User",
-        "documentation": {}
-    },
-    {
-        "label": "AdminSchema",
-        "kind": 6,
-        "importPath": "models.User",
-        "description": "models.User",
-        "peekOfCode": "class AdminSchema(ma.Schema):\n    class Meta:\n        fields = ('id', 'nombre', 'pswd', 'user', 'rol')\nadmin_shchema = AdminSchema()\nadmins_shchema = AdminSchema(many=True)",
-        "detail": "models.User",
-        "documentation": {}
-    },
-    {
-        "label": "create_default_data",
-        "kind": 2,
-        "importPath": "models.User",
-        "description": "models.User",
-        "peekOfCode": "def create_default_data():\n    if not Administrador.query.first():\n        admins = [\n            Administrador(nombre='Jesus Garcia', pswd='jgarcia123', user='jesusgarcia123', is_admin=True),\n            Administrador(nombre='Juan Verdugo', pswd='jberdugo123', user='juanberdugo123', is_admin=True),\n            Administrador(nombre='David Campo', pswd='dcampo123', user='davidcampo123', is_admin=True)\n        ]\n        db.session.add_all(admins)\n        db.session.commit()\nwith app.app_context():",
-        "detail": "models.User",
-        "documentation": {}
-    },
-    {
-        "label": "admin_shchema",
-        "kind": 5,
-        "importPath": "models.User",
-        "description": "models.User",
-        "peekOfCode": "admin_shchema = AdminSchema()\nadmins_shchema = AdminSchema(many=True)",
-        "detail": "models.User",
-        "documentation": {}
-    },
-    {
-        "label": "admins_shchema",
-        "kind": 5,
-        "importPath": "models.User",
-        "description": "models.User",
-        "peekOfCode": "admins_shchema = AdminSchema(many=True)",
-        "detail": "models.User",
-        "documentation": {}
-    },
-    {
-        "label": "Vendedor",
-        "kind": 6,
-        "importPath": "models.Vendedor",
-        "description": "models.Vendedor",
-        "peekOfCode": "class Vendedor(db.Model):\n    __tablename__ = 'vendedor'\n    id = db.Column(db.Integer, primary_key=True)\n    nombre = db.Column(db.String(50))\n    email = db.Column(db.String(50))\n    fecha_inicio = db.Column(db.Date)\n    user = db.Column(db.String(50), unique=True)\n    pswd = db.Column(db.String(50))\n    id_empresa = db.Column(db.Integer)\n    def __init__(self, id, nombre, email, fecha_inicio, user, pswd, id_empresa):",
-        "detail": "models.Vendedor",
->>>>>>> 60ef691bcfa307388cf9b2e8ec8558a96a6a6dfd
         "documentation": {}
     },
     {
@@ -2291,127 +1476,16 @@
         "kind": 2,
         "importPath": "app",
         "description": "app",
-<<<<<<< HEAD
         "peekOfCode": "def index():\n    return render_template('index.html')\n@app.errorhandler(404)\ndef page_not_found(e):\n    return render_template('404.html'), 404\nif __name__ == '__main__':\n    app.run(debug=True)",
-=======
-        "peekOfCode": "def index():\n    return render_template('login.html')\n@app.route('/ingresar', methods=['POST'])\ndef ingresar():\n    user = request.form['user'].replace(' ', '')\n    pswd = request.form['pswd']\n    admin = db.session.query(Administrador).filter(Administrador.user == user, Administrador.pswd == pswd).first()\n    vendedor = db.session.query(Vendedor).filter(Vendedor.user == user, Vendedor.pswd == pswd).first()\n    empresa = db.session.query(Empresa).filter(Empresa.user == user, Empresa.pswd == pswd).first()\n    cliente = db.session.query(Cliente).filter(Cliente.user == user, Cliente.pswd == pswd).first()",
->>>>>>> 60ef691bcfa307388cf9b2e8ec8558a96a6a6dfd
         "detail": "app",
         "documentation": {}
     },
     {
-<<<<<<< HEAD
         "label": "page_not_found",
         "kind": 2,
         "importPath": "app",
         "description": "app",
         "peekOfCode": "def page_not_found(e):\n    return render_template('404.html'), 404\nif __name__ == '__main__':\n    app.run(debug=True)",
-=======
-        "label": "ingresar",
-        "kind": 2,
-        "importPath": "app",
-        "description": "app",
-        "peekOfCode": "def ingresar():\n    user = request.form['user'].replace(' ', '')\n    pswd = request.form['pswd']\n    admin = db.session.query(Administrador).filter(Administrador.user == user, Administrador.pswd == pswd).first()\n    vendedor = db.session.query(Vendedor).filter(Vendedor.user == user, Vendedor.pswd == pswd).first()\n    empresa = db.session.query(Empresa).filter(Empresa.user == user, Empresa.pswd == pswd).first()\n    cliente = db.session.query(Cliente).filter(Cliente.user == user, Cliente.pswd == pswd).first()\n    if admin:\n        session['usuario'] = admin_shchema.dump(admin)\n        return redirect('/admins')",
-        "detail": "app",
-        "documentation": {}
-    },
-    {
-        "label": "SECRET_KEY",
-        "kind": 5,
-        "importPath": "app",
-        "description": "app",
-        "peekOfCode": "SECRET_KEY = \"newtoken\"\napp = Flask(__name__, \n            static_folder='config/static',\n            template_folder='config/templates')\napp.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root@localhost:3307/inn'\napp.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False\ndb = SQLAlchemy(app)\nadmin_shchema = AdminSchema()\nadmins_shchema = AdminSchema(many=True)\nvendedor_schema = VendedorSchema()",
-        "detail": "app",
-        "documentation": {}
-    },
-    {
-        "label": "app",
-        "kind": 5,
-        "importPath": "app",
-        "description": "app",
-        "peekOfCode": "app = Flask(__name__, \n            static_folder='config/static',\n            template_folder='config/templates')\napp.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root@localhost:3307/inn'\napp.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False\ndb = SQLAlchemy(app)\nadmin_shchema = AdminSchema()\nadmins_shchema = AdminSchema(many=True)\nvendedor_schema = VendedorSchema()\nvendedores_schema = VendedorSchema(many=True)",
-        "detail": "app",
-        "documentation": {}
-    },
-    {
-        "label": "app.config['SQLALCHEMY_DATABASE_URI']",
-        "kind": 5,
-        "importPath": "app",
-        "description": "app",
-        "peekOfCode": "app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root@localhost:3307/inn'\napp.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False\ndb = SQLAlchemy(app)\nadmin_shchema = AdminSchema()\nadmins_shchema = AdminSchema(many=True)\nvendedor_schema = VendedorSchema()\nvendedores_schema = VendedorSchema(many=True)\nempresa_schema = EmpresaSchema()\ncliente_schema = ClientesSchema()\nfrom controllers.empresa import empresa_schema, ruta_empresa",
-        "detail": "app",
-        "documentation": {}
-    },
-    {
-        "label": "app.config['SQLALCHEMY_TRACK_MODIFICATIONS']",
-        "kind": 5,
-        "importPath": "app",
-        "description": "app",
-        "peekOfCode": "app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False\ndb = SQLAlchemy(app)\nadmin_shchema = AdminSchema()\nadmins_shchema = AdminSchema(many=True)\nvendedor_schema = VendedorSchema()\nvendedores_schema = VendedorSchema(many=True)\nempresa_schema = EmpresaSchema()\ncliente_schema = ClientesSchema()\nfrom controllers.empresa import empresa_schema, ruta_empresa\nfrom controllers.productos import productos_bp",
-        "detail": "app",
-        "documentation": {}
-    },
-    {
-        "label": "db",
-        "kind": 5,
-        "importPath": "app",
-        "description": "app",
-        "peekOfCode": "db = SQLAlchemy(app)\nadmin_shchema = AdminSchema()\nadmins_shchema = AdminSchema(many=True)\nvendedor_schema = VendedorSchema()\nvendedores_schema = VendedorSchema(many=True)\nempresa_schema = EmpresaSchema()\ncliente_schema = ClientesSchema()\nfrom controllers.empresa import empresa_schema, ruta_empresa\nfrom controllers.productos import productos_bp\nfrom controllers.vendedor import ruta_vendedor, vendedor_schema",
-        "detail": "app",
-        "documentation": {}
-    },
-    {
-        "label": "admin_shchema",
-        "kind": 5,
-        "importPath": "app",
-        "description": "app",
-        "peekOfCode": "admin_shchema = AdminSchema()\nadmins_shchema = AdminSchema(many=True)\nvendedor_schema = VendedorSchema()\nvendedores_schema = VendedorSchema(many=True)\nempresa_schema = EmpresaSchema()\ncliente_schema = ClientesSchema()\nfrom controllers.empresa import empresa_schema, ruta_empresa\nfrom controllers.productos import productos_bp\nfrom controllers.vendedor import ruta_vendedor, vendedor_schema\nfrom controllers.proveedores import ruta_proveedores",
-        "detail": "app",
-        "documentation": {}
-    },
-    {
-        "label": "admins_shchema",
-        "kind": 5,
-        "importPath": "app",
-        "description": "app",
-        "peekOfCode": "admins_shchema = AdminSchema(many=True)\nvendedor_schema = VendedorSchema()\nvendedores_schema = VendedorSchema(many=True)\nempresa_schema = EmpresaSchema()\ncliente_schema = ClientesSchema()\nfrom controllers.empresa import empresa_schema, ruta_empresa\nfrom controllers.productos import productos_bp\nfrom controllers.vendedor import ruta_vendedor, vendedor_schema\nfrom controllers.proveedores import ruta_proveedores\nfrom controllers.cliente import ruta_clientes",
-        "detail": "app",
-        "documentation": {}
-    },
-    {
-        "label": "vendedor_schema",
-        "kind": 5,
-        "importPath": "app",
-        "description": "app",
-        "peekOfCode": "vendedor_schema = VendedorSchema()\nvendedores_schema = VendedorSchema(many=True)\nempresa_schema = EmpresaSchema()\ncliente_schema = ClientesSchema()\nfrom controllers.empresa import empresa_schema, ruta_empresa\nfrom controllers.productos import productos_bp\nfrom controllers.vendedor import ruta_vendedor, vendedor_schema\nfrom controllers.proveedores import ruta_proveedores\nfrom controllers.cliente import ruta_clientes\nfrom controllers.users import ruta_user",
-        "detail": "app",
-        "documentation": {}
-    },
-    {
-        "label": "vendedores_schema",
-        "kind": 5,
-        "importPath": "app",
-        "description": "app",
-        "peekOfCode": "vendedores_schema = VendedorSchema(many=True)\nempresa_schema = EmpresaSchema()\ncliente_schema = ClientesSchema()\nfrom controllers.empresa import empresa_schema, ruta_empresa\nfrom controllers.productos import productos_bp\nfrom controllers.vendedor import ruta_vendedor, vendedor_schema\nfrom controllers.proveedores import ruta_proveedores\nfrom controllers.cliente import ruta_clientes\nfrom controllers.users import ruta_user\napp.register_blueprint(ruta_user, url_prefix=\"/controller\")",
-        "detail": "app",
-        "documentation": {}
-    },
-    {
-        "label": "empresa_schema",
-        "kind": 5,
-        "importPath": "app",
-        "description": "app",
-        "peekOfCode": "empresa_schema = EmpresaSchema()\ncliente_schema = ClientesSchema()\nfrom controllers.empresa import empresa_schema, ruta_empresa\nfrom controllers.productos import productos_bp\nfrom controllers.vendedor import ruta_vendedor, vendedor_schema\nfrom controllers.proveedores import ruta_proveedores\nfrom controllers.cliente import ruta_clientes\nfrom controllers.users import ruta_user\napp.register_blueprint(ruta_user, url_prefix=\"/controller\")\napp.register_blueprint(productos_bp, url_prefix=\"/controller\")",
-        "detail": "app",
-        "documentation": {}
-    },
-    {
-        "label": "cliente_schema",
-        "kind": 5,
-        "importPath": "app",
-        "description": "app",
-        "peekOfCode": "cliente_schema = ClientesSchema()\nfrom controllers.empresa import empresa_schema, ruta_empresa\nfrom controllers.productos import productos_bp\nfrom controllers.vendedor import ruta_vendedor, vendedor_schema\nfrom controllers.proveedores import ruta_proveedores\nfrom controllers.cliente import ruta_clientes\nfrom controllers.users import ruta_user\napp.register_blueprint(ruta_user, url_prefix=\"/controller\")\napp.register_blueprint(productos_bp, url_prefix=\"/controller\")\napp.register_blueprint(ruta_empresa, url_prefix=\"/controller\")",
->>>>>>> 60ef691bcfa307388cf9b2e8ec8558a96a6a6dfd
         "detail": "app",
         "documentation": {}
     }
