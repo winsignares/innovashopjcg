@@ -205,7 +205,6 @@ def eliminar_empresa(empresa_id):
 @token_required
 @empresa_required
 def list_clientes():
-    empresa_id = session.get('empresa_id')
     empresa_id = session.get('empresa_id') 
     if not empresa_id:
         return jsonify({"error": "Not logged in"}), 401

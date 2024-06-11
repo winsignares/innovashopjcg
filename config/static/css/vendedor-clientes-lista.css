@@ -3,7 +3,7 @@ body {
   margin: 0;
   font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
   color: #fff;
-  padding-left: 240px;
+  padding-left: 260px;
 }
 
 main {
@@ -15,29 +15,12 @@ main {
   background-color: #dadada;
   margin: 2%;
   height: calc(100vh - 60px);
-  width: calc(95vw - 220px);
+  width: calc(95vw - 50px) !important;
   display: block;
   border-radius: 20px;
   position: fixed;
   align-items: center;
   overflow: hidden;
-  box-shadow: 0 0 10px #000000;
-}
-
-.new-cliente-container {
-  background-color: #353131;
-  border-radius: 20px;
-  padding: 20px;
-  margin-top: 5%;
-  position: relative;
-  display: flex;
-  height: 75%;
-  margin: 2% 2% 2% 2%;
-  margin-left: 3%;
-  margin-right: 3%;
-  flex-direction: column;
-  align-items: center;
-  color: #000000;
   box-shadow: 0 0 10px #000000;
 }
 
@@ -51,43 +34,6 @@ main {
   text-align: center;
   margin-bottom: 20px;
   margin-top: 30px;
-}
-
-.lista-container {
-  height: 400px; /* Altura fija del contenedor */
-  width: 1100px;
-  overflow-y: auto; /* Desbordamiento vertical con barra de desplazamiento */
-  display: flex; /* Hace que las columnas se ajusten horizontalmente */
-  background-color: #dadada; /* Color de fondo oscuro */
-  border-radius: 10px; /* Bordes redondeados */
-}
-
-.columna {
-  flex: 1; /* Distribuye el espacio de manera uniforme entre las columnas */
-  padding: 20px 10px; /* Añade espacio interno a las columnas */
-  border-right: 2px solid #bdbdbd; /* Separador derecho */
-  text-align: center;
-}
-
-.columna:last-child {
-  border-right: none; /* Eliminar separador derecho en la última columna */
-}
-
-.Activo {
-  width: 16px;
-  height: 16px;
-}
-
-.Expirado {
-  width: 16px;
-  height: 16px;
-}
-
-.lista {
-  list-style: none; /* Quita los marcadores de lista */
-  padding: 0; /* Elimina el relleno predeterminado */
-  margin-top: 0; /* Elimina el margen superior */
-  margin-bottom: 10px; /* Agrega espacio entre las listas */
 }
 
 .lista li {
@@ -198,6 +144,20 @@ main {
   cursor: pointer;
   margin-bottom: 5px;
   margin-top: 20px;
+}
+
+.btn {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  border: none !important;
+  padding: 10px 20px !important;
+  cursor: pointer !important;
+  border-radius: 5px !important;
+  transition: background-color 0.3s ease !important;
+}
+
+.btn:hover {
+  background-color: #333333 !important;
 }
 
 .lista-iconos {

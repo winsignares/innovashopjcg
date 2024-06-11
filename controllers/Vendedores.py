@@ -98,4 +98,4 @@ def show_home():
 
 @ruta_vendedor.route('/clientes')
 def show_clientes():
-    return render_template('vendedores-templates/vendedores-clientes-lista')
+    return render_template('vendedores-templates/vendedor-clientes-lista.html')
